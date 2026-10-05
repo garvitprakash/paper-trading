@@ -1,0 +1,281 @@
+{
+ "version": 1,
+ "start_capital": 500000,
+ "cash": 500000.0,
+ "next_amount": 10000.0,
+ "positions": [],
+ "trades": [],
+ "today_list": {
+  "date": "2026-10-05",
+  "created_at": "2026-10-05T09:03:39+05:30",
+  "scanned": 350,
+  "mcap_unknown": [],
+  "items": [
+   {
+    "symbol": "JIOFIN",
+    "ticker": "JIOFIN.NS",
+    "name": "Jio Financial Services Ltd.",
+    "group": "Nifty 50",
+    "rsi": 22.8,
+    "mcap_cr": 140317,
+    "close": 212.5,
+    "volume": 28082023,
+    "status": "pending"
+   },
+   {
+    "symbol": "TMPV",
+    "ticker": "TMPV.NS",
+    "name": "Tata Motors Passenger Vehicles Ltd.",
+    "group": "Nifty 50",
+    "rsi": 27.3,
+    "mcap_cr": 102903,
+    "close": 279.4,
+    "volume": 15258191,
+    "status": "pending"
+   },
+   {
+    "symbol": "RELIANCE",
+    "ticker": "RELIANCE.NS",
+    "name": "Reliance Industries Ltd.",
+    "group": "Nifty 50",
+    "rsi": 27.9,
+    "mcap_cr": 1580187,
+    "close": 1167.7,
+    "volume": 16771221,
+    "status": "pending"
+   },
+   {
+    "symbol": "NTPC",
+    "ticker": "NTPC.NS",
+    "name": "NTPC Ltd.",
+    "group": "Nifty 50",
+    "rsi": 29.5,
+    "mcap_cr": 305542,
+    "close": 315.1,
+    "volume": 10094465,
+    "status": "pending"
+   },
+   {
+    "symbol": "ONGC",
+    "ticker": "ONGC.NS",
+    "name": "Oil & Natural Gas Corporation Ltd.",
+    "group": "Nifty 50",
+    "rsi": 30.7,
+    "mcap_cr": 279748,
+    "close": 222.37,
+    "volume": 13099985,
+    "status": "pending"
+   },
+   {
+    "symbol": "ICICIBANK",
+    "ticker": "ICICIBANK.NS",
+    "name": "ICICI Bank Ltd.",
+    "group": "Nifty 50",
+    "rsi": 33.7,
+    "mcap_cr": 940802,
+    "close": 1310.6,
+    "volume": 13163495,
+    "status": "pending"
+   },
+   {
+    "symbol": "POWERGRID",
+    "ticker": "POWERGRID.NS",
+    "name": "Power Grid Corporation of India Ltd.",
+    "group": "Nifty 50",
+    "rsi": 34.6,
+    "mcap_cr": 236747,
+    "close": 254.55,
+    "volume": 10976701,
+    "status": "pending"
+   },
+   {
+    "symbol": "CANBK",
+    "ticker": "CANBK.NS",
+    "name": "Canara Bank",
+    "group": "Nifty Next 50",
+    "rsi": 30.1,
+    "mcap_cr": 107360,
+    "close": 118.36,
+    "volume": 13953325,
+    "status": "pending"
+   },
+   {
+    "symbol": "WIPRO",
+    "ticker": "WIPRO.NS",
+    "name": "Wipro Ltd.",
+    "group": "Nifty Next 50",
+    "rsi": 32.0,
+    "mcap_cr": 157652,
+    "close": 159.35,
+    "volume": 18521731,
+    "status": "pending"
+   },
+   {
+    "symbol": "IRFC",
+    "ticker": "IRFC.NS",
+    "name": "Indian Railway Finance Corporation Ltd.",
+    "group": "Nifty Next 50",
+    "rsi": 32.2,
+    "mcap_cr": 100706,
+    "close": 77.06,
+    "volume": 12764829,
+    "status": "pending"
+   },
+   {
+    "symbol": "IDEA",
+    "ticker": "IDEA.NS",
+    "name": "Vodafone Idea Ltd.",
+    "group": "Nifty Next 50",
+    "rsi": 32.3,
+    "mcap_cr": 136946,
+    "close": 12.64,
+    "volume": 612490273,
+    "status": "pending"
+   },
+   {
+    "symbol": "PNB",
+    "ticker": "PNB.NS",
+    "name": "Punjab National Bank",
+    "group": "Nifty Next 50",
+    "rsi": 34.0,
+    "mcap_cr": 125928,
+    "close": 109.57,
+    "volume": 11365686,
+    "status": "pending"
+   },
+   {
+    "symbol": "SUZLON",
+    "ticker": "SUZLON.NS",
+    "name": "Suzlon Energy Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 18.8,
+    "mcap_cr": 53487,
+    "close": 38.91,
+    "volume": 53247107,
+    "status": "pending"
+   },
+   {
+    "symbol": "POLICYBZR",
+    "ticker": "POLICYBZR.NS",
+    "name": "PB Fintech Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 19.4,
+    "mcap_cr": 45286,
+    "close": 980.0,
+    "volume": 14061779,
+    "status": "pending"
+   },
+   {
+    "symbol": "SWIGGY",
+    "ticker": "SWIGGY.NS",
+    "name": "Swiggy Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 26.7,
+    "mcap_cr": 62356,
+    "close": 238.0,
+    "volume": 13785398,
+    "status": "pending"
+   },
+   {
+    "symbol": "NMDC",
+    "ticker": "NMDC.NS",
+    "name": "NMDC Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 27.5,
+    "mcap_cr": 65622,
+    "close": 74.64,
+    "volume": 17077400,
+    "status": "pending"
+   },
+   {
+    "symbol": "NHPC",
+    "ticker": "NHPC.NS",
+    "name": "NHPC Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 28.7,
+    "mcap_cr": 72073,
+    "close": 71.75,
+    "volume": 10903143,
+    "status": "pending"
+   },
+   {
+    "symbol": "FEDERALBNK",
+    "ticker": "FEDERALBNK.NS",
+    "name": "Federal Bank Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 30.4,
+    "mcap_cr": 78604,
+    "close": 318.2,
+    "volume": 11278668,
+    "status": "pending"
+   },
+   {
+    "symbol": "ASHOKLEY",
+    "ticker": "ASHOKLEY.NS",
+    "name": "Ashok Leyland Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 31.5,
+    "mcap_cr": 88390,
+    "close": 150.48,
+    "volume": 20574319,
+    "status": "pending"
+   },
+   {
+    "symbol": "YESBANK",
+    "ticker": "YESBANK.NS",
+    "name": "Yes Bank Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 32.0,
+    "mcap_cr": 65132,
+    "close": 20.75,
+    "volume": 80611659,
+    "status": "pending"
+   },
+   {
+    "symbol": "GROWW",
+    "ticker": "GROWW.NS",
+    "name": "Billionbrains Garage Ventures Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 32.4,
+    "mcap_cr": 111634,
+    "close": 180.11,
+    "volume": 18076780,
+    "status": "pending"
+   },
+   {
+    "symbol": "IFCI",
+    "ticker": "IFCI.NS",
+    "name": "IFCI Ltd.",
+    "group": "Nifty Smallcap 100",
+    "rsi": 31.4,
+    "mcap_cr": 17516,
+    "close": 65.14,
+    "volume": 41910107,
+    "status": "pending"
+   }
+  ]
+ },
+ "list_history": [],
+ "snapshots": [],
+ "daily": {
+  "scan_done": "2026-10-05"
+ },
+ "summary": {
+  "total_actual_pl": 0,
+  "unrealized_pl_approx": 0,
+  "closed_trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate_pct": null,
+  "open_positions": 0,
+  "max_positions": 10,
+  "invested_open": 0,
+  "cash": 500000.0,
+  "portfolio_value": 500000.0,
+  "start_capital": 500000,
+  "next_amount": 10000.0,
+  "total_tax_paid": 0,
+  "total_charges_paid": 0
+ },
+ "updated_at": "2026-10-05T09:04:04+05:30"
+}
