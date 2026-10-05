@@ -1,0 +1,79 @@
+name: Paper Trading Robot
+
+# Samay GitHub me UTC me likhte hain. India (IST) = UTC + 5:30
+on:
+  schedule:
+    - cron: '30 2 * * 1-5'             # subah 8:00 IST  -> aaj ki stock list
+    - cron: '0,15,30,45 4-9 * * 1-5'   # 9:30 am se 3:15 pm IST, har 15 minute -> kharid / bikri check
+    - cron: '0,30 10 * * 1-5'          # 3:30 pm aur 4:00 pm IST -> aakhri check aur din ka hisaab
+  workflow_dispatch:                   # haath se chalane ka button (test ke liye)
+    inputs:
+      mode:
+        description: 'Kya chalana hai? (test = sirf Telegram check)'
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - test
+          - scan
+          - buy
+          - check
+          - eod
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper-trader
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Code download
+        uses: actions/checkout@v4
+
+      - name: Python taiyar karna
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Zaroori packages
+        run: pip install -r requirements.txt
+
+      - name: Data branch taiyar karna
+        run: |
+          set -e
+          git config user.name "paper-trading-bot"
+          git config user.email "paper-trading-bot@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin data > /dev/null 2>&1; then
+            git fetch origin data
+            git worktree add -B data _data origin/data
+          else
+            git worktree add --orphan -b data _data
+          fi
+
+      - name: Robot chalana
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DATA_DIR: ${{ github.workspace }}/_data
+        run: python trader.py --mode "${{ github.event.inputs.mode || 'auto' }}"
+
+      - name: Data save karna (website isi se dikhti hai)
+        run: |
+          cd _data
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Kuch naya nahi, save karne ki zaroorat nahi."
+          else
+            git commit -m "data update $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+            for i in 1 2 3; do
+              git push origin HEAD:data && break
+              git pull --rebase origin data || true
+              sleep 3
+            done
+          fi
