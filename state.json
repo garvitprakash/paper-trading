@@ -1,9 +1,170 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 500000.0,
+ "cash": 402369.63,
  "next_amount": 10000.0,
- "positions": [],
+ "positions": [
+  {
+   "symbol": "JIOFIN",
+   "ticker": "JIOFIN.NS",
+   "name": "Jio Financial Services Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 213.86,
+   "qty": 46,
+   "invested": 9837.56,
+   "buy_charges": 11.67,
+   "target": 235.25,
+   "stop": 171.09,
+   "last_price": 212.49,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "TMPV",
+   "ticker": "TMPV.NS",
+   "name": "Tata Motors Passenger Vehicles Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 281.25,
+   "qty": 35,
+   "invested": 9843.75,
+   "buy_charges": 11.68,
+   "target": 309.38,
+   "stop": 225.0,
+   "last_price": 280.35,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "RELIANCE",
+   "ticker": "RELIANCE.NS",
+   "name": "Reliance Industries Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 1174.5,
+   "qty": 8,
+   "invested": 9396.0,
+   "buy_charges": 11.15,
+   "target": 1291.95,
+   "stop": 939.6,
+   "last_price": 1181.9,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "NTPC",
+   "ticker": "NTPC.NS",
+   "name": "NTPC Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 318.85,
+   "qty": 31,
+   "invested": 9884.35,
+   "buy_charges": 11.73,
+   "target": 350.74,
+   "stop": 255.08,
+   "last_price": 319.2,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "ONGC",
+   "ticker": "ONGC.NS",
+   "name": "Oil & Natural Gas Corporation Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 223.49,
+   "qty": 44,
+   "invested": 9833.56,
+   "buy_charges": 11.66,
+   "target": 245.84,
+   "stop": 178.79,
+   "last_price": 224.35,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "ICICIBANK",
+   "ticker": "ICICIBANK.NS",
+   "name": "ICICI Bank Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 1314.5,
+   "qty": 7,
+   "invested": 9201.5,
+   "buy_charges": 10.92,
+   "target": 1445.95,
+   "stop": 1051.6,
+   "last_price": 1317.0,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "POWERGRID",
+   "ticker": "POWERGRID.NS",
+   "name": "Power Grid Corporation of India Ltd.",
+   "group": "Nifty 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 256.6,
+   "qty": 38,
+   "invested": 9750.8,
+   "buy_charges": 11.57,
+   "target": 282.26,
+   "stop": 205.28,
+   "last_price": 257.45,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "CANBK",
+   "ticker": "CANBK.NS",
+   "name": "Canara Bank",
+   "group": "Nifty Next 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 119.29,
+   "qty": 83,
+   "invested": 9901.07,
+   "buy_charges": 11.74,
+   "target": 131.22,
+   "stop": 95.43,
+   "last_price": 119.88,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "WIPRO",
+   "ticker": "WIPRO.NS",
+   "name": "Wipro Ltd.",
+   "group": "Nifty Next 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 162.61,
+   "qty": 61,
+   "invested": 9919.21,
+   "buy_charges": 11.77,
+   "target": 178.87,
+   "stop": 130.09,
+   "last_price": 163.93,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  },
+  {
+   "symbol": "IRFC",
+   "ticker": "IRFC.NS",
+   "name": "Indian Railway Finance Corporation Ltd.",
+   "group": "Nifty Next 50",
+   "buy_date": "2026-10-05",
+   "buy_time": "2026-10-05T09:15:00+05:30",
+   "buy_price": 77.71,
+   "qty": 128,
+   "invested": 9946.88,
+   "buy_charges": 11.8,
+   "target": 85.48,
+   "stop": 62.17,
+   "last_price": 77.4,
+   "last_checked": "2026-10-05T09:40:00+05:30"
+  }
+ ],
  "trades": [],
  "today_list": {
   "date": "2026-10-05",
@@ -20,7 +181,7 @@
     "mcap_cr": 140317,
     "close": 212.5,
     "volume": 28082023,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "TMPV",
@@ -31,7 +192,7 @@
     "mcap_cr": 102903,
     "close": 279.4,
     "volume": 15258191,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "RELIANCE",
@@ -42,7 +203,7 @@
     "mcap_cr": 1580187,
     "close": 1167.7,
     "volume": 16771221,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "NTPC",
@@ -53,7 +214,7 @@
     "mcap_cr": 305542,
     "close": 315.1,
     "volume": 10094465,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "ONGC",
@@ -64,7 +225,7 @@
     "mcap_cr": 279748,
     "close": 222.37,
     "volume": 13099985,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "ICICIBANK",
@@ -75,7 +236,7 @@
     "mcap_cr": 940802,
     "close": 1310.6,
     "volume": 13163495,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "POWERGRID",
@@ -86,7 +247,7 @@
     "mcap_cr": 236747,
     "close": 254.55,
     "volume": 10976701,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "CANBK",
@@ -97,7 +258,7 @@
     "mcap_cr": 107360,
     "close": 118.36,
     "volume": 13953325,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "WIPRO",
@@ -108,7 +269,7 @@
     "mcap_cr": 157652,
     "close": 159.35,
     "volume": 18521731,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "IRFC",
@@ -119,7 +280,7 @@
     "mcap_cr": 100706,
     "close": 77.06,
     "volume": 12764829,
-    "status": "pending"
+    "status": "bought"
    },
    {
     "symbol": "IDEA",
@@ -130,7 +291,7 @@
     "mcap_cr": 136946,
     "close": 12.64,
     "volume": 612490273,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "PNB",
@@ -141,7 +302,7 @@
     "mcap_cr": 125928,
     "close": 109.57,
     "volume": 11365686,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "SUZLON",
@@ -152,7 +313,7 @@
     "mcap_cr": 53487,
     "close": 38.91,
     "volume": 53247107,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "POLICYBZR",
@@ -163,7 +324,7 @@
     "mcap_cr": 45286,
     "close": 980.0,
     "volume": 14061779,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "SWIGGY",
@@ -174,7 +335,7 @@
     "mcap_cr": 62356,
     "close": 238.0,
     "volume": 13785398,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "NMDC",
@@ -185,7 +346,7 @@
     "mcap_cr": 65622,
     "close": 74.64,
     "volume": 17077400,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "NHPC",
@@ -196,7 +357,7 @@
     "mcap_cr": 72073,
     "close": 71.75,
     "volume": 10903143,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "FEDERALBNK",
@@ -207,7 +368,7 @@
     "mcap_cr": 78604,
     "close": 318.2,
     "volume": 11278668,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "ASHOKLEY",
@@ -218,7 +379,7 @@
     "mcap_cr": 88390,
     "close": 150.48,
     "volume": 20574319,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "YESBANK",
@@ -229,7 +390,7 @@
     "mcap_cr": 65132,
     "close": 20.75,
     "volume": 80611659,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "GROWW",
@@ -240,7 +401,7 @@
     "mcap_cr": 111634,
     "close": 180.11,
     "volume": 18076780,
-    "status": "pending"
+    "status": "slots_full"
    },
    {
     "symbol": "IFCI",
@@ -251,31 +412,32 @@
     "mcap_cr": 17516,
     "close": 65.14,
     "volume": 41910107,
-    "status": "pending"
+    "status": "slots_full"
    }
   ]
  },
  "list_history": [],
  "snapshots": [],
  "daily": {
-  "scan_done": "2026-10-05"
+  "scan_done": "2026-10-05",
+  "buy_done": "2026-10-05"
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": 0,
+  "unrealized_pl_approx": 152.98,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
   "win_rate_pct": null,
-  "open_positions": 0,
+  "open_positions": 10,
   "max_positions": 10,
-  "invested_open": 0,
-  "cash": 500000.0,
-  "portfolio_value": 500000.0,
+  "invested_open": 97514.68,
+  "cash": 402369.63,
+  "portfolio_value": 500037.29,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-05T09:04:04+05:30"
+ "updated_at": "2026-10-05T09:44:35+05:30"
 }
