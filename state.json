@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 39.16,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 38.86,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "POLICYBZR",
@@ -33,8 +33,8 @@
    "buy_charges": 11.6,
    "target": 1075.36,
    "stop": 782.08,
-   "last_price": 1034.9,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 1014.3,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -49,8 +49,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 244.2,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 247.2,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 74.38,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 72.62,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -81,8 +81,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 73.11,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 72.96,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -97,8 +97,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 320.0,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 318.8,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -113,8 +113,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 153.7,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 152.69,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -129,8 +129,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 20.86,
-   "last_checked": "2026-10-06T15:15:00+05:30"
+   "last_price": 20.82,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "GROWW",
@@ -145,8 +145,8 @@
    "buy_charges": 11.74,
    "target": 201.63,
    "stop": 146.64,
-   "last_price": 193.07,
-   "last_checked": "2026-10-06T15:25:00+05:30"
+   "last_price": 192.07,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   },
   {
    "symbol": "IFCI",
@@ -161,14 +161,14 @@
    "buy_charges": 11.8,
    "target": 71.99,
    "stop": 52.36,
-   "last_price": 65.5,
-   "last_checked": "2026-10-06T15:25:00+05:30"
+   "last_price": 64.49,
+   "last_checked": "2026-10-07T09:30:00+05:30"
   }
  ],
  "trades": [],
  "today_list": {
-  "date": "2026-10-06",
-  "created_at": "2026-10-06T14:47:56+05:30",
+  "date": "2026-10-07",
+  "created_at": "2026-10-07T09:33:14+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -177,21 +177,10 @@
     "ticker": "SUZLON.NS",
     "name": "Suzlon Energy Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 19.0,
-    "mcap_cr": 53735,
-    "close": 38.92,
-    "volume": 51123556,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "POLICYBZR",
-    "ticker": "POLICYBZR.NS",
-    "name": "PB Fintech Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 19.3,
-    "mcap_cr": 47841,
-    "close": 976.2,
-    "volume": 13249741,
+    "rsi": 22.1,
+    "mcap_cr": 53419,
+    "close": 39.16,
+    "volume": 42495197,
     "status": "slots_full"
    },
    {
@@ -199,21 +188,10 @@
     "ticker": "NMDC.NS",
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 25.8,
-    "mcap_cr": 65253,
-    "close": 73.74,
-    "volume": 11989948,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "SWIGGY",
-    "ticker": "SWIGGY.NS",
-    "name": "Swiggy Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 27.6,
-    "mcap_cr": 63443,
-    "close": 238.8,
-    "volume": 11179271,
+    "rsi": 29.2,
+    "mcap_cr": 63846,
+    "close": 74.38,
+    "volume": 10800931,
     "status": "slots_full"
    },
    {
@@ -221,26 +199,89 @@
     "ticker": "IFCI.NS",
     "name": "IFCI Ltd.",
     "group": "Nifty Smallcap 100",
-    "rsi": 30.6,
-    "mcap_cr": 17648,
-    "close": 64.28,
-    "volume": 33656348,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "JIOFIN",
-    "ticker": "JIOFIN.NS",
-    "name": "Jio Financial Services Ltd.",
-    "group": "Nifty 50",
-    "rsi": 22.4,
-    "mcap_cr": 143618,
-    "close": 212.0,
-    "volume": 16101981,
+    "rsi": 33.3,
+    "mcap_cr": 17376,
+    "close": 65.51,
+    "volume": 29555126,
     "status": "slots_full"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-06",
+   "created_at": "2026-10-06T14:47:56+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "SUZLON",
+     "ticker": "SUZLON.NS",
+     "name": "Suzlon Energy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 19.0,
+     "mcap_cr": 53735,
+     "close": 38.92,
+     "volume": 51123556,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "POLICYBZR",
+     "ticker": "POLICYBZR.NS",
+     "name": "PB Fintech Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 19.3,
+     "mcap_cr": 47841,
+     "close": 976.2,
+     "volume": 13249741,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 25.8,
+     "mcap_cr": 65253,
+     "close": 73.74,
+     "volume": 11989948,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "SWIGGY",
+     "ticker": "SWIGGY.NS",
+     "name": "Swiggy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 27.6,
+     "mcap_cr": 63443,
+     "close": 238.8,
+     "volume": 11179271,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "IFCI",
+     "ticker": "IFCI.NS",
+     "name": "IFCI Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 30.6,
+     "mcap_cr": 17648,
+     "close": 64.28,
+     "volume": 33656348,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "name": "Jio Financial Services Ltd.",
+     "group": "Nifty 50",
+     "rsi": 22.4,
+     "mcap_cr": 143618,
+     "close": 212.0,
+     "volume": 16101981,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-05",
    "created_at": "2026-10-05T11:11:21+05:30",
@@ -456,13 +497,13 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-06",
-  "buy_done": "2026-10-06",
+  "scan_done": "2026-10-07",
+  "buy_done": "2026-10-07",
   "eod_done": "2026-10-06"
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": 1315.99,
+  "unrealized_pl_approx": 573.69,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
@@ -471,11 +512,11 @@
   "max_positions": 10,
   "invested_open": 98927.46,
   "cash": 400955.18,
-  "portfolio_value": 501198.63,
+  "portfolio_value": 500456.33,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-06T21:51:03+05:30"
+ "updated_at": "2026-10-07T09:33:32+05:30"
 }
