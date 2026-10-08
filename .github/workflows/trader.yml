@@ -1,18 +1,22 @@
 name: Paper Trading Robot
 
 # Samay GitHub me UTC me likhte hain. India (IST) = UTC + 5:30
+# Robot ab din me kuch hi baar "jagaya" jaata hai. Ek baar jag jaye to wo khud ghanton tak chalta hai
+# aur har 15 minute me khud kharid/bikri check karta hai (market band hone tak).
 on:
   schedule:
-    - cron: '30 2 * * 1-5'             # subah 8:00 IST  -> aaj ki stock list
-    - cron: '0,15,30,45 4-9 * * 1-5'   # 9:30 am se 3:15 pm IST, har 15 minute -> kharid / bikri check
-    - cron: '0,30 10 * * 1-5'          # 3:30 pm aur 4:00 pm IST -> aakhri check aur din ka hisaab
-  workflow_dispatch:                   # haath se chalane ka button (test ke liye)
+    - cron: '12 2 * * 1-5'    # 7:42 am IST  (aaj ki list + din bhar ka chakkar shuru)
+    - cron: '42 3 * * 1-5'    # 9:12 am IST  (backup)
+    - cron: '17 4 * * 1-5'    # 9:47 am IST  (backup)
+    - cron: '47 6 * * 1-5'    # 12:17 pm IST (backup)
+  workflow_dispatch:           # haath se chalane ka button
     inputs:
       mode:
-        description: 'Kya chalana hai? (test = sirf Telegram check)'
-        default: 'auto'
+        description: 'loop = poora din chalao (roz isi ko dabaiye). Baaki sirf test ke liye.'
+        default: 'loop'
         type: choice
         options:
+          - loop
           - auto
           - test
           - scan
@@ -22,6 +26,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: paper-trader
@@ -30,7 +35,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 355
     steps:
       - name: Code download
         uses: actions/checkout@v4
@@ -61,19 +66,69 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DATA_DIR: ${{ github.workspace }}/_data
-        run: python trader.py --mode "${{ github.event.inputs.mode || 'auto' }}"
+          GH_TOKEN: ${{ github.token }}
+          MODE: ${{ github.event.inputs.mode || 'loop' }}
+          REPO: ${{ github.repository }}
+        run: |
+          save_data() {
+            ( cd _data
+              git add -A
+              if git diff --cached --quiet; then
+                echo "Kuch naya nahi, save karne ki zaroorat nahi."
+              else
+                git commit -q -m "data update $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+                for i in 1 2 3; do
+                  git push -q origin HEAD:data && break
+                  git pull -q --rebase origin data || true
+                  sleep 3
+                done
+              fi
+            ) || true
+          }
 
-      - name: Data save karna (website isi se dikhti hai)
+          if [ "$MODE" != "loop" ]; then
+            python trader.py --mode "$MODE" || true
+            save_data
+            exit 0
+          fi
+
+          # ---- poora din ka chakkar ----
+          END="${LOOP_END:-1630}"            # shaam 4:30 pm IST tak
+          PAUSE="${LOOP_SLEEP:-780}"         # har chakkar ke baad 13 minute ruko (chakkar milakar ~15 min)
+          MAXSECS="${LOOP_MAXSECS:-19800}"   # 5.5 ghante baad naya run shuru karke ye band
+          START=$(date +%s)
+          while true; do
+            NOW=$(TZ=Asia/Kolkata date +%H%M)
+            DOW=$(TZ=Asia/Kolkata date +%u)
+            TODAY=$(TZ=Asia/Kolkata date +%F)
+            if [ "$DOW" -ge 6 ]; then echo "Weekend hai, kuch nahi karna."; break; fi
+            if [ "$((10#$NOW))" -ge "$((10#$END))" ]; then echo "Din ka kaam khatam."; break; fi
+
+            python trader.py --mode auto || true
+            save_data
+
+            if grep -q "\"eod_done\": \"$TODAY\"" _data/state.json 2>/dev/null; then
+              echo "Aaj ka hisaab ho gaya."; break
+            fi
+
+            if [ "$(( $(date +%s) - START ))" -ge "$MAXSECS" ]; then
+              echo "GitHub ki 6 ghante ki seema paas hai, naya run shuru kar raha hoon."
+              gh workflow run trader.yml --repo "$REPO" -f mode=loop || true
+              break
+            fi
+            sleep "$PAUSE"
+          done
+
+      - name: Aakhri data save
+        if: always()
         run: |
           cd _data
           git add -A
-          if git diff --cached --quiet; then
-            echo "Kuch naya nahi, save karne ki zaroorat nahi."
-          else
-            git commit -m "data update $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          if ! git diff --cached --quiet; then
+            git commit -q -m "data update (final) $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
             for i in 1 2 3; do
-              git push origin HEAD:data && break
-              git pull --rebase origin data || true
+              git push -q origin HEAD:data && break
+              git pull -q --rebase origin data || true
               sleep 3
             done
           fi
