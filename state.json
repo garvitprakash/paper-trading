@@ -620,12 +620,20 @@
    "cash": 400955.18,
    "portfolio_value": 500631.24,
    "open_positions": 10
+  },
+  {
+   "date": "2026-10-08",
+   "total_actual_pl": 0,
+   "unrealized_pl_approx": -1385.71,
+   "cash": 400955.18,
+   "portfolio_value": 498496.93,
+   "open_positions": 10
   }
  ],
  "daily": {
   "scan_done": "2026-10-08",
   "buy_done": "2026-10-08",
-  "eod_done": "2026-10-07"
+  "eod_done": "2026-10-08"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -644,5 +652,5 @@
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-08T15:34:48+05:30"
+ "updated_at": "2026-10-08T15:47:51+05:30"
 }
