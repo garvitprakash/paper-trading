@@ -145,8 +145,8 @@
    "buy_charges": 11.74,
    "target": 201.63,
    "stop": 146.64,
-   "last_price": 192.11,
-   "last_checked": "2026-10-09T15:15:00+05:30"
+   "last_price": 192.2,
+   "last_checked": "2026-10-09T15:25:00+05:30"
   },
   {
    "symbol": "IFCI",
@@ -161,8 +161,8 @@
    "buy_charges": 11.8,
    "target": 71.99,
    "stop": 52.36,
-   "last_price": 67.51,
-   "last_checked": "2026-10-09T15:15:00+05:30"
+   "last_price": 66.97,
+   "last_checked": "2026-10-09T15:25:00+05:30"
   }
  ],
  "trades": [],
@@ -788,7 +788,7 @@
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": -293.63,
+  "unrealized_pl_approx": -370.85,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
@@ -797,11 +797,11 @@
   "max_positions": 10,
   "invested_open": 98927.46,
   "cash": 400955.18,
-  "portfolio_value": 499589.01,
+  "portfolio_value": 499511.79,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-09T15:16:23+05:30"
+ "updated_at": "2026-10-09T15:29:26+05:30"
 }
