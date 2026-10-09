@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 36.57,
-   "last_checked": "2026-10-08T15:10:00+05:30"
+   "last_price": 37.2,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "POLICYBZR",
@@ -33,8 +33,8 @@
    "buy_charges": 11.6,
    "target": 1075.36,
    "stop": 782.08,
-   "last_price": 997.8,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 1023.0,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -49,8 +49,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 234.9,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 234.0,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 70.89,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 71.79,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -81,8 +81,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 71.7,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 72.26,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -97,8 +97,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 321.6,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 326.6,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -113,8 +113,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 145.06,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 145.9,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -129,8 +129,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 20.38,
-   "last_checked": "2026-10-08T15:15:00+05:30"
+   "last_price": 20.6,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "GROWW",
@@ -145,8 +145,8 @@
    "buy_charges": 11.74,
    "target": 201.63,
    "stop": 146.64,
-   "last_price": 193.0,
-   "last_checked": "2026-10-08T15:25:00+05:30"
+   "last_price": 191.11,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   },
   {
    "symbol": "IFCI",
@@ -161,14 +161,14 @@
    "buy_charges": 11.8,
    "target": 71.99,
    "stop": 52.36,
-   "last_price": 66.25,
-   "last_checked": "2026-10-08T15:25:00+05:30"
+   "last_price": 66.73,
+   "last_checked": "2026-10-09T10:15:00+05:30"
   }
  ],
  "trades": [],
  "today_list": {
-  "date": "2026-10-08",
-  "created_at": "2026-10-08T10:57:48+05:30",
+  "date": "2026-10-09",
+  "created_at": "2026-10-09T10:16:08+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -177,10 +177,10 @@
     "ticker": "SUZLON.NS",
     "name": "Suzlon Energy Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 19.3,
-    "mcap_cr": 51590,
-    "close": 38.34,
-    "volume": 73531474,
+    "rsi": 15.2,
+    "mcap_cr": 51137,
+    "close": 36.43,
+    "volume": 85701657,
     "status": "slots_full"
    },
    {
@@ -188,10 +188,10 @@
     "ticker": "NMDC.NS",
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 26.0,
-    "mcap_cr": 63002,
-    "close": 72.8,
-    "volume": 15148455,
+    "rsi": 23.1,
+    "mcap_cr": 63116,
+    "close": 70.69,
+    "volume": 26538950,
     "status": "slots_full"
    },
    {
@@ -199,10 +199,32 @@
     "ticker": "ASHOKLEY.NS",
     "name": "Ashok Leyland Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 33.2,
-    "mcap_cr": 86287,
-    "close": 149.2,
-    "volume": 11928149,
+    "rsi": 29.3,
+    "mcap_cr": 85700,
+    "close": 145.02,
+    "volume": 15971379,
+    "status": "slots_full"
+   },
+   {
+    "symbol": "GMRAIRPORT",
+    "ticker": "GMRAIRPORT.NS",
+    "name": "GMR Airports Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 30.1,
+    "mcap_cr": 95341,
+    "close": 87.77,
+    "volume": 55866346,
+    "status": "slots_full"
+   },
+   {
+    "symbol": "HINDPETRO",
+    "ticker": "HINDPETRO.NS",
+    "name": "Hindustan Petroleum Corporation Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 31.7,
+    "mcap_cr": 69793,
+    "close": 326.6,
+    "volume": 12074362,
     "status": "slots_full"
    },
    {
@@ -210,65 +232,43 @@
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 34.5,
-    "mcap_cr": 64410,
-    "close": 20.79,
-    "volume": 73908969,
+    "rsi": 32.2,
+    "mcap_cr": 64661,
+    "close": 20.45,
+    "volume": 62706430,
     "status": "slots_full"
    },
    {
-    "symbol": "IFCI",
-    "ticker": "IFCI.NS",
-    "name": "IFCI Ltd.",
+    "symbol": "NHPC",
+    "ticker": "NHPC.NS",
+    "name": "NHPC Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 33.2,
+    "mcap_cr": 72585,
+    "close": 71.65,
+    "volume": 10723011,
+    "status": "slots_full"
+   },
+   {
+    "symbol": "BANDHANBNK",
+    "ticker": "BANDHANBNK.NS",
+    "name": "Bandhan Bank Ltd.",
     "group": "Nifty Smallcap 100",
-    "rsi": 31.7,
-    "mcap_cr": 18092,
-    "close": 64.03,
-    "volume": 21013703,
+    "rsi": 33.3,
+    "mcap_cr": 25443,
+    "close": 155.54,
+    "volume": 14678826,
     "status": "slots_full"
    },
    {
-    "symbol": "INOXWIND",
-    "ticker": "INOXWIND.NS",
-    "name": "Inox Wind Ltd.",
-    "group": "Nifty Smallcap 100",
-    "rsi": 32.8,
-    "mcap_cr": 11185,
-    "close": 67.1,
-    "volume": 10148423,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "ONGC",
-    "ticker": "ONGC.NS",
-    "name": "Oil & Natural Gas Corporation Ltd.",
+    "symbol": "POWERGRID",
+    "ticker": "POWERGRID.NS",
+    "name": "Power Grid Corporation of India Ltd.",
     "group": "Nifty 50",
-    "rsi": 32.8,
-    "mcap_cr": 277584,
-    "close": 221.88,
-    "volume": 14223609,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "SBIN",
-    "ticker": "SBIN.NS",
-    "name": "State Bank of India",
-    "group": "Nifty 50",
-    "rsi": 33.4,
-    "mcap_cr": 875939,
-    "close": 954.0,
-    "volume": 12523009,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "JIOFIN",
-    "ticker": "JIOFIN.NS",
-    "name": "Jio Financial Services Ltd.",
-    "group": "Nifty 50",
-    "rsi": 34.5,
-    "mcap_cr": 140990,
-    "close": 216.44,
-    "volume": 10207060,
+    "rsi": 28.5,
+    "mcap_cr": 232097,
+    "close": 244.65,
+    "volume": 14409222,
     "status": "slots_full"
    },
    {
@@ -276,15 +276,166 @@
     "ticker": "BEL.NS",
     "name": "Bharat Electronics Ltd.",
     "group": "Nifty 50",
-    "rsi": 34.8,
-    "mcap_cr": 273678,
-    "close": 378.3,
-    "volume": 13636290,
+    "rsi": 29.0,
+    "mcap_cr": 266697,
+    "close": 367.3,
+    "volume": 13373488,
+    "status": "slots_full"
+   },
+   {
+    "symbol": "JIOFIN",
+    "ticker": "JIOFIN.NS",
+    "name": "Jio Financial Services Ltd.",
+    "group": "Nifty 50",
+    "rsi": 29.0,
+    "mcap_cr": 141129,
+    "close": 211.0,
+    "volume": 10614368,
+    "status": "slots_full"
+   },
+   {
+    "symbol": "NTPC",
+    "ticker": "NTPC.NS",
+    "name": "NTPC Ltd.",
+    "group": "Nifty 50",
+    "rsi": 30.4,
+    "mcap_cr": 303894,
+    "close": 309.7,
+    "volume": 12262742,
+    "status": "slots_full"
+   },
+   {
+    "symbol": "TATASTEEL",
+    "ticker": "TATASTEEL.NS",
+    "name": "Tata Steel Ltd.",
+    "group": "Nifty 50",
+    "rsi": 31.5,
+    "mcap_cr": 216953,
+    "close": 171.96,
+    "volume": 30689721,
     "status": "slots_full"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-08",
+   "created_at": "2026-10-08T10:57:48+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "SUZLON",
+     "ticker": "SUZLON.NS",
+     "name": "Suzlon Energy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 19.3,
+     "mcap_cr": 51590,
+     "close": 38.34,
+     "volume": 73531474,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 26.0,
+     "mcap_cr": 63002,
+     "close": 72.8,
+     "volume": 15148455,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "ASHOKLEY",
+     "ticker": "ASHOKLEY.NS",
+     "name": "Ashok Leyland Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.2,
+     "mcap_cr": 86287,
+     "close": 149.2,
+     "volume": 11928149,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 34.5,
+     "mcap_cr": 64410,
+     "close": 20.79,
+     "volume": 73908969,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "IFCI",
+     "ticker": "IFCI.NS",
+     "name": "IFCI Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 31.7,
+     "mcap_cr": 18092,
+     "close": 64.03,
+     "volume": 21013703,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "INOXWIND",
+     "ticker": "INOXWIND.NS",
+     "name": "Inox Wind Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 32.8,
+     "mcap_cr": 11185,
+     "close": 67.1,
+     "volume": 10148423,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "ONGC",
+     "ticker": "ONGC.NS",
+     "name": "Oil & Natural Gas Corporation Ltd.",
+     "group": "Nifty 50",
+     "rsi": 32.8,
+     "mcap_cr": 277584,
+     "close": 221.88,
+     "volume": 14223609,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "name": "State Bank of India",
+     "group": "Nifty 50",
+     "rsi": 33.4,
+     "mcap_cr": 875939,
+     "close": 954.0,
+     "volume": 12523009,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "name": "Jio Financial Services Ltd.",
+     "group": "Nifty 50",
+     "rsi": 34.5,
+     "mcap_cr": 140990,
+     "close": 216.44,
+     "volume": 10207060,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "BEL",
+     "ticker": "BEL.NS",
+     "name": "Bharat Electronics Ltd.",
+     "group": "Nifty 50",
+     "rsi": 34.8,
+     "mcap_cr": 273678,
+     "close": 378.3,
+     "volume": 13636290,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-07",
    "created_at": "2026-10-07T09:33:14+05:30",
@@ -631,13 +782,13 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-08",
-  "buy_done": "2026-10-08",
+  "scan_done": "2026-10-09",
+  "buy_done": "2026-10-09",
   "eod_done": "2026-10-08"
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": -1385.71,
+  "unrealized_pl_approx": -533.05,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
@@ -646,11 +797,11 @@
   "max_positions": 10,
   "invested_open": 98927.46,
   "cash": 400955.18,
-  "portfolio_value": 498496.93,
+  "portfolio_value": 499349.59,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-08T15:47:51+05:30"
+ "updated_at": "2026-10-09T10:16:26+05:30"
 }
