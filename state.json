@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 37.66,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 37.7,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "POLICYBZR",
@@ -33,8 +33,8 @@
    "buy_charges": 11.6,
    "target": 1075.36,
    "stop": 782.08,
-   "last_price": 1018.0,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 1012.0,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -49,8 +49,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 235.7,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 235.1,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 72.12,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 71.83,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -81,8 +81,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 72.55,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 72.5,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -97,8 +97,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 330.95,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 330.0,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -113,8 +113,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 145.68,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 145.42,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -129,8 +129,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 20.56,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 20.51,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "GROWW",
@@ -145,8 +145,8 @@
    "buy_charges": 11.74,
    "target": 201.63,
    "stop": 146.64,
-   "last_price": 193.0,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 192.67,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   },
   {
    "symbol": "IFCI",
@@ -161,8 +161,8 @@
    "buy_charges": 11.8,
    "target": 71.99,
    "stop": 52.36,
-   "last_price": 66.62,
-   "last_checked": "2026-10-09T14:20:00+05:30"
+   "last_price": 66.59,
+   "last_checked": "2026-10-09T14:35:00+05:30"
   }
  ],
  "trades": [],
@@ -788,7 +788,7 @@
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": -129.77,
+  "unrealized_pl_approx": -341.26,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
@@ -797,11 +797,11 @@
   "max_positions": 10,
   "invested_open": 98927.46,
   "cash": 400955.18,
-  "portfolio_value": 499752.87,
+  "portfolio_value": 499541.38,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-09T14:24:14+05:30"
+ "updated_at": "2026-10-09T14:37:17+05:30"
 }
