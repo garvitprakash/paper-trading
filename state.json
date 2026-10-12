@@ -145,8 +145,8 @@
    "buy_charges": 11.74,
    "target": 201.63,
    "stop": 146.64,
-   "last_price": 192.78,
-   "last_checked": "2026-10-12T15:15:00+05:30"
+   "last_price": 192.99,
+   "last_checked": "2026-10-12T15:25:00+05:30"
   },
   {
    "symbol": "BEL",
@@ -882,7 +882,7 @@
  },
  "summary": {
   "total_actual_pl": 756.37,
-  "unrealized_pl_approx": -242.9,
+  "unrealized_pl_approx": -231.56,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -891,11 +891,11 @@
   "max_positions": 10,
   "invested_open": 99428.66,
   "cash": 401209.75,
-  "portfolio_value": 500395.51,
+  "portfolio_value": 500406.85,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 198.64,
   "total_charges_paid": 39.07
  },
- "updated_at": "2026-10-12T15:17:35+05:30"
+ "updated_at": "2026-10-12T15:30:37+05:30"
 }
