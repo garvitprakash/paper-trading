@@ -167,8 +167,8 @@
  ],
  "trades": [],
  "today_list": {
-  "date": "2026-10-09",
-  "created_at": "2026-10-09T10:16:08+05:30",
+  "date": "2026-10-12",
+  "created_at": "2026-10-12T07:40:30+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -177,147 +177,210 @@
     "ticker": "SUZLON.NS",
     "name": "Suzlon Energy Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 15.2,
-    "mcap_cr": 51137,
-    "close": 36.43,
-    "volume": 85701657,
-    "status": "slots_full"
+    "rsi": 26.1,
+    "mcap_cr": 51687,
+    "close": 37.6,
+    "volume": 57534896,
+    "status": "pending"
    },
    {
     "symbol": "NMDC",
     "ticker": "NMDC.NS",
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 23.1,
-    "mcap_cr": 63116,
-    "close": 70.69,
-    "volume": 26538950,
-    "status": "slots_full"
+    "rsi": 28.2,
+    "mcap_cr": 63125,
+    "close": 71.8,
+    "volume": 16569636,
+    "status": "pending"
    },
    {
     "symbol": "ASHOKLEY",
     "ticker": "ASHOKLEY.NS",
     "name": "Ashok Leyland Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 29.3,
-    "mcap_cr": 85700,
-    "close": 145.02,
-    "volume": 15971379,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "GMRAIRPORT",
-    "ticker": "GMRAIRPORT.NS",
-    "name": "GMR Airports Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 30.1,
-    "mcap_cr": 95341,
-    "close": 87.77,
-    "volume": 55866346,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "HINDPETRO",
-    "ticker": "HINDPETRO.NS",
-    "name": "Hindustan Petroleum Corporation Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 31.7,
-    "mcap_cr": 69793,
-    "close": 326.6,
-    "volume": 12074362,
-    "status": "slots_full"
+    "rsi": 29.4,
+    "mcap_cr": 85206,
+    "close": 145.06,
+    "volume": 11102691,
+    "status": "pending"
    },
    {
     "symbol": "YESBANK",
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 32.2,
-    "mcap_cr": 64661,
-    "close": 20.45,
-    "volume": 62706430,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "NHPC",
-    "ticker": "NHPC.NS",
-    "name": "NHPC Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 33.2,
-    "mcap_cr": 72585,
-    "close": 71.65,
-    "volume": 10723011,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "BANDHANBNK",
-    "ticker": "BANDHANBNK.NS",
-    "name": "Bandhan Bank Ltd.",
-    "group": "Nifty Smallcap 100",
-    "rsi": 33.3,
-    "mcap_cr": 25443,
-    "close": 155.54,
-    "volume": 14678826,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "POWERGRID",
-    "ticker": "POWERGRID.NS",
-    "name": "Power Grid Corporation of India Ltd.",
-    "group": "Nifty 50",
-    "rsi": 28.5,
-    "mcap_cr": 232097,
-    "close": 244.65,
-    "volume": 14409222,
-    "status": "slots_full"
+    "rsi": 33.0,
+    "mcap_cr": 64349,
+    "close": 20.5,
+    "volume": 49563814,
+    "status": "pending"
    },
    {
     "symbol": "BEL",
     "ticker": "BEL.NS",
     "name": "Bharat Electronics Ltd.",
     "group": "Nifty 50",
-    "rsi": 29.0,
-    "mcap_cr": 266697,
-    "close": 367.3,
-    "volume": 13373488,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "JIOFIN",
-    "ticker": "JIOFIN.NS",
-    "name": "Jio Financial Services Ltd.",
-    "group": "Nifty 50",
-    "rsi": 29.0,
-    "mcap_cr": 141129,
-    "close": 211.0,
-    "volume": 10614368,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "NTPC",
-    "ticker": "NTPC.NS",
-    "name": "NTPC Ltd.",
-    "group": "Nifty 50",
-    "rsi": 30.4,
-    "mcap_cr": 303894,
-    "close": 309.7,
-    "volume": 12262742,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "TATASTEEL",
-    "ticker": "TATASTEEL.NS",
-    "name": "Tata Steel Ltd.",
-    "group": "Nifty 50",
-    "rsi": 31.5,
-    "mcap_cr": 216953,
-    "close": 171.96,
-    "volume": 30689721,
-    "status": "slots_full"
+    "rsi": 30.0,
+    "mcap_cr": 269110,
+    "close": 368.15,
+    "volume": 17198740,
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-09",
+   "created_at": "2026-10-09T10:16:08+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "SUZLON",
+     "ticker": "SUZLON.NS",
+     "name": "Suzlon Energy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 15.2,
+     "mcap_cr": 51137,
+     "close": 36.43,
+     "volume": 85701657,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 23.1,
+     "mcap_cr": 63116,
+     "close": 70.69,
+     "volume": 26538950,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "ASHOKLEY",
+     "ticker": "ASHOKLEY.NS",
+     "name": "Ashok Leyland Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 29.3,
+     "mcap_cr": 85700,
+     "close": 145.02,
+     "volume": 15971379,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "GMRAIRPORT",
+     "ticker": "GMRAIRPORT.NS",
+     "name": "GMR Airports Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 30.1,
+     "mcap_cr": 95341,
+     "close": 87.77,
+     "volume": 55866346,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "HINDPETRO",
+     "ticker": "HINDPETRO.NS",
+     "name": "Hindustan Petroleum Corporation Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 31.7,
+     "mcap_cr": 69793,
+     "close": 326.6,
+     "volume": 12074362,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 32.2,
+     "mcap_cr": 64661,
+     "close": 20.45,
+     "volume": 62706430,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NHPC",
+     "ticker": "NHPC.NS",
+     "name": "NHPC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.2,
+     "mcap_cr": 72585,
+     "close": 71.65,
+     "volume": 10723011,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "BANDHANBNK",
+     "ticker": "BANDHANBNK.NS",
+     "name": "Bandhan Bank Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 33.3,
+     "mcap_cr": 25443,
+     "close": 155.54,
+     "volume": 14678826,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "POWERGRID",
+     "ticker": "POWERGRID.NS",
+     "name": "Power Grid Corporation of India Ltd.",
+     "group": "Nifty 50",
+     "rsi": 28.5,
+     "mcap_cr": 232097,
+     "close": 244.65,
+     "volume": 14409222,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "BEL",
+     "ticker": "BEL.NS",
+     "name": "Bharat Electronics Ltd.",
+     "group": "Nifty 50",
+     "rsi": 29.0,
+     "mcap_cr": 266697,
+     "close": 367.3,
+     "volume": 13373488,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "name": "Jio Financial Services Ltd.",
+     "group": "Nifty 50",
+     "rsi": 29.0,
+     "mcap_cr": 141129,
+     "close": 211.0,
+     "volume": 10614368,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NTPC",
+     "ticker": "NTPC.NS",
+     "name": "NTPC Ltd.",
+     "group": "Nifty 50",
+     "rsi": 30.4,
+     "mcap_cr": 303894,
+     "close": 309.7,
+     "volume": 12262742,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "TATASTEEL",
+     "ticker": "TATASTEEL.NS",
+     "name": "Tata Steel Ltd.",
+     "group": "Nifty 50",
+     "rsi": 31.5,
+     "mcap_cr": 216953,
+     "close": 171.96,
+     "volume": 30689721,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-08",
    "created_at": "2026-10-08T10:57:48+05:30",
@@ -790,7 +853,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-09",
+  "scan_done": "2026-10-12",
   "buy_done": "2026-10-09",
   "eod_done": "2026-10-09"
  },
@@ -811,5 +874,5 @@
   "total_tax_paid": 0,
   "total_charges_paid": 0
  },
- "updated_at": "2026-10-09T16:23:46+05:30"
+ "updated_at": "2026-10-12T07:40:52+05:30"
 }
