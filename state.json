@@ -81,8 +81,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 327.75,
-   "last_checked": "2026-10-13T15:15:00+05:30"
+   "last_price": 329.5,
+   "last_checked": "2026-10-13T15:25:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -97,8 +97,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 147.11,
-   "last_checked": "2026-10-13T15:15:00+05:30"
+   "last_price": 147.37,
+   "last_checked": "2026-10-13T15:25:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -113,8 +113,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 20.8,
-   "last_checked": "2026-10-13T15:15:00+05:30"
+   "last_price": 20.85,
+   "last_checked": "2026-10-13T15:25:00+05:30"
   },
   {
    "symbol": "GROWW",
@@ -967,7 +967,7 @@
  },
  "summary": {
   "total_actual_pl": 1533.54,
-  "unrealized_pl_approx": 165.02,
+  "unrealized_pl_approx": 258.17,
   "closed_trades": 2,
   "wins": 2,
   "losses": 0,
@@ -976,11 +976,11 @@
   "max_positions": 10,
   "invested_open": 89652.66,
   "cash": 411774.52,
-  "portfolio_value": 501592.2,
+  "portfolio_value": 501685.35,
   "start_capital": 500000,
   "next_amount": 11025.0,
   "total_tax_paid": 402.75,
   "total_charges_paid": 77.79
  },
- "updated_at": "2026-10-13T15:57:14+05:30"
+ "updated_at": "2026-10-13T15:57:42+05:30"
 }
