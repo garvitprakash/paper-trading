@@ -196,69 +196,99 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-13",
-  "created_at": "2026-10-13T07:40:29+05:30",
+  "date": "2026-10-14",
+  "created_at": "2026-10-14T07:40:30+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
-   {
-    "symbol": "SUZLON",
-    "ticker": "SUZLON.NS",
-    "name": "Suzlon Energy Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 26.1,
-    "mcap_cr": 54395,
-    "close": 37.6,
-    "volume": 57534896,
-    "status": "already"
-   },
    {
     "symbol": "NMDC",
     "ticker": "NMDC.NS",
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 28.2,
-    "mcap_cr": 61842,
-    "close": 71.8,
-    "volume": 16569636,
-    "status": "already"
+    "rsi": 30.3,
+    "mcap_cr": 62721,
+    "close": 71.34,
+    "volume": 11906833,
+    "status": "pending"
    },
    {
-    "symbol": "ASHOKLEY",
-    "ticker": "ASHOKLEY.NS",
-    "name": "Ashok Leyland Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 29.4,
-    "mcap_cr": 84730,
-    "close": 145.06,
-    "volume": 11102691,
-    "status": "already"
-   },
-   {
-    "symbol": "YESBANK",
-    "ticker": "YESBANK.NS",
-    "name": "Yes Bank Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 33.0,
-    "mcap_cr": 64161,
-    "close": 20.5,
-    "volume": 49563814,
-    "status": "already"
-   },
-   {
-    "symbol": "BEL",
-    "ticker": "BEL.NS",
-    "name": "Bharat Electronics Ltd.",
+    "symbol": "NTPC",
+    "ticker": "NTPC.NS",
+    "name": "NTPC Ltd.",
     "group": "Nifty 50",
-    "rsi": 30.0,
-    "mcap_cr": 273313,
-    "close": 368.15,
-    "volume": 17198740,
-    "status": "already"
+    "rsi": 32.5,
+    "mcap_cr": 301566,
+    "close": 310.0,
+    "volume": 12834279,
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-13",
+   "created_at": "2026-10-13T07:40:29+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "SUZLON",
+     "ticker": "SUZLON.NS",
+     "name": "Suzlon Energy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 26.1,
+     "mcap_cr": 54395,
+     "close": 37.6,
+     "volume": 57534896,
+     "status": "already"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 28.2,
+     "mcap_cr": 61842,
+     "close": 71.8,
+     "volume": 16569636,
+     "status": "already"
+    },
+    {
+     "symbol": "ASHOKLEY",
+     "ticker": "ASHOKLEY.NS",
+     "name": "Ashok Leyland Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 29.4,
+     "mcap_cr": 84730,
+     "close": 145.06,
+     "volume": 11102691,
+     "status": "already"
+    },
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.0,
+     "mcap_cr": 64161,
+     "close": 20.5,
+     "volume": 49563814,
+     "status": "already"
+    },
+    {
+     "symbol": "BEL",
+     "ticker": "BEL.NS",
+     "name": "Bharat Electronics Ltd.",
+     "group": "Nifty 50",
+     "rsi": 30.0,
+     "mcap_cr": 273313,
+     "close": 368.15,
+     "volume": 17198740,
+     "status": "already"
+    }
+   ]
+  },
   {
    "date": "2026-10-12",
    "created_at": "2026-10-12T07:40:30+05:30",
@@ -961,7 +991,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-13",
+  "scan_done": "2026-10-14",
   "buy_done": "2026-10-13",
   "eod_done": "2026-10-13"
  },
@@ -982,5 +1012,5 @@
   "total_tax_paid": 402.75,
   "total_charges_paid": 77.79
  },
- "updated_at": "2026-10-13T15:57:42+05:30"
+ "updated_at": "2026-10-14T07:40:55+05:30"
 }
