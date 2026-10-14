@@ -34,7 +34,7 @@
    "target": 265.49,
    "stop": 193.08,
    "last_price": 230.95,
-   "last_checked": "2026-10-14T15:10:00+05:30"
+   "last_checked": "2026-10-14T15:25:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 73.53,
-   "last_checked": "2026-10-14T15:10:00+05:30"
+   "last_price": 73.72,
+   "last_checked": "2026-10-14T15:25:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -82,7 +82,7 @@
    "target": 354.97,
    "stop": 258.16,
    "last_price": 330.0,
-   "last_checked": "2026-10-14T15:15:00+05:30"
+   "last_checked": "2026-10-14T15:25:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -113,8 +113,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 21.15,
-   "last_checked": "2026-10-14T15:15:00+05:30"
+   "last_price": 21.2,
+   "last_checked": "2026-10-14T15:25:00+05:30"
   },
   {
    "symbol": "GROWW",
@@ -1004,16 +1004,24 @@
    "cash": 411774.52,
    "portfolio_value": 501592.2,
    "open_positions": 9
+  },
+  {
+   "date": "2026-10-14",
+   "total_actual_pl": 1533.54,
+   "unrealized_pl_approx": 432.14,
+   "cash": 400866.1,
+   "portfolio_value": 501846.4,
+   "open_positions": 10
   }
  ],
  "daily": {
   "scan_done": "2026-10-14",
   "buy_done": "2026-10-14",
-  "eod_done": "2026-10-13"
+  "eod_done": "2026-10-14"
  },
  "summary": {
   "total_actual_pl": 1533.54,
-  "unrealized_pl_approx": 381.98,
+  "unrealized_pl_approx": 432.14,
   "closed_trades": 2,
   "wins": 2,
   "losses": 0,
@@ -1022,11 +1030,11 @@
   "max_positions": 10,
   "invested_open": 100548.16,
   "cash": 400866.1,
-  "portfolio_value": 501796.24,
+  "portfolio_value": 501846.4,
   "start_capital": 500000,
   "next_amount": 11025.0,
   "total_tax_paid": 402.75,
   "total_charges_paid": 77.79
  },
- "updated_at": "2026-10-14T15:43:56+05:30"
+ "updated_at": "2026-10-14T15:56:58+05:30"
 }
