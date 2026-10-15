@@ -212,8 +212,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-14",
-  "created_at": "2026-10-14T07:40:30+05:30",
+  "date": "2026-10-15",
+  "created_at": "2026-10-15T07:40:27+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -222,26 +222,56 @@
     "ticker": "NMDC.NS",
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 30.3,
-    "mcap_cr": 62721,
-    "close": 71.34,
-    "volume": 11906833,
-    "status": "already"
+    "rsi": 29.8,
+    "mcap_cr": 62492,
+    "close": 71.08,
+    "volume": 12410170,
+    "status": "pending"
    },
    {
-    "symbol": "NTPC",
-    "ticker": "NTPC.NS",
-    "name": "NTPC Ltd.",
-    "group": "Nifty 50",
-    "rsi": 32.5,
-    "mcap_cr": 301566,
-    "close": 310.0,
-    "volume": 12834279,
-    "status": "bought"
+    "symbol": "ASHOKLEY",
+    "ticker": "ASHOKLEY.NS",
+    "name": "Ashok Leyland Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 32.9,
+    "mcap_cr": 85171,
+    "close": 145.0,
+    "volume": 17155545,
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-14",
+   "created_at": "2026-10-14T07:40:30+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 30.3,
+     "mcap_cr": 62721,
+     "close": 71.34,
+     "volume": 11906833,
+     "status": "already"
+    },
+    {
+     "symbol": "NTPC",
+     "ticker": "NTPC.NS",
+     "name": "NTPC Ltd.",
+     "group": "Nifty 50",
+     "rsi": 32.5,
+     "mcap_cr": 301566,
+     "close": 310.0,
+     "volume": 12834279,
+     "status": "bought"
+    }
+   ]
+  },
   {
    "date": "2026-10-13",
    "created_at": "2026-10-13T07:40:29+05:30",
@@ -1015,7 +1045,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-14",
+  "scan_done": "2026-10-15",
   "buy_done": "2026-10-14",
   "eod_done": "2026-10-14"
  },
@@ -1036,5 +1066,5 @@
   "total_tax_paid": 402.75,
   "total_charges_paid": 77.79
  },
- "updated_at": "2026-10-14T15:57:26+05:30"
+ "updated_at": "2026-10-15T07:40:45+05:30"
 }
