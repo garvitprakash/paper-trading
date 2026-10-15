@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 40.93,
-   "last_checked": "2026-10-15T15:15:00+05:30"
+   "last_price": 40.95,
+   "last_checked": "2026-10-15T15:25:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -50,7 +50,7 @@
    "target": 82.19,
    "stop": 59.78,
    "last_price": 70.82,
-   "last_checked": "2026-10-15T15:15:00+05:30"
+   "last_checked": "2026-10-15T15:25:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 72.25,
-   "last_checked": "2026-10-15T15:15:00+05:30"
+   "last_price": 72.7,
+   "last_checked": "2026-10-15T15:25:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -81,8 +81,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 331.3,
-   "last_checked": "2026-10-15T15:10:00+05:30"
+   "last_price": 335.0,
+   "last_checked": "2026-10-15T15:25:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -97,8 +97,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 148.4,
-   "last_checked": "2026-10-15T15:15:00+05:30"
+   "last_price": 148.18,
+   "last_checked": "2026-10-15T15:25:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -145,8 +145,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 298.56,
-   "last_price": 379.4,
-   "last_checked": "2026-10-15T15:15:00+05:30"
+   "last_price": 380.4,
+   "last_checked": "2026-10-15T15:25:00+05:30"
   },
   {
    "symbol": "NTPC",
@@ -161,8 +161,8 @@
    "buy_charges": 12.92,
    "target": 342.43,
    "stop": 249.04,
-   "last_price": 314.0,
-   "last_checked": "2026-10-15T15:10:00+05:30"
+   "last_price": 314.65,
+   "last_checked": "2026-10-15T15:25:00+05:30"
   }
  ],
  "trades": [
@@ -1042,16 +1042,24 @@
    "cash": 400866.1,
    "portfolio_value": 501846.4,
    "open_positions": 10
+  },
+  {
+   "date": "2026-10-15",
+   "total_actual_pl": 1533.54,
+   "unrealized_pl_approx": -554.85,
+   "cash": 400866.1,
+   "portfolio_value": 500859.41,
+   "open_positions": 10
   }
  ],
  "daily": {
   "scan_done": "2026-10-15",
   "buy_done": "2026-10-15",
-  "eod_done": "2026-10-14"
+  "eod_done": "2026-10-15"
  },
  "summary": {
   "total_actual_pl": 1533.54,
-  "unrealized_pl_approx": -769.93,
+  "unrealized_pl_approx": -554.85,
   "closed_trades": 2,
   "wins": 2,
   "losses": 0,
@@ -1060,11 +1068,11 @@
   "max_positions": 10,
   "invested_open": 100548.16,
   "cash": 400866.1,
-  "portfolio_value": 500644.33,
+  "portfolio_value": 500859.41,
   "start_capital": 500000,
   "next_amount": 11025.0,
   "total_tax_paid": 402.75,
   "total_charges_paid": 77.79
  },
- "updated_at": "2026-10-15T15:43:34+05:30"
+ "updated_at": "2026-10-15T15:56:37+05:30"
 }
