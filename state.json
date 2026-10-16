@@ -1,8 +1,8 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 400866.1,
- "next_amount": 11025.0,
+ "cash": 400047.43,
+ "next_amount": 11576.25,
  "positions": [
   {
    "symbol": "SUZLON",
@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 40.95,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 40.77,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -33,8 +33,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 229.0,
-   "last_checked": "2026-10-15T15:15:00+05:30"
+   "last_price": 233.15,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -49,8 +49,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 70.82,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 71.21,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 72.7,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 72.03,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -81,8 +81,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 335.0,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 337.9,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -97,8 +97,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 148.18,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 148.74,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -113,24 +113,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 18.22,
-   "last_checked": "2026-10-15T15:15:00+05:30"
-  },
-  {
-   "symbol": "GROWW",
-   "ticker": "GROWW.NS",
-   "name": "Billionbrains Garage Ventures Ltd.",
-   "group": "Nifty Midcap 150",
-   "buy_date": "2026-10-05",
-   "buy_time": "2026-10-05T09:15:00+05:30",
-   "buy_price": 183.3,
-   "qty": 54,
-   "invested": 9898.2,
-   "buy_charges": 11.74,
-   "target": 201.63,
-   "stop": 146.64,
-   "last_price": 197.75,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 17.73,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "BEL",
@@ -145,8 +129,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 298.56,
-   "last_price": 380.4,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 378.0,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   },
   {
    "symbol": "NTPC",
@@ -161,8 +145,24 @@
    "buy_charges": 12.92,
    "target": 342.43,
    "stop": 249.04,
-   "last_price": 314.65,
-   "last_checked": "2026-10-15T15:25:00+05:30"
+   "last_price": 312.35,
+   "last_checked": "2026-10-16T09:35:00+05:30"
+  },
+  {
+   "symbol": "EMMVEE",
+   "ticker": "EMMVEE.NS",
+   "name": "Emmvee Photovoltaic Power Ltd.",
+   "group": "Nifty Smallcap 100",
+   "buy_date": "2026-10-16",
+   "buy_time": "2026-10-16T09:35:00+05:30",
+   "buy_price": 273.05,
+   "qty": 42,
+   "invested": 11468.1,
+   "buy_charges": 13.6,
+   "target": 300.35,
+   "stop": 218.44,
+   "last_price": 273.05,
+   "last_checked": "2026-10-16T09:35:00+05:30"
   }
  ],
  "trades": [
@@ -209,6 +209,28 @@
    "profit_loss": 777.17,
    "profit_pct": 7.94,
    "reason": "target"
+  },
+  {
+   "symbol": "GROWW",
+   "name": "Billionbrains Garage Ventures Ltd.",
+   "group": "Nifty Midcap 150",
+   "buy_date": "2026-10-05",
+   "qty": 54,
+   "buy_price": 183.3,
+   "buy_amount": 9898.2,
+   "buy_charges": 11.74,
+   "total_cost": 9909.94,
+   "sell_date": "2026-10-16",
+   "sell_time": "2026-10-16T09:15:00+05:30",
+   "sell_price": 201.63,
+   "sell_amount": 10888.02,
+   "sell_charges": 27.21,
+   "days_held": 11,
+   "tax": 197.78,
+   "net_cash": 10663.03,
+   "profit_loss": 753.09,
+   "profit_pct": 7.6,
+   "reason": "target"
   }
  ],
  "today_list": {
@@ -226,7 +248,7 @@
     "mcap_cr": 56878,
     "close": 18.12,
     "volume": 667974054,
-    "status": "pending"
+    "status": "already"
    },
    {
     "symbol": "NMDC",
@@ -237,7 +259,7 @@
     "mcap_cr": 62264,
     "close": 70.82,
     "volume": 20782467,
-    "status": "pending"
+    "status": "already"
    },
    {
     "symbol": "EMMVEE",
@@ -248,7 +270,7 @@
     "mcap_cr": 19531,
     "close": 282.1,
     "volume": 10992268,
-    "status": "pending"
+    "status": "bought"
    }
   ]
  },
@@ -1095,25 +1117,25 @@
  ],
  "daily": {
   "scan_done": "2026-10-16",
-  "buy_done": "2026-10-15",
+  "buy_done": "2026-10-16",
   "eod_done": "2026-10-15"
  },
  "summary": {
-  "total_actual_pl": 1533.54,
-  "unrealized_pl_approx": -554.85,
-  "closed_trades": 2,
-  "wins": 2,
+  "total_actual_pl": 2286.63,
+  "unrealized_pl_approx": -1509.03,
+  "closed_trades": 3,
+  "wins": 3,
   "losses": 0,
   "win_rate_pct": 100.0,
   "open_positions": 10,
   "max_positions": 10,
-  "invested_open": 100548.16,
-  "cash": 400866.1,
-  "portfolio_value": 500859.41,
+  "invested_open": 102118.06,
+  "cash": 400047.43,
+  "portfolio_value": 500656.46,
   "start_capital": 500000,
-  "next_amount": 11025.0,
-  "total_tax_paid": 402.75,
-  "total_charges_paid": 77.79
+  "next_amount": 11576.25,
+  "total_tax_paid": 600.53,
+  "total_charges_paid": 116.74
  },
- "updated_at": "2026-10-16T09:25:04+05:30"
+ "updated_at": "2026-10-16T09:38:06+05:30"
 }
