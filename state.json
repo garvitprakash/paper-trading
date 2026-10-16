@@ -49,8 +49,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 71.65,
-   "last_checked": "2026-10-16T15:15:00+05:30"
+   "last_price": 71.69,
+   "last_checked": "2026-10-16T15:25:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -1130,7 +1130,7 @@
  },
  "summary": {
   "total_actual_pl": 2286.63,
-  "unrealized_pl_approx": -1377.86,
+  "unrealized_pl_approx": -1372.54,
   "closed_trades": 3,
   "wins": 3,
   "losses": 0,
@@ -1139,11 +1139,11 @@
   "max_positions": 10,
   "invested_open": 102118.06,
   "cash": 400047.43,
-  "portfolio_value": 500787.63,
+  "portfolio_value": 500792.95,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 116.74
  },
- "updated_at": "2026-10-16T15:56:42+05:30"
+ "updated_at": "2026-10-16T15:57:10+05:30"
 }
