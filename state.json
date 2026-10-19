@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 40.39,
-   "last_checked": "2026-10-19T15:15:00+05:30"
+   "last_price": 40.38,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -65,8 +65,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 70.71,
-   "last_checked": "2026-10-19T15:15:00+05:30"
+   "last_price": 70.7,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -81,8 +81,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 347.9,
-   "last_checked": "2026-10-19T15:15:00+05:30"
+   "last_price": 348.85,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -97,8 +97,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 147.4,
-   "last_checked": "2026-10-19T15:10:00+05:30"
+   "last_price": 147.72,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "BEL",
@@ -113,8 +113,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 298.56,
-   "last_price": 375.35,
-   "last_checked": "2026-10-19T15:15:00+05:30"
+   "last_price": 377.2,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "NTPC",
@@ -130,7 +130,7 @@
    "target": 342.43,
    "stop": 249.04,
    "last_price": 309.0,
-   "last_checked": "2026-10-19T15:10:00+05:30"
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "EMMVEE",
@@ -1168,16 +1168,24 @@
    "cash": 400047.43,
    "portfolio_value": 500787.63,
    "open_positions": 10
+  },
+  {
+   "date": "2026-10-19",
+   "total_actual_pl": 250.81,
+   "unrealized_pl_approx": -489.81,
+   "cash": 408017.47,
+   "portfolio_value": 499651.72,
+   "open_positions": 9
   }
  ],
  "daily": {
   "scan_done": "2026-10-19",
   "buy_done": "2026-10-19",
-  "eod_done": "2026-10-16"
+  "eod_done": "2026-10-19"
  },
  "summary": {
   "total_actual_pl": 250.81,
-  "unrealized_pl_approx": -586.98,
+  "unrealized_pl_approx": -489.81,
   "closed_trades": 4,
   "wins": 3,
   "losses": 1,
@@ -1186,11 +1194,11 @@
   "max_positions": 10,
   "invested_open": 92124.06,
   "cash": 408017.47,
-  "portfolio_value": 499554.55,
+  "portfolio_value": 499651.72,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-19T15:43:42+05:30"
+ "updated_at": "2026-10-19T15:56:44+05:30"
 }
