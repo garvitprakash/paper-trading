@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 31.4,
-   "last_price": 40.66,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 40.7,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -33,8 +33,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 230.85,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 230.75,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -49,8 +49,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 71.02,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 71.11,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 70.75,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 70.76,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -81,8 +81,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 346.9,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 350.15,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -97,8 +97,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 121.28,
-   "last_price": 148.18,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 148.61,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -113,8 +113,8 @@
    "buy_charges": 11.86,
    "target": 23.14,
    "stop": 16.83,
-   "last_price": 17.3,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 17.27,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "BEL",
@@ -129,8 +129,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 298.56,
-   "last_price": 377.75,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 377.8,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "NTPC",
@@ -145,8 +145,8 @@
    "buy_charges": 12.92,
    "target": 342.43,
    "stop": 249.04,
-   "last_price": 312.65,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 313.25,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   },
   {
    "symbol": "EMMVEE",
@@ -161,8 +161,8 @@
    "buy_charges": 13.6,
    "target": 300.35,
    "stop": 218.44,
-   "last_price": 268.9,
-   "last_checked": "2026-10-19T11:35:00+05:30"
+   "last_price": 270.65,
+   "last_checked": "2026-10-19T11:45:00+05:30"
   }
  ],
  "trades": [
@@ -1171,7 +1171,7 @@
  },
  "summary": {
   "total_actual_pl": 2286.63,
-  "unrealized_pl_approx": -1975.91,
+  "unrealized_pl_approx": -1749.39,
   "closed_trades": 3,
   "wins": 3,
   "losses": 0,
@@ -1180,11 +1180,11 @@
   "max_positions": 10,
   "invested_open": 102118.06,
   "cash": 400047.43,
-  "portfolio_value": 500189.58,
+  "portfolio_value": 500416.1,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 116.74
  },
- "updated_at": "2026-10-19T11:35:27+05:30"
+ "updated_at": "2026-10-19T11:48:29+05:30"
 }
