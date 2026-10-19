@@ -234,8 +234,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-16",
-  "created_at": "2026-10-16T07:40:34+05:30",
+  "date": "2026-10-19",
+  "created_at": "2026-10-19T07:40:33+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -244,37 +244,78 @@
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 24.6,
-    "mcap_cr": 56878,
-    "close": 18.12,
-    "volume": 667974054,
-    "status": "already"
+    "rsi": 22.5,
+    "mcap_cr": 54932,
+    "close": 17.5,
+    "volume": 373615017,
+    "status": "pending"
+   },
+   {
+    "symbol": "LTF",
+    "ticker": "LTF.NS",
+    "name": "L&T Finance Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 31.4,
+    "mcap_cr": 63625,
+    "close": 253.85,
+    "volume": 23954101,
+    "status": "pending"
    },
    {
     "symbol": "NMDC",
     "ticker": "NMDC.NS",
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 29.2,
-    "mcap_cr": 62264,
-    "close": 70.82,
-    "volume": 20782467,
-    "status": "already"
-   },
-   {
-    "symbol": "EMMVEE",
-    "ticker": "EMMVEE.NS",
-    "name": "Emmvee Photovoltaic Power Ltd.",
-    "group": "Nifty Smallcap 100",
-    "rsi": 30.3,
-    "mcap_cr": 19531,
-    "close": 282.1,
-    "volume": 10992268,
-    "status": "bought"
+    "rsi": 33.4,
+    "mcap_cr": 63029,
+    "close": 71.69,
+    "volume": 15303261,
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-16",
+   "created_at": "2026-10-16T07:40:34+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 24.6,
+     "mcap_cr": 56878,
+     "close": 18.12,
+     "volume": 667974054,
+     "status": "already"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 29.2,
+     "mcap_cr": 62264,
+     "close": 70.82,
+     "volume": 20782467,
+     "status": "already"
+    },
+    {
+     "symbol": "EMMVEE",
+     "ticker": "EMMVEE.NS",
+     "name": "Emmvee Photovoltaic Power Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 30.3,
+     "mcap_cr": 19531,
+     "close": 282.1,
+     "volume": 10992268,
+     "status": "bought"
+    }
+   ]
+  },
   {
    "date": "2026-10-15",
    "created_at": "2026-10-15T07:40:27+05:30",
@@ -1124,7 +1165,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-16",
+  "scan_done": "2026-10-19",
   "buy_done": "2026-10-16",
   "eod_done": "2026-10-16"
  },
@@ -1145,5 +1186,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 116.74
  },
- "updated_at": "2026-10-16T15:57:10+05:30"
+ "updated_at": "2026-10-19T07:40:49+05:30"
 }
