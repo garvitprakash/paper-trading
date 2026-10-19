@@ -33,8 +33,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 228.6,
-   "last_checked": "2026-10-19T15:15:00+05:30"
+   "last_price": 229.0,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -49,8 +49,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 70.41,
-   "last_checked": "2026-10-19T15:15:00+05:30"
+   "last_price": 70.5,
+   "last_checked": "2026-10-19T15:25:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -1185,7 +1185,7 @@
  },
  "summary": {
   "total_actual_pl": 250.81,
-  "unrealized_pl_approx": -489.81,
+  "unrealized_pl_approx": -461.44,
   "closed_trades": 4,
   "wins": 3,
   "losses": 1,
@@ -1194,11 +1194,11 @@
   "max_positions": 10,
   "invested_open": 92124.06,
   "cash": 408017.47,
-  "portfolio_value": 499651.72,
+  "portfolio_value": 499680.09,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-19T15:56:44+05:30"
+ "updated_at": "2026-10-19T15:57:11+05:30"
 }
