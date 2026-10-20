@@ -240,8 +240,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-19",
-  "created_at": "2026-10-19T07:40:33+05:30",
+  "date": "2026-10-20",
+  "created_at": "2026-10-20T07:40:28+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -251,10 +251,10 @@
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 22.5,
-    "mcap_cr": 54932,
+    "mcap_cr": 52986,
     "close": 17.5,
     "volume": 373615017,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "LTF",
@@ -262,10 +262,10 @@
     "name": "L&T Finance Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 31.4,
-    "mcap_cr": 63625,
+    "mcap_cr": 63412,
     "close": 253.85,
     "volume": 23954101,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "NMDC",
@@ -273,14 +273,55 @@
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 33.4,
-    "mcap_cr": 63029,
+    "mcap_cr": 61982,
     "close": 71.69,
     "volume": 15303261,
-    "status": "slots_full"
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-19",
+   "created_at": "2026-10-19T07:40:33+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 22.5,
+     "mcap_cr": 54932,
+     "close": 17.5,
+     "volume": 373615017,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "LTF",
+     "ticker": "LTF.NS",
+     "name": "L&T Finance Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 31.4,
+     "mcap_cr": 63625,
+     "close": 253.85,
+     "volume": 23954101,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.4,
+     "mcap_cr": 63029,
+     "close": 71.69,
+     "volume": 15303261,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-16",
    "created_at": "2026-10-16T07:40:34+05:30",
@@ -1179,7 +1220,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-19",
+  "scan_done": "2026-10-20",
   "buy_done": "2026-10-19",
   "eod_done": "2026-10-19"
  },
@@ -1200,5 +1241,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-19T15:57:11+05:30"
+ "updated_at": "2026-10-20T07:40:44+05:30"
 }
