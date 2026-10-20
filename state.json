@@ -1221,8 +1221,9 @@
  ],
  "daily": {
   "scan_done": "2026-10-20",
-  "buy_done": "2026-10-19",
-  "eod_done": "2026-10-19"
+  "buy_done": "2026-10-20",
+  "eod_done": "2026-10-19",
+  "holiday": "2026-10-20"
  },
  "summary": {
   "total_actual_pl": 250.81,
@@ -1241,5 +1242,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-20T10:04:03+05:30"
+ "updated_at": "2026-10-20T10:17:04+05:30"
 }
