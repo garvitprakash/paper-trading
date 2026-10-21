@@ -145,8 +145,8 @@
    "buy_charges": 13.6,
    "target": 300.35,
    "stop": 218.44,
-   "last_price": 254.75,
-   "last_checked": "2026-10-21T15:15:00+05:30"
+   "last_price": 254.85,
+   "last_checked": "2026-10-21T15:25:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -1292,7 +1292,7 @@
  },
  "summary": {
   "total_actual_pl": 250.81,
-  "unrealized_pl_approx": -2808.48,
+  "unrealized_pl_approx": -2804.28,
   "closed_trades": 4,
   "wins": 3,
   "losses": 1,
@@ -1301,11 +1301,11 @@
   "max_positions": 10,
   "invested_open": 103690.5,
   "cash": 396437.31,
-  "portfolio_value": 497319.33,
+  "portfolio_value": 497323.53,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-21T15:17:41+05:30"
+ "updated_at": "2026-10-21T15:30:43+05:30"
 }
