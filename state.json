@@ -240,8 +240,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-20",
-  "created_at": "2026-10-20T07:40:28+05:30",
+  "date": "2026-10-21",
+  "created_at": "2026-10-21T07:40:25+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -250,37 +250,78 @@
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 22.5,
+    "rsi": 20.5,
     "mcap_cr": 52986,
-    "close": 17.5,
-    "volume": 373615017,
+    "close": 16.88,
+    "volume": 206773668,
     "status": "pending"
    },
    {
-    "symbol": "LTF",
-    "ticker": "LTF.NS",
-    "name": "L&T Finance Ltd.",
+    "symbol": "IDFCFIRSTB",
+    "ticker": "IDFCFIRSTB.NS",
+    "name": "IDFC First Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 31.4,
-    "mcap_cr": 63412,
-    "close": 253.85,
-    "volume": 23954101,
+    "rsi": 32.2,
+    "mcap_cr": 65822,
+    "close": 76.33,
+    "volume": 11815153,
     "status": "pending"
    },
    {
-    "symbol": "NMDC",
-    "ticker": "NMDC.NS",
-    "name": "NMDC Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 33.4,
-    "mcap_cr": 61982,
-    "close": 71.69,
-    "volume": 15303261,
+    "symbol": "SAMMAANCAP",
+    "ticker": "SAMMAANCAP.NS",
+    "name": "Sammaan Capital Ltd.",
+    "group": "Nifty Smallcap 100",
+    "rsi": 34.3,
+    "mcap_cr": 14450,
+    "close": 125.8,
+    "volume": 10256705,
     "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-20",
+   "created_at": "2026-10-20T07:40:28+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 22.5,
+     "mcap_cr": 52986,
+     "close": 17.5,
+     "volume": 373615017,
+     "status": "pending"
+    },
+    {
+     "symbol": "LTF",
+     "ticker": "LTF.NS",
+     "name": "L&T Finance Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 31.4,
+     "mcap_cr": 63412,
+     "close": 253.85,
+     "volume": 23954101,
+     "status": "pending"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.4,
+     "mcap_cr": 61982,
+     "close": 71.69,
+     "volume": 15303261,
+     "status": "pending"
+    }
+   ]
+  },
   {
    "date": "2026-10-19",
    "created_at": "2026-10-19T07:40:33+05:30",
@@ -1228,7 +1269,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-20",
+  "scan_done": "2026-10-21",
   "buy_done": "2026-10-20",
   "eod_done": "2026-10-20",
   "holiday": "2026-10-20"
@@ -1250,5 +1291,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-20T15:56:36+05:30"
+ "updated_at": "2026-10-21T07:40:46+05:30"
 }
