@@ -256,8 +256,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-21",
-  "created_at": "2026-10-21T07:40:25+05:30",
+  "date": "2026-10-22",
+  "created_at": "2026-10-22T07:40:31+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -266,37 +266,133 @@
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 20.5,
-    "mcap_cr": 52986,
-    "close": 16.88,
-    "volume": 206773668,
-    "status": "bought"
+    "rsi": 19.2,
+    "mcap_cr": 51511,
+    "close": 16.41,
+    "volume": 207185385,
+    "status": "pending"
+   },
+   {
+    "symbol": "VMM",
+    "ticker": "VMM.NS",
+    "name": "Vishal Mega Mart Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 28.1,
+    "mcap_cr": 42163,
+    "close": 90.0,
+    "volume": 54289708,
+    "status": "pending"
+   },
+   {
+    "symbol": "NMDC",
+    "ticker": "NMDC.NS",
+    "name": "NMDC Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 28.9,
+    "mcap_cr": 61191,
+    "close": 69.6,
+    "volume": 17414848,
+    "status": "pending"
+   },
+   {
+    "symbol": "SWIGGY",
+    "ticker": "SWIGGY.NS",
+    "name": "Swiggy Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 29.3,
+    "mcap_cr": 58660,
+    "close": 223.65,
+    "volume": 10808433,
+    "status": "pending"
    },
    {
     "symbol": "IDFCFIRSTB",
     "ticker": "IDFCFIRSTB.NS",
     "name": "IDFC First Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 32.2,
-    "mcap_cr": 65822,
-    "close": 76.33,
-    "volume": 11815153,
-    "status": "slots_full"
+    "rsi": 29.4,
+    "mcap_cr": 64727,
+    "close": 75.06,
+    "volume": 16735578,
+    "status": "pending"
    },
    {
-    "symbol": "SAMMAANCAP",
-    "ticker": "SAMMAANCAP.NS",
-    "name": "Sammaan Capital Ltd.",
+    "symbol": "IFCI",
+    "ticker": "IFCI.NS",
+    "name": "IFCI Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 34.3,
-    "mcap_cr": 14450,
-    "close": 125.8,
-    "volume": 10256705,
-    "status": "slots_full"
+    "mcap_cr": 17020,
+    "close": 63.17,
+    "volume": 20665695,
+    "status": "pending"
+   },
+   {
+    "symbol": "OLAELEC",
+    "ticker": "OLAELEC.NS",
+    "name": "Ola Electric Mobility Ltd.",
+    "group": "Nifty Smallcap 100",
+    "rsi": 34.9,
+    "mcap_cr": 14872,
+    "close": 33.05,
+    "volume": 31117145,
+    "status": "pending"
+   },
+   {
+    "symbol": "JIOFIN",
+    "ticker": "JIOFIN.NS",
+    "name": "Jio Financial Services Ltd.",
+    "group": "Nifty 50",
+    "rsi": 34.8,
+    "mcap_cr": 139584,
+    "close": 211.39,
+    "volume": 13024817,
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-21",
+   "created_at": "2026-10-21T07:40:25+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 20.5,
+     "mcap_cr": 52986,
+     "close": 16.88,
+     "volume": 206773668,
+     "status": "bought"
+    },
+    {
+     "symbol": "IDFCFIRSTB",
+     "ticker": "IDFCFIRSTB.NS",
+     "name": "IDFC First Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 32.2,
+     "mcap_cr": 65822,
+     "close": 76.33,
+     "volume": 11815153,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "SAMMAANCAP",
+     "ticker": "SAMMAANCAP.NS",
+     "name": "Sammaan Capital Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 34.3,
+     "mcap_cr": 14450,
+     "close": 125.8,
+     "volume": 10256705,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-20",
    "created_at": "2026-10-20T07:40:28+05:30",
@@ -1293,7 +1389,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-21",
+  "scan_done": "2026-10-22",
   "buy_done": "2026-10-21",
   "eod_done": "2026-10-21",
   "holiday": "2026-10-20"
@@ -1315,5 +1411,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-21T15:57:15+05:30"
+ "updated_at": "2026-10-22T07:40:55+05:30"
 }
