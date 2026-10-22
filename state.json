@@ -18,7 +18,7 @@
    "target": 43.18,
    "stop": 31.4,
    "last_price": 38.97,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "SWIGGY",
@@ -33,8 +33,8 @@
    "buy_charges": 11.74,
    "target": 265.49,
    "stop": 193.08,
-   "last_price": 213.1,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 211.35,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "NMDC",
@@ -49,8 +49,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 59.78,
-   "last_price": 68.93,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 68.88,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "NHPC",
@@ -65,8 +65,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 57.4,
-   "last_price": 72.42,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 72.37,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "FEDERALBNK",
@@ -81,8 +81,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 258.16,
-   "last_price": 346.35,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 345.0,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "ASHOKLEY",
@@ -98,7 +98,7 @@
    "target": 166.76,
    "stop": 121.28,
    "last_price": 146.55,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "BEL",
@@ -113,8 +113,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 298.56,
-   "last_price": 365.6,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 366.75,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "NTPC",
@@ -129,8 +129,8 @@
    "buy_charges": 12.92,
    "target": 342.43,
    "stop": 249.04,
-   "last_price": 301.35,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 300.95,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "EMMVEE",
@@ -145,8 +145,8 @@
    "buy_charges": 13.6,
    "target": 300.35,
    "stop": 218.44,
-   "last_price": 254.2,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 254.6,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   },
   {
    "symbol": "YESBANK",
@@ -161,8 +161,8 @@
    "buy_charges": 13.72,
    "target": 18.6,
    "stop": 13.53,
-   "last_price": 16.43,
-   "last_checked": "2026-10-22T10:40:00+05:30"
+   "last_price": 16.38,
+   "last_checked": "2026-10-22T10:55:00+05:30"
   }
  ],
  "trades": [
@@ -1396,7 +1396,7 @@
  },
  "summary": {
   "total_actual_pl": 250.81,
-  "unrealized_pl_approx": -3206.13,
+  "unrealized_pl_approx": -3331.18,
   "closed_trades": 4,
   "wins": 3,
   "losses": 1,
@@ -1405,11 +1405,11 @@
   "max_positions": 10,
   "invested_open": 103690.5,
   "cash": 396437.31,
-  "portfolio_value": 496921.68,
+  "portfolio_value": 496796.63,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-22T10:43:26+05:30"
+ "updated_at": "2026-10-22T10:56:28+05:30"
 }
