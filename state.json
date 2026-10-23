@@ -256,8 +256,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-22",
-  "created_at": "2026-10-22T07:40:31+05:30",
+  "date": "2026-10-23",
+  "created_at": "2026-10-23T07:40:35+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -266,92 +266,199 @@
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 19.2,
-    "mcap_cr": 51511,
-    "close": 16.41,
-    "volume": 207185385,
-    "status": "slots_full"
+    "rsi": 18.2,
+    "mcap_cr": 50381,
+    "close": 16.05,
+    "volume": 133633332,
+    "status": "pending"
    },
    {
-    "symbol": "VMM",
-    "ticker": "VMM.NS",
-    "name": "Vishal Mega Mart Ltd.",
+    "symbol": "M&MFIN",
+    "ticker": "M&MFIN.NS",
+    "name": "Mahindra & Mahindra Financial Services Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 28.1,
-    "mcap_cr": 42163,
-    "close": 90.0,
-    "volume": 54289708,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "NMDC",
-    "ticker": "NMDC.NS",
-    "name": "NMDC Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 28.9,
-    "mcap_cr": 61191,
-    "close": 69.6,
-    "volume": 17414848,
-    "status": "slots_full"
+    "rsi": 23.4,
+    "mcap_cr": 39966,
+    "close": 287.6,
+    "volume": 13171893,
+    "status": "pending"
    },
    {
     "symbol": "SWIGGY",
     "ticker": "SWIGGY.NS",
     "name": "Swiggy Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 29.3,
-    "mcap_cr": 58660,
-    "close": 223.65,
-    "volume": 10808433,
-    "status": "slots_full"
+    "rsi": 24.1,
+    "mcap_cr": 55447,
+    "close": 211.4,
+    "volume": 27037639,
+    "status": "pending"
+   },
+   {
+    "symbol": "VMM",
+    "ticker": "VMM.NS",
+    "name": "Vishal Mega Mart Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 25.7,
+    "mcap_cr": 41222,
+    "close": 87.99,
+    "volume": 17942202,
+    "status": "pending"
+   },
+   {
+    "symbol": "NMDC",
+    "ticker": "NMDC.NS",
+    "name": "NMDC Ltd.",
+    "group": "Nifty Midcap 150",
+    "rsi": 27.4,
+    "mcap_cr": 60558,
+    "close": 68.88,
+    "volume": 10213019,
+    "status": "pending"
    },
    {
     "symbol": "IDFCFIRSTB",
     "ticker": "IDFCFIRSTB.NS",
     "name": "IDFC First Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 29.4,
-    "mcap_cr": 64727,
-    "close": 75.06,
-    "volume": 16735578,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "IFCI",
-    "ticker": "IFCI.NS",
-    "name": "IFCI Ltd.",
-    "group": "Nifty Smallcap 100",
-    "rsi": 34.3,
-    "mcap_cr": 17020,
-    "close": 63.17,
-    "volume": 20665695,
-    "status": "slots_full"
+    "rsi": 29.1,
+    "mcap_cr": 64581,
+    "close": 74.89,
+    "volume": 13591015,
+    "status": "pending"
    },
    {
     "symbol": "OLAELEC",
     "ticker": "OLAELEC.NS",
     "name": "Ola Electric Mobility Ltd.",
     "group": "Nifty Smallcap 100",
-    "rsi": 34.9,
-    "mcap_cr": 14872,
-    "close": 33.05,
-    "volume": 31117145,
-    "status": "slots_full"
+    "rsi": 31.6,
+    "mcap_cr": 14372,
+    "close": 31.94,
+    "volume": 49739710,
+    "status": "pending"
+   },
+   {
+    "symbol": "IFCI",
+    "ticker": "IFCI.NS",
+    "name": "IFCI Ltd.",
+    "group": "Nifty Smallcap 100",
+    "rsi": 32.0,
+    "mcap_cr": 16513,
+    "close": 61.29,
+    "volume": 18655004,
+    "status": "pending"
    },
    {
     "symbol": "JIOFIN",
     "ticker": "JIOFIN.NS",
     "name": "Jio Financial Services Ltd.",
     "group": "Nifty 50",
-    "rsi": 34.8,
-    "mcap_cr": 139584,
-    "close": 211.39,
-    "volume": 13024817,
-    "status": "slots_full"
+    "rsi": 34.2,
+    "mcap_cr": 139194,
+    "close": 210.8,
+    "volume": 11045019,
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-22",
+   "created_at": "2026-10-22T07:40:31+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 19.2,
+     "mcap_cr": 51511,
+     "close": 16.41,
+     "volume": 207185385,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "VMM",
+     "ticker": "VMM.NS",
+     "name": "Vishal Mega Mart Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 28.1,
+     "mcap_cr": 42163,
+     "close": 90.0,
+     "volume": 54289708,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 28.9,
+     "mcap_cr": 61191,
+     "close": 69.6,
+     "volume": 17414848,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "SWIGGY",
+     "ticker": "SWIGGY.NS",
+     "name": "Swiggy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 29.3,
+     "mcap_cr": 58660,
+     "close": 223.65,
+     "volume": 10808433,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "IDFCFIRSTB",
+     "ticker": "IDFCFIRSTB.NS",
+     "name": "IDFC First Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 29.4,
+     "mcap_cr": 64727,
+     "close": 75.06,
+     "volume": 16735578,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "IFCI",
+     "ticker": "IFCI.NS",
+     "name": "IFCI Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 34.3,
+     "mcap_cr": 17020,
+     "close": 63.17,
+     "volume": 20665695,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "OLAELEC",
+     "ticker": "OLAELEC.NS",
+     "name": "Ola Electric Mobility Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 34.9,
+     "mcap_cr": 14872,
+     "close": 33.05,
+     "volume": 31117145,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "name": "Jio Financial Services Ltd.",
+     "group": "Nifty 50",
+     "rsi": 34.8,
+     "mcap_cr": 139584,
+     "close": 211.39,
+     "volume": 13024817,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-21",
    "created_at": "2026-10-21T07:40:25+05:30",
@@ -1397,7 +1504,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-22",
+  "scan_done": "2026-10-23",
   "buy_done": "2026-10-22",
   "eod_done": "2026-10-22",
   "holiday": "2026-10-20"
@@ -1419,5 +1526,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 152.81
  },
- "updated_at": "2026-10-22T15:57:35+05:30"
+ "updated_at": "2026-10-23T07:40:52+05:30"
 }
