@@ -97,8 +97,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 298.56,
-   "last_price": 359.0,
-   "last_checked": "2026-10-23T15:10:00+05:30"
+   "last_price": 362.0,
+   "last_checked": "2026-10-23T15:25:00+05:30"
   },
   {
    "symbol": "NTPC",
@@ -113,8 +113,8 @@
    "buy_charges": 12.92,
    "target": 342.43,
    "stop": 249.04,
-   "last_price": 297.4,
-   "last_checked": "2026-10-23T15:15:00+05:30"
+   "last_price": 298.0,
+   "last_checked": "2026-10-23T15:25:00+05:30"
   },
   {
    "symbol": "EMMVEE",
@@ -1541,7 +1541,7 @@
  },
  "summary": {
   "total_actual_pl": -1775.6,
-  "unrealized_pl_approx": -4827.39,
+  "unrealized_pl_approx": -4722.39,
   "closed_trades": 5,
   "wins": 3,
   "losses": 2,
@@ -1550,11 +1550,11 @@
   "max_positions": 10,
   "invested_open": 105228.0,
   "cash": 392871.58,
-  "portfolio_value": 493272.19,
+  "portfolio_value": 493377.19,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
   "total_charges_paid": 188.67
  },
- "updated_at": "2026-10-23T15:56:49+05:30"
+ "updated_at": "2026-10-23T15:57:19+05:30"
 }
