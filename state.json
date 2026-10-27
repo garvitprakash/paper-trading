@@ -278,8 +278,8 @@
   }
  ],
  "today_list": {
-  "date": "2026-10-26",
-  "created_at": "2026-10-26T07:40:31+05:30",
+  "date": "2026-10-27",
+  "created_at": "2026-10-27T07:40:30+05:30",
   "scanned": 300,
   "mcap_unknown": [],
   "items": [
@@ -289,10 +289,10 @@
     "name": "Swiggy Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 15.6,
-    "mcap_cr": 46162,
+    "mcap_cr": 48719,
     "close": 176.0,
     "volume": 137428526,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "YESBANK",
@@ -300,10 +300,10 @@
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 17.5,
-    "mcap_cr": 49597,
+    "mcap_cr": 49785,
     "close": 15.8,
     "volume": 144285154,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "NMDC",
@@ -311,10 +311,10 @@
     "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 23.0,
-    "mcap_cr": 58334,
+    "mcap_cr": 58457,
     "close": 66.35,
     "volume": 22385585,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "IDFCFIRSTB",
@@ -322,21 +322,21 @@
     "name": "IDFC First Bank Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 24.3,
-    "mcap_cr": 62347,
+    "mcap_cr": 61864,
     "close": 72.3,
     "volume": 18052745,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "VMM",
     "ticker": "VMM.NS",
     "name": "Vishal Mega Mart Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 25.0,
-    "mcap_cr": 40922,
+    "rsi": 24.9,
+    "mcap_cr": 41554,
     "close": 87.35,
     "volume": 13012970,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "GMRAIRPORT",
@@ -344,10 +344,10 @@
     "name": "GMR Airports Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 33.8,
-    "mcap_cr": 91208,
+    "mcap_cr": 94904,
     "close": 86.38,
     "volume": 10334206,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "MAHABANK",
@@ -355,10 +355,10 @@
     "name": "Bank of Maharashtra",
     "group": "Nifty Midcap 150",
     "rsi": 34.4,
-    "mcap_cr": 57933,
+    "mcap_cr": 58548,
     "close": 75.32,
     "volume": 18510652,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "SUZLON",
@@ -366,10 +366,10 @@
     "name": "Suzlon Energy Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 34.4,
-    "mcap_cr": 51412,
+    "mcap_cr": 51027,
     "close": 37.4,
     "volume": 75290675,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "NHPC",
@@ -377,10 +377,10 @@
     "name": "NHPC Ltd.",
     "group": "Nifty Midcap 150",
     "rsi": 34.8,
-    "mcap_cr": 70155,
+    "mcap_cr": 70878,
     "close": 69.84,
     "volume": 13659037,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "OLAELEC",
@@ -388,10 +388,10 @@
     "name": "Ola Electric Mobility Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 26.7,
-    "mcap_cr": 13468,
+    "mcap_cr": 13472,
     "close": 29.93,
     "volume": 60973747,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "INOXWIND",
@@ -399,10 +399,10 @@
     "name": "Inox Wind Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 28.5,
-    "mcap_cr": 10185,
+    "mcap_cr": 10093,
     "close": 58.93,
     "volume": 14520196,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "IFCI",
@@ -410,10 +410,10 @@
     "name": "IFCI Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 29.7,
-    "mcap_cr": 15972,
+    "mcap_cr": 16123,
     "close": 59.28,
     "volume": 24837772,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "URBANCO",
@@ -421,10 +421,10 @@
     "name": "Urban Company Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 31.3,
-    "mcap_cr": 19684,
+    "mcap_cr": 20113,
     "close": 132.75,
     "volume": 10757218,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "BANDHANBNK",
@@ -432,10 +432,10 @@
     "name": "Bandhan Bank Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 34.0,
-    "mcap_cr": 24150,
+    "mcap_cr": 24306,
     "close": 149.89,
     "volume": 11733044,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "VEDPOWER",
@@ -443,10 +443,10 @@
     "name": "Vedanta Power Ltd.",
     "group": "Nifty Smallcap 100",
     "rsi": 34.1,
-    "mcap_cr": 11033,
+    "mcap_cr": 11014,
     "close": 28.26,
     "volume": 21998779,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "JIOFIN",
@@ -454,10 +454,10 @@
     "name": "Jio Financial Services Ltd.",
     "group": "Nifty 50",
     "rsi": 28.8,
-    "mcap_cr": 135384,
+    "mcap_cr": 135516,
     "close": 205.03,
     "volume": 19149171,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "TMPV",
@@ -465,10 +465,10 @@
     "name": "Tata Motors Passenger Vehicles Ltd.",
     "group": "Nifty 50",
     "rsi": 29.7,
-    "mcap_cr": 97452,
+    "mcap_cr": 97121,
     "close": 264.6,
     "volume": 10468785,
-    "status": "slots_full"
+    "status": "pending"
    },
    {
     "symbol": "TATASTEEL",
@@ -476,14 +476,220 @@
     "name": "Tata Steel Ltd.",
     "group": "Nifty 50",
     "rsi": 30.8,
-    "mcap_cr": 209157,
+    "mcap_cr": 211989,
     "close": 167.67,
     "volume": 30332375,
-    "status": "slots_full"
+    "status": "pending"
    }
   ]
  },
  "list_history": [
+  {
+   "date": "2026-10-26",
+   "created_at": "2026-10-26T07:40:31+05:30",
+   "scanned": 300,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "SWIGGY",
+     "ticker": "SWIGGY.NS",
+     "name": "Swiggy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 15.6,
+     "mcap_cr": 46162,
+     "close": 176.0,
+     "volume": 137428526,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 17.5,
+     "mcap_cr": 49597,
+     "close": 15.8,
+     "volume": 144285154,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NMDC",
+     "ticker": "NMDC.NS",
+     "name": "NMDC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 23.0,
+     "mcap_cr": 58334,
+     "close": 66.35,
+     "volume": 22385585,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "IDFCFIRSTB",
+     "ticker": "IDFCFIRSTB.NS",
+     "name": "IDFC First Bank Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 24.3,
+     "mcap_cr": 62347,
+     "close": 72.3,
+     "volume": 18052745,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "VMM",
+     "ticker": "VMM.NS",
+     "name": "Vishal Mega Mart Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 25.0,
+     "mcap_cr": 40922,
+     "close": 87.35,
+     "volume": 13012970,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "GMRAIRPORT",
+     "ticker": "GMRAIRPORT.NS",
+     "name": "GMR Airports Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.8,
+     "mcap_cr": 91208,
+     "close": 86.38,
+     "volume": 10334206,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "MAHABANK",
+     "ticker": "MAHABANK.NS",
+     "name": "Bank of Maharashtra",
+     "group": "Nifty Midcap 150",
+     "rsi": 34.4,
+     "mcap_cr": 57933,
+     "close": 75.32,
+     "volume": 18510652,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "SUZLON",
+     "ticker": "SUZLON.NS",
+     "name": "Suzlon Energy Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 34.4,
+     "mcap_cr": 51412,
+     "close": 37.4,
+     "volume": 75290675,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "NHPC",
+     "ticker": "NHPC.NS",
+     "name": "NHPC Ltd.",
+     "group": "Nifty Midcap 150",
+     "rsi": 34.8,
+     "mcap_cr": 70155,
+     "close": 69.84,
+     "volume": 13659037,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "OLAELEC",
+     "ticker": "OLAELEC.NS",
+     "name": "Ola Electric Mobility Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 26.7,
+     "mcap_cr": 13468,
+     "close": 29.93,
+     "volume": 60973747,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "INOXWIND",
+     "ticker": "INOXWIND.NS",
+     "name": "Inox Wind Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 28.5,
+     "mcap_cr": 10185,
+     "close": 58.93,
+     "volume": 14520196,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "IFCI",
+     "ticker": "IFCI.NS",
+     "name": "IFCI Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 29.7,
+     "mcap_cr": 15972,
+     "close": 59.28,
+     "volume": 24837772,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "URBANCO",
+     "ticker": "URBANCO.NS",
+     "name": "Urban Company Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 31.3,
+     "mcap_cr": 19684,
+     "close": 132.75,
+     "volume": 10757218,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "BANDHANBNK",
+     "ticker": "BANDHANBNK.NS",
+     "name": "Bandhan Bank Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 34.0,
+     "mcap_cr": 24150,
+     "close": 149.89,
+     "volume": 11733044,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "VEDPOWER",
+     "ticker": "VEDPOWER.NS",
+     "name": "Vedanta Power Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 34.1,
+     "mcap_cr": 11033,
+     "close": 28.26,
+     "volume": 21998779,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "name": "Jio Financial Services Ltd.",
+     "group": "Nifty 50",
+     "rsi": 28.8,
+     "mcap_cr": 135384,
+     "close": 205.03,
+     "volume": 19149171,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "TMPV",
+     "ticker": "TMPV.NS",
+     "name": "Tata Motors Passenger Vehicles Ltd.",
+     "group": "Nifty 50",
+     "rsi": 29.7,
+     "mcap_cr": 97452,
+     "close": 264.6,
+     "volume": 10468785,
+     "status": "slots_full"
+    },
+    {
+     "symbol": "TATASTEEL",
+     "ticker": "TATASTEEL.NS",
+     "name": "Tata Steel Ltd.",
+     "group": "Nifty 50",
+     "rsi": 30.8,
+     "mcap_cr": 209157,
+     "close": 167.67,
+     "volume": 30332375,
+     "status": "slots_full"
+    }
+   ]
+  },
   {
    "date": "2026-10-23",
    "created_at": "2026-10-23T07:40:35+05:30",
@@ -1748,7 +1954,7 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-10-26",
+  "scan_done": "2026-10-27",
   "buy_done": "2026-10-26",
   "eod_done": "2026-10-26",
   "holiday": "2026-10-20"
@@ -1770,5 +1976,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 188.67
  },
- "updated_at": "2026-10-26T15:57:09+05:30"
+ "updated_at": "2026-10-27T07:40:50+05:30"
 }
