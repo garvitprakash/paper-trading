@@ -51,8 +51,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 60.99,
-   "last_price": 74.05,
-   "last_checked": "2026-10-28T15:15:00+05:30",
+   "last_price": 74.44,
+   "last_checked": "2026-10-28T15:25:00+05:30",
    "mcap_cr": 74373
   },
   {
@@ -68,8 +68,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 274.29,
-   "last_price": 346.35,
-   "last_checked": "2026-10-28T15:15:00+05:30",
+   "last_price": 346.0,
+   "last_checked": "2026-10-28T15:25:00+05:30",
    "mcap_cr": 85476
   },
   {
@@ -85,8 +85,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 128.86,
-   "last_price": 144.45,
-   "last_checked": "2026-10-28T15:10:00+05:30",
+   "last_price": 144.85,
+   "last_checked": "2026-10-28T15:25:00+05:30",
    "mcap_cr": 84519
   },
   {
@@ -102,8 +102,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 317.22,
-   "last_price": 364.25,
-   "last_checked": "2026-10-28T15:10:00+05:30",
+   "last_price": 363.35,
+   "last_checked": "2026-10-28T15:25:00+05:30",
    "mcap_cr": 267246
   },
   {
@@ -153,8 +153,8 @@
    "buy_charges": 13.72,
    "target": 18.6,
    "stop": 14.37,
-   "last_price": 15.59,
-   "last_checked": "2026-10-28T15:15:00+05:30",
+   "last_price": 15.61,
+   "last_checked": "2026-10-28T15:25:00+05:30",
    "mcap_cr": 49283
   },
   {
@@ -2076,17 +2076,25 @@
    "cash": 392871.58,
    "portfolio_value": 493536.69,
    "open_positions": 10
+  },
+  {
+   "date": "2026-10-28",
+   "total_actual_pl": -1775.6,
+   "unrealized_pl_approx": -4059.09,
+   "cash": 392871.58,
+   "portfolio_value": 494040.49,
+   "open_positions": 10
   }
  ],
  "daily": {
   "scan_done": "2026-10-28",
   "buy_done": "2026-10-28",
-  "eod_done": "2026-10-27",
+  "eod_done": "2026-10-28",
   "holiday": "2026-10-20"
  },
  "summary": {
   "total_actual_pl": -1775.6,
-  "unrealized_pl_approx": -4117.28,
+  "unrealized_pl_approx": -4059.09,
   "closed_trades": 5,
   "wins": 3,
   "losses": 2,
@@ -2095,7 +2103,7 @@
   "max_positions": 10,
   "invested_open": 105228.0,
   "cash": 392871.58,
-  "portfolio_value": 493982.3,
+  "portfolio_value": 494040.49,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
@@ -2103,5 +2111,5 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-10-28T15:43:24+05:30"
+ "updated_at": "2026-10-28T15:56:31+05:30"
 }
