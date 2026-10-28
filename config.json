@@ -5,23 +5,18 @@
   "increase_pct_after_profit_sale": 5,
   "take_profit_pct": 10,
   "stop_loss_pct": 20,
-
   "min_market_cap_cr": 10000,
   "max_rsi": 35,
   "rsi_period": 14,
   "min_volume_shares": 10000000,
   "circuit_move_pct": 4.9,
   "list_max": 40,
-
   "group_priority": [
-    "Nifty 50",
-    "Nifty Next 50",
     "Nifty Midcap 150",
-    "Nifty Smallcap 100"
+    "Nifty Smallcap 100",
+    "Nifty 50"
   ],
-
   "last_buy_time": "15:15",
-
   "charges": {
     "brokerage_pct": 0,
     "stt_pct": 0.1,
@@ -31,7 +26,6 @@
     "dp_sell_flat": 15.93,
     "gst_pct": 18
   },
-
   "tax": {
     "stcg_rate_pct": 20,
     "ltcg_rate_pct": 12.5,
