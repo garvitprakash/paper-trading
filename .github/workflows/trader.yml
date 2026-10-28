@@ -93,10 +93,12 @@ jobs:
           fi
 
           # ---- poora din ka chakkar ----
+          # Har ~15 minute me "auto" (list, kharid, bikri). Beech me lagatar Telegram par aapka jawab sunta hai.
           END="${LOOP_END:-1630}"            # shaam 4:30 pm IST tak
-          PAUSE="${LOOP_SLEEP:-780}"         # har chakkar ke baad 13 minute ruko (chakkar milakar ~15 min)
+          EVERY="${LOOP_EVERY:-780}"         # "auto" chakkar ke beech ka antar (13 minute)
           MAXSECS="${LOOP_MAXSECS:-19800}"   # 5.5 ghante baad naya run shuru karke ye band
           START=$(date +%s)
+          LAST_AUTO=0
           while true; do
             NOW=$(TZ=Asia/Kolkata date +%H%M)
             DOW=$(TZ=Asia/Kolkata date +%u)
@@ -104,19 +106,26 @@ jobs:
             if [ "$DOW" -ge 6 ]; then echo "Weekend hai, kuch nahi karna."; break; fi
             if [ "$((10#$NOW))" -ge "$((10#$END))" ]; then echo "Din ka kaam khatam."; break; fi
 
-            python trader.py --mode auto || true
-            save_data
+            T=$(date +%s)
+            if [ "$(( T - LAST_AUTO ))" -ge "$EVERY" ]; then
+              python trader.py --mode auto || true
+              LAST_AUTO=$(date +%s)
+              save_data
 
-            if grep -q "\"eod_done\": \"$TODAY\"" _data/state.json 2>/dev/null; then
-              echo "Aaj ka hisaab ho gaya."; break
+              if grep -q "\"eod_done\": \"$TODAY\"" _data/state.json 2>/dev/null; then
+                echo "Aaj ka hisaab ho gaya."; break
+              fi
+              if [ "$(( $(date +%s) - START ))" -ge "$MAXSECS" ]; then
+                echo "GitHub ki 6 ghante ki seema paas hai, naya run shuru kar raha hoon."
+                gh workflow run trader.yml --repo "$REPO" -f mode=loop || true
+                break
+              fi
+            else
+              # Telegram par jawab dekho (40 second tak sunta hai), kuch aaya to turant kaam karta hai
+              python trader.py --mode poll || true
+              save_data
             fi
-
-            if [ "$(( $(date +%s) - START ))" -ge "$MAXSECS" ]; then
-              echo "GitHub ki 6 ghante ki seema paas hai, naya run shuru kar raha hoon."
-              gh workflow run trader.yml --repo "$REPO" -f mode=loop || true
-              break
-            fi
-            sleep "$PAUSE"
+            sleep 1
           done
 
       - name: Aakhri data save
