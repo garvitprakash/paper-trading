@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Trading</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#14181f; --muted:#667085; --line:#e4e7ec;
+    --green:#0a7d4b; --green-bg:#e6f6ee; --red:#c0261d; --red-bg:#fdecea;
+    --blue:#1d4ed8; --blue-bg:#e8effd; --amber:#9a6200; --amber-bg:#fff4dc;
+    --head:#f1f3f6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e1116; --card:#171b22; --ink:#e8ecf2; --muted:#95a0b2; --line:#272d37;
+      --green:#3ddc97; --green-bg:#12301f; --red:#ff7b72; --red-bg:#3a1a19;
+      --blue:#7aa2ff; --blue-bg:#18233f; --amber:#f5c26b; --amber-bg:#3a2d12;
+      --head:#1d222b;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;font-size:15px;line-height:1.45}
+  .wrap{max-width:1180px;margin:0 auto;padding:16px}
+  header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px;margin-bottom:12px}
+  h1{font-size:20px;margin:0}
+  .upd{color:var(--muted);font-size:13px}
+  .hero{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;margin-bottom:12px}
+  .hero .lbl{color:var(--muted);font-size:13px;letter-spacing:.02em}
+  .hero .big{font-size:40px;font-weight:750;letter-spacing:-.02em;line-height:1.1;margin:4px 0 2px}
+  .hero .sub{color:var(--muted);font-size:13px}
+  .pos{color:var(--green)} .neg{color:var(--red)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:18px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .stat .k{color:var(--muted);font-size:12px}
+  .stat .v{font-size:19px;font-weight:650;margin-top:2px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;overflow:hidden}
+  section>h2{font-size:16px;margin:0;padding:14px 16px 4px}
+  section>.note{color:var(--muted);font-size:13px;padding:0 16px 10px}
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;white-space:nowrap}
+  th,td{padding:9px 12px;text-align:right;border-top:1px solid var(--line)}
+  th{background:var(--head);color:var(--muted);font-weight:600;font-size:12px;position:sticky;top:0}
+  th:first-child,td:first-child{text-align:left}
+  td.l,th.l{text-align:left}
+  td.stock{font-weight:600}
+  tfoot td{font-weight:700;background:var(--head)}
+  .badge{display:inline-block;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600}
+  .b-green{background:var(--green-bg);color:var(--green)}
+  .b-red{background:var(--red-bg);color:var(--red)}
+  .b-blue{background:var(--blue-bg);color:var(--blue)}
+  .b-amber{background:var(--amber-bg);color:var(--amber)}
+  .b-gray{background:var(--head);color:var(--muted)}
+  .empty{padding:18px 16px;color:var(--muted)}
+  details{border-top:1px solid var(--line)}
+  details summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:14px}
+  .msg{background:var(--amber-bg);color:var(--amber);border-radius:12px;padding:14px 16px;margin-bottom:14px}
+  footer{color:var(--muted);font-size:12px;padding:6px 2px 24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📈 Paper Trading</h1>
+    <div class="upd" id="upd">Data load ho raha hai...</div>
+  </header>
+  <div id="app"></div>
+  <footer>Ye sirf nakli (paper) trading hai, asli paisa nahi lagta. Data lagbhag 15 minute purana hota hai.
+    Tax aur kharche andaaza hain, asli tax saal ke total par alag se banta hai.</footer>
+</div>
+
+<script>
+const $ = (s)=>document.querySelector(s);
+const esc = (s)=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nf0 = new Intl.NumberFormat('en-IN',{maximumFractionDigits:0});
+const nf2 = new Intl.NumberFormat('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+const rs  = (x)=> (x<0?'-':'')+'₹'+nf2.format(Math.abs(x||0));
+const rs0 = (x)=> (x<0?'-':'')+'₹'+nf0.format(Math.abs(x||0));
+const cls = (x)=> x>0?'pos':(x<0?'neg':'');
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function fd(s){ if(!s) return '-'; const p=String(s).slice(0,10).split('-'); return p.length===3? `${p[2]} ${MON[+p[1]-1]} ${p[0]}` : s; }
+function ft(iso){ if(!iso) return ''; const d=new Date(iso); if(isNaN(d)) return iso;
+  return d.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:true}); }
+
+const STATUS = {
+  pending:['Intezaar','b-blue'], bought:['Kharida','b-green'], slots_full:['Nahi kharida (10 ki limit full)','b-gray'],
+  too_expensive:['Bahut mehnga (1 share rakam se zyada)','b-amber'], no_funds:['Fund kam','b-red'],
+  already:['Pehle se hamare paas hai','b-gray'], locked:['Circuit me, chhoda','b-red']
+};
+
+function candidateUrls(){
+  const urls=[]; const h=location.hostname;
+  const parts=location.pathname.split('/').filter(Boolean);
+  const q=new URLSearchParams(location.search).get('repo');
+  let owner,repo;
+  if(q){ [owner,repo]=q.split('/'); }
+  else if(h.endsWith('.github.io')){ owner=h.split('.')[0]; repo=parts[0]; }
+  if(owner && repo) urls.push(`https://raw.githubusercontent.com/${owner}/${repo}/data/state.json`);
+  urls.push('data/state.json');
+  return urls;
+}
+async function loadState(){
+  let lastErr;
+  for(const u of candidateUrls()){
+    try{
+      const r = await fetch(u + (u.includes('?')?'&':'?') + 't=' + Date.now(), {cache:'no-store'});
+      if(r.ok) return await r.json();
+      lastErr = new Error('HTTP '+r.status);
+    }catch(e){ lastErr=e; }
+  }
+  throw lastErr || new Error('data nahi mila');
+}
+
+function stat(k,v,c=''){ return `<div class="stat"><div class="k">${k}</div><div class="v ${c}">${v}</div></div>`; }
+
+function render(st){
+  const S = st.summary || {};
+  const pl = S.total_actual_pl || 0;
+  const un = S.unrealized_pl_approx || 0;
+  let h = '';
+
+  h += `<div class="hero"><div class="lbl">TOTAL ACTUAL PROFIT / LOSS</div>
+        <div class="big ${cls(pl)}">${pl>0?'+':''}${rs(pl)}</div>
+        <div class="sub">Bik chuke stock ka, saare kharche aur tax kaatne ke baad. Abhi ke stock ka andaazan P/L: <b class="${cls(un)}">${un>0?'+':''}${rs(un)}</b></div></div>`;
+
+  h += `<div class="grid">
+    ${stat('Portfolio value (cash + stock)', rs0(S.portfolio_value))}
+    ${stat('Cash hath me', rs0(S.cash))}
+    ${stat('Abhi ke stock', `${S.open_positions||0} / ${S.max_positions||10}`)}
+    ${stat('Agli kharid ki rakam', rs0(S.next_amount))}
+    ${stat('Bik chuke trade', `${S.closed_trades||0} (jeet ${S.wins||0}, haar ${S.losses||0})`)}
+    ${stat('Jeet ka %', S.win_rate_pct==null?'-':S.win_rate_pct+'%')}
+    ${stat('Total tax', rs0(S.total_tax_paid))}
+    ${stat('Total kharche (STT etc.)', rs0(S.total_charges_paid))}
+  </div>`;
+
+  // ---- aaj ki list
+  const tl = st.today_list;
+  h += `<section><h2>📋 Aaj ki List (kharidne layak stock)</h2>`;
+  if(tl && tl.items){
+    h += `<div class="note">${fd(tl.date)} | ${tl.items.length} stock niyam par khare utre | index ke kram me, kam RSI pehle`
+      + (tl.scanned? ` | ${tl.scanned} stock scan hue`:'') + `</div>`;
+    if(tl.items.length){
+      h += `<div class="scroll"><table><thead><tr><th>#  Stock</th><th class="l">Index</th><th>RSI</th><th>Pichhla close</th><th>Market cap (cr)</th><th>Volume</th><th class="l">Haal</th></tr></thead><tbody>`;
+      tl.items.forEach((it,i)=>{
+        const s = STATUS[it.status]||[it.status,'b-gray'];
+        h += `<tr><td class="stock">${i+1}. ${esc(it.symbol)}</td><td class="l">${esc(it.group)}</td><td>${it.rsi}</td>
+              <td>${rs(it.close)}</td><td>${nf0.format(it.mcap_cr)}</td><td>${nf0.format(it.volume)}</td>
+              <td class="l"><span class="badge ${s[1]}">${s[0]}</span></td></tr>`;
+      });
+      h += `</tbody></table></div>`;
+    } else h += `<div class="empty">Aaj koi stock niyam par khara nahi utra.</div>`;
+  } else h += `<div class="empty">Aaj ki list subah 8 baje banti hai.</div>`;
+  h += `</section>`;
+
+  // ---- abhi ke stock
+  h += `<section><h2>💼 Abhi ke Stock (hamare paas)</h2>`;
+  if(st.positions && st.positions.length){
+    h += `<div class="note">Target = 10% profit par bikri | Stop = 20% loss par bikri | P/L andazan (kharche kaate bina)</div>
+      <div class="scroll"><table><thead><tr><th>Stock</th><th class="l">Index</th><th>Kharid date</th><th>Qty</th><th>Kharid bhaav</th><th>Lagaya</th><th>Abhi bhaav</th><th>P/L %</th><th>P/L ₹</th><th>Target</th><th>Stop</th></tr></thead><tbody>`;
+    st.positions.forEach(p=>{
+      const lp = p.last_price ?? p.buy_price; const pp = (lp-p.buy_price)*p.qty; const pc = (lp/p.buy_price-1)*100;
+      h += `<tr><td class="stock">${esc(p.symbol)}</td><td class="l">${esc(p.group)}</td><td>${fd(p.buy_date)}</td><td>${p.qty}</td>
+            <td>${rs(p.buy_price)}</td><td>${rs(p.invested)}</td><td>${rs(lp)}</td>
+            <td class="${cls(pc)}">${pc>0?'+':''}${pc.toFixed(2)}%</td><td class="${cls(pp)}">${rs(pp)}</td>
+            <td>${rs(p.target)}</td><td>${rs(p.stop)}</td></tr>`;
+    });
+    h += `</tbody></table></div>`;
+  } else h += `<div class="empty">Abhi koi stock hamare paas nahi hai.</div>`;
+  h += `</section>`;
+
+  // ---- poori table (bik chuke)
+  const tr = (st.trades||[]).slice().sort((a,b)=> (b.sell_time||'').localeCompare(a.sell_time||''));
+  h += `<section><h2>🧾 Poori Table (bik chuke stock)</h2>`;
+  if(tr.length){
+    const T = {buy:0,sell:0,tax:0,ch:0,net:0,pl:0};
+    h += `<div class="note">Sabse naya sabse upar. Final cash = bikri rakam - kharche - tax.</div>
+      <div class="scroll"><table><thead><tr>
+        <th>Stock</th><th>Purchase date</th><th>Qty</th><th>Total purchase amount</th><th>Sale date</th>
+        <th>Sale ke baad total amount</th><th>Kitne din rakha</th><th>Kharche</th><th>Tax</th>
+        <th>Final cash in hand</th><th>Profit / Loss</th><th class="l">Kaise bika</th></tr></thead><tbody>`;
+    tr.forEach(t=>{
+      const ch = (t.buy_charges||0)+(t.sell_charges||0);
+      T.buy+=t.buy_amount; T.sell+=t.sell_amount; T.tax+=t.tax; T.ch+=ch; T.net+=t.net_cash; T.pl+=t.profit_loss;
+      h += `<tr><td class="stock">${esc(t.symbol)}</td><td>${fd(t.buy_date)}</td><td>${t.qty}</td><td>${rs(t.buy_amount)}</td>
+            <td>${fd(t.sell_date)}</td><td>${rs(t.sell_amount)}</td><td>${t.days_held}</td><td>${rs(ch)}</td><td>${rs(t.tax)}</td>
+            <td>${rs(t.net_cash)}</td><td class="${cls(t.profit_loss)}">${t.profit_loss>0?'+':''}${rs(t.profit_loss)} (${t.profit_pct}%)</td>
+            <td class="l"><span class="badge ${t.reason==='target'?'b-green':'b-red'}">${t.reason==='target'?'10% profit':'20% loss'}</span></td></tr>`;
+    });
+    h += `</tbody><tfoot><tr><td>Total</td><td></td><td></td><td>${rs(T.buy)}</td><td></td><td>${rs(T.sell)}</td><td></td>
+          <td>${rs(T.ch)}</td><td>${rs(T.tax)}</td><td>${rs(T.net)}</td><td class="${cls(T.pl)}">${T.pl>0?'+':''}${rs(T.pl)}</td><td></td></tr></tfoot></table></div>`;
+  } else h += `<div class="empty">Abhi tak koi stock bika nahi hai.</div>`;
+  h += `</section>`;
+
+  // ---- purani lists
+  const hist = st.list_history || [];
+  h += `<section><h2>🗓️ Purani Lists</h2>`;
+  if(hist.length){
+    hist.forEach(l=>{
+      h += `<details><summary>${fd(l.date)} - ${l.items.length} stock</summary><div class="scroll"><table><thead><tr><th>Stock</th><th class="l">Index</th><th>RSI</th><th>Close</th><th class="l">Haal</th></tr></thead><tbody>`;
+      l.items.forEach((it,i)=>{ const s=STATUS[it.status]||[it.status,'b-gray'];
+        h += `<tr><td class="stock">${i+1}. ${esc(it.symbol)}</td><td class="l">${esc(it.group)}</td><td>${it.rsi}</td><td>${rs(it.close)}</td><td class="l"><span class="badge ${s[1]}">${s[0]}</span></td></tr>`; });
+      h += `</tbody></table></div></details>`;
+    });
+  } else h += `<div class="empty">Purani lists yahan dikhengi.</div>`;
+  h += `</section>`;
+
+  $('#app').innerHTML = h;
+  $('#upd').textContent = st.updated_at ? 'Aakhri update: ' + ft(st.updated_at) + ' IST' : '';
+}
+
+loadState().then(render).catch(e=>{
+  $('#upd').textContent = '';
+  $('#app').innerHTML = `<div class="msg"><b>Data abhi nahi mila.</b><br>Robot ka pehla run hone ke baad yahan sab dikhne lagega.
+    Agar robot chal chuka hai, to 1-2 minute baad page dobara kholiye.<br><small>(${esc(e.message||e)})</small></div>`;
+});
+</script>
+</body>
+</html>
