@@ -17,8 +17,8 @@
    "buy_charges": 11.83,
    "target": 43.18,
    "stop": 33.36,
-   "last_price": 37.11,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 37.08,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 51453
   },
   {
@@ -34,8 +34,8 @@
    "buy_charges": 11.79,
    "target": 82.19,
    "stop": 63.51,
-   "last_price": 67.34,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 67.1,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 59635
   },
   {
@@ -51,8 +51,8 @@
    "buy_charges": 11.83,
    "target": 78.93,
    "stop": 60.99,
-   "last_price": 73.87,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 73.7,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 74373
   },
   {
@@ -68,8 +68,8 @@
    "buy_charges": 11.48,
    "target": 354.97,
    "stop": 274.29,
-   "last_price": 346.3,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 346.35,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 85476
   },
   {
@@ -85,8 +85,8 @@
    "buy_charges": 11.69,
    "target": 166.76,
    "stop": 128.86,
-   "last_price": 143.87,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 143.41,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 84519
   },
   {
@@ -102,8 +102,8 @@
    "buy_charges": 12.4,
    "target": 410.52,
    "stop": 317.22,
-   "last_price": 364.25,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 363.75,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 267246
   },
   {
@@ -119,8 +119,8 @@
    "buy_charges": 12.92,
    "target": 342.43,
    "stop": 264.61,
-   "last_price": 303.5,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 302.6,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 294827
   },
   {
@@ -136,8 +136,8 @@
    "buy_charges": 13.6,
    "target": 300.36,
    "stop": 232.09,
-   "last_price": 244.45,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 245.9,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 17070
   },
   {
@@ -153,8 +153,8 @@
    "buy_charges": 13.72,
    "target": 18.6,
    "stop": 14.37,
-   "last_price": 15.63,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 15.61,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 49283
   },
   {
@@ -170,8 +170,8 @@
    "buy_charges": 13.56,
    "target": 306.74,
    "stop": 237.02,
-   "last_price": 262.6,
-   "last_checked": "2026-10-28T14:25:00+05:30",
+   "last_price": 262.2,
+   "last_checked": "2026-10-28T14:35:00+05:30",
    "mcap_cr": 36158
   }
  ],
@@ -2086,7 +2086,7 @@
  },
  "summary": {
   "total_actual_pl": -1775.6,
-  "unrealized_pl_approx": -4291.44,
+  "unrealized_pl_approx": -4397.69,
   "closed_trades": 5,
   "wins": 3,
   "losses": 2,
@@ -2095,7 +2095,7 @@
   "max_positions": 10,
   "invested_open": 105228.0,
   "cash": 392871.58,
-  "portfolio_value": 493808.14,
+  "portfolio_value": 493701.89,
   "start_capital": 500000,
   "next_amount": 11576.25,
   "total_tax_paid": 600.53,
@@ -2103,5 +2103,5 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-10-28T14:26:27+05:30"
+ "updated_at": "2026-10-28T14:39:41+05:30"
 }
