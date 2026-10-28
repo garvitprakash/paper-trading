@@ -85,10 +85,13 @@ function ft(iso){ if(!iso) return ''; const d=new Date(iso); if(isNaN(d)) return
   return d.toLocaleString('en-IN',{timeZone:'Asia/Kolkata',day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:true}); }
 
 const STATUS = {
-  pending:['Intezaar','b-blue'], bought:['Kharida','b-green'], slots_full:['Nahi kharida (10 ki limit full)','b-gray'],
-  too_expensive:['Bahut mehnga (1 share rakam se zyada)','b-amber'], no_funds:['Fund kam','b-red'],
+  pending:['Aapke chunne ka intezaar','b-blue'], selected:['Aapne chuna, kharid hogi','b-amber'], bought:['Kharida','b-green'],
+  slots_full:['Nahi kharida (10 ki limit full)','b-gray'],
+  too_expensive:['Bahut mehnga','b-amber'], no_funds:['Fund kam','b-red'],
   already:['Pehle se hamare paas hai','b-gray'], locked:['Circuit me, chhoda','b-red']
 };
+const pct = (x)=> x==null?'-':(x>0?'+':'')+Number(x).toFixed(1)+'%';
+const cr = (x)=> x?nf0.format(x):'-';
 
 function candidateUrls(){
   const urls=[]; const h=location.hostname;
@@ -140,14 +143,17 @@ function render(st){
   const tl = st.today_list;
   h += `<section><h2>📋 Aaj ki List (kharidne layak stock)</h2>`;
   if(tl && tl.items){
-    h += `<div class="note">${fd(tl.date)} | ${tl.items.length} stock niyam par khare utre | index ke kram me, kam RSI pehle`
+    h += `<div class="note">${fd(tl.date)} | ${tl.items.length} stock niyam par khare utre | sabse kam RSI sabse upar`
       + (tl.scanned? ` | ${tl.scanned} stock scan hue`:'') + `</div>`;
     if(tl.items.length){
-      h += `<div class="scroll"><table><thead><tr><th>#  Stock</th><th class="l">Index</th><th>RSI</th><th>Pichhla close</th><th>Market cap (cr)</th><th>Volume</th><th class="l">Haal</th></tr></thead><tbody>`;
+      h += `<div class="note"><b>Kaise chunein:</b> Telegram me list ke number bhejiye (jaise <b>1 4 7</b>, ya <b>sab</b>, ya <b>0</b> = kuch nahi). Wahi stock kharide jayenge.</div>`;
+      h += `<div class="scroll"><table><thead><tr><th>#  Stock</th><th class="l">Index</th><th>RSI</th><th>1 saal return</th><th>Pichhla close</th><th>Market cap (cr)</th><th>Volume</th><th>Lagega (kam se kam)</th><th class="l">Haal</th></tr></thead><tbody>`;
       tl.items.forEach((it,i)=>{
         const s = STATUS[it.status]||[it.status,'b-gray'];
+        const plan = it.plan_qty ? `${rs0(it.plan_cost)} (${it.plan_qty} share)` : '-';
         h += `<tr><td class="stock">${i+1}. ${esc(it.symbol)}</td><td class="l">${esc(it.group)}</td><td>${it.rsi}</td>
-              <td>${rs(it.close)}</td><td>${nf0.format(it.mcap_cr)}</td><td>${nf0.format(it.volume)}</td>
+              <td class="${cls(it.ret_1y_pct)}">${pct(it.ret_1y_pct)}</td>
+              <td>${rs(it.close)}</td><td>${cr(it.mcap_cr)}</td><td>${nf0.format(it.volume)}</td><td>${plan}</td>
               <td class="l"><span class="badge ${s[1]}">${s[0]}</span></td></tr>`;
       });
       h += `</tbody></table></div>`;
@@ -158,11 +164,11 @@ function render(st){
   // ---- abhi ke stock
   h += `<section><h2>💼 Abhi ke Stock (hamare paas)</h2>`;
   if(st.positions && st.positions.length){
-    h += `<div class="note">Target = 10% profit par bikri | Stop = 20% loss par bikri | P/L andazan (kharche kaate bina)</div>
-      <div class="scroll"><table><thead><tr><th>Stock</th><th class="l">Index</th><th>Kharid date</th><th>Qty</th><th>Kharid bhaav</th><th>Lagaya</th><th>Abhi bhaav</th><th>P/L %</th><th>P/L ₹</th><th>Target</th><th>Stop</th></tr></thead><tbody>`;
+    h += `<div class="note">Target = ${S.take_profit_pct||10}% profit par bikri | Stop = ${S.stop_loss_pct||15}% loss par bikri | P/L andazan (kharche kaate bina)</div>
+      <div class="scroll"><table><thead><tr><th>Stock</th><th class="l">Index</th><th>Market cap (cr)</th><th>Kharid date</th><th>Qty</th><th>Kharid bhaav</th><th>Lagaya</th><th>Abhi bhaav</th><th>P/L %</th><th>P/L ₹</th><th>Target</th><th>Stop</th></tr></thead><tbody>`;
     st.positions.forEach(p=>{
       const lp = p.last_price ?? p.buy_price; const pp = (lp-p.buy_price)*p.qty; const pc = (lp/p.buy_price-1)*100;
-      h += `<tr><td class="stock">${esc(p.symbol)}</td><td class="l">${esc(p.group)}</td><td>${fd(p.buy_date)}</td><td>${p.qty}</td>
+      h += `<tr><td class="stock">${esc(p.symbol)}</td><td class="l">${esc(p.group)}</td><td>${cr(p.mcap_cr)}</td><td>${fd(p.buy_date)}</td><td>${p.qty}</td>
             <td>${rs(p.buy_price)}</td><td>${rs(p.invested)}</td><td>${rs(lp)}</td>
             <td class="${cls(pc)}">${pc>0?'+':''}${pc.toFixed(2)}%</td><td class="${cls(pp)}">${rs(pp)}</td>
             <td>${rs(p.target)}</td><td>${rs(p.stop)}</td></tr>`;
@@ -178,18 +184,18 @@ function render(st){
     const T = {buy:0,sell:0,tax:0,ch:0,net:0,pl:0};
     h += `<div class="note">Sabse naya sabse upar. Final cash = bikri rakam - kharche - tax.</div>
       <div class="scroll"><table><thead><tr>
-        <th>Stock</th><th>Purchase date</th><th>Qty</th><th>Total purchase amount</th><th>Sale date</th>
+        <th>Stock</th><th class="l">Index</th><th>Market cap (cr)</th><th>Purchase date</th><th>Qty</th><th>Total purchase amount</th><th>Sale date</th>
         <th>Sale ke baad total amount</th><th>Kitne din rakha</th><th>Kharche</th><th>Tax</th>
         <th>Final cash in hand</th><th>Profit / Loss</th><th class="l">Kaise bika</th></tr></thead><tbody>`;
     tr.forEach(t=>{
       const ch = (t.buy_charges||0)+(t.sell_charges||0);
       T.buy+=t.buy_amount; T.sell+=t.sell_amount; T.tax+=t.tax; T.ch+=ch; T.net+=t.net_cash; T.pl+=t.profit_loss;
-      h += `<tr><td class="stock">${esc(t.symbol)}</td><td>${fd(t.buy_date)}</td><td>${t.qty}</td><td>${rs(t.buy_amount)}</td>
+      h += `<tr><td class="stock">${esc(t.symbol)}</td><td class="l">${esc(t.group)}</td><td>${cr(t.mcap_cr)}</td><td>${fd(t.buy_date)}</td><td>${t.qty}</td><td>${rs(t.buy_amount)}</td>
             <td>${fd(t.sell_date)}</td><td>${rs(t.sell_amount)}</td><td>${t.days_held}</td><td>${rs(ch)}</td><td>${rs(t.tax)}</td>
             <td>${rs(t.net_cash)}</td><td class="${cls(t.profit_loss)}">${t.profit_loss>0?'+':''}${rs(t.profit_loss)} (${t.profit_pct}%)</td>
-            <td class="l"><span class="badge ${t.reason==='target'?'b-green':'b-red'}">${t.reason==='target'?'10% profit':'20% loss'}</span></td></tr>`;
+            <td class="l"><span class="badge ${t.reason==='target'?'b-green':'b-red'}">${t.reason==='target'?(S.take_profit_pct||10)+'% profit':(S.stop_loss_pct||15)+'% loss'}</span></td></tr>`;
     });
-    h += `</tbody><tfoot><tr><td>Total</td><td></td><td></td><td>${rs(T.buy)}</td><td></td><td>${rs(T.sell)}</td><td></td>
+    h += `</tbody><tfoot><tr><td>Total</td><td></td><td></td><td></td><td></td><td>${rs(T.buy)}</td><td></td><td>${rs(T.sell)}</td><td></td>
           <td>${rs(T.ch)}</td><td>${rs(T.tax)}</td><td>${rs(T.net)}</td><td class="${cls(T.pl)}">${T.pl>0?'+':''}${rs(T.pl)}</td><td></td></tr></tfoot></table></div>`;
   } else h += `<div class="empty">Abhi tak koi stock bika nahi hai.</div>`;
   h += `</section>`;
@@ -199,9 +205,9 @@ function render(st){
   h += `<section><h2>🗓️ Purani Lists</h2>`;
   if(hist.length){
     hist.forEach(l=>{
-      h += `<details><summary>${fd(l.date)} - ${l.items.length} stock</summary><div class="scroll"><table><thead><tr><th>Stock</th><th class="l">Index</th><th>RSI</th><th>Close</th><th class="l">Haal</th></tr></thead><tbody>`;
+      h += `<details><summary>${fd(l.date)} - ${l.items.length} stock</summary><div class="scroll"><table><thead><tr><th>Stock</th><th class="l">Index</th><th>RSI</th><th>1 saal return</th><th>Market cap (cr)</th><th>Close</th><th class="l">Haal</th></tr></thead><tbody>`;
       l.items.forEach((it,i)=>{ const s=STATUS[it.status]||[it.status,'b-gray'];
-        h += `<tr><td class="stock">${i+1}. ${esc(it.symbol)}</td><td class="l">${esc(it.group)}</td><td>${it.rsi}</td><td>${rs(it.close)}</td><td class="l"><span class="badge ${s[1]}">${s[0]}</span></td></tr>`; });
+        h += `<tr><td class="stock">${i+1}. ${esc(it.symbol)}</td><td class="l">${esc(it.group)}</td><td>${it.rsi}</td><td>${pct(it.ret_1y_pct)}</td><td>${cr(it.mcap_cr)}</td><td>${rs(it.close)}</td><td class="l"><span class="badge ${s[1]}">${s[0]}</span></td></tr>`; });
       h += `</tbody></table></div></details>`;
     });
   } else h += `<div class="empty">Purani lists yahan dikhengi.</div>`;
