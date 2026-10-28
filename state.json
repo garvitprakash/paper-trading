@@ -289,108 +289,75 @@
  ],
  "today_list": {
   "date": "2026-10-28",
-  "created_at": "2026-10-28T07:40:30+05:30",
-  "scanned": 300,
+  "created_at": "2026-10-28T20:29:58+05:30",
+  "scanned": 350,
   "mcap_unknown": [],
   "items": [
+   {
+    "symbol": "JIOFIN",
+    "ticker": "JIOFIN.NS",
+    "name": "Jio Financial Services Ltd.",
+    "group": "Nifty 50",
+    "rsi": 31.3,
+    "mcap_cr": 135463,
+    "close": 205.15,
+    "volume": 12726804,
+    "status": "pending"
+   },
    {
     "symbol": "YESBANK",
     "ticker": "YESBANK.NS",
     "name": "Yes Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 18.8,
-    "mcap_cr": 49911,
-    "close": 15.9,
-    "volume": 182276471,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "IDFCFIRSTB",
-    "ticker": "IDFCFIRSTB.NS",
-    "name": "IDFC First Bank Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 22.8,
-    "mcap_cr": 61537,
-    "close": 71.36,
-    "volume": 22816968,
-    "status": "slots_full"
+    "rsi": 17.9,
+    "mcap_cr": 49001,
+    "close": 15.61,
+    "volume": 96396776,
+    "status": "pending"
    },
    {
     "symbol": "SWIGGY",
     "ticker": "SWIGGY.NS",
     "name": "Swiggy Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 26.1,
-    "mcap_cr": 49559,
-    "close": 188.95,
-    "volume": 25329155,
-    "status": "slots_full"
+    "rsi": 24.6,
+    "mcap_cr": 48129,
+    "close": 183.5,
+    "volume": 13274372,
+    "status": "pending"
    },
    {
-    "symbol": "VMM",
-    "ticker": "VMM.NS",
-    "name": "Vishal Mega Mart Ltd.",
+    "symbol": "NMDC",
+    "ticker": "NMDC.NS",
+    "name": "NMDC Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 29.5,
-    "mcap_cr": 41222,
-    "close": 88.7,
-    "volume": 15028925,
-    "status": "slots_full"
+    "rsi": 32.3,
+    "mcap_cr": 59345,
+    "close": 67.5,
+    "volume": 12968924,
+    "status": "pending"
    },
    {
-    "symbol": "ASHOKLEY",
-    "ticker": "ASHOKLEY.NS",
-    "name": "Ashok Leyland Ltd.",
+    "symbol": "IDFCFIRSTB",
+    "ticker": "IDFCFIRSTB.NS",
+    "name": "IDFC First Bank Ltd.",
     "group": "Nifty Midcap 150",
-    "rsi": 31.8,
-    "mcap_cr": 83409,
-    "close": 142.0,
-    "volume": 20313145,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "SUZLON",
-    "ticker": "SUZLON.NS",
-    "name": "Suzlon Energy Ltd.",
-    "group": "Nifty Midcap 150",
-    "rsi": 32.9,
-    "mcap_cr": 50752,
-    "close": 36.92,
-    "volume": 125555102,
-    "status": "slots_full"
+    "rsi": 33.5,
+    "mcap_cr": 63408,
+    "close": 73.53,
+    "volume": 19403020,
+    "status": "pending"
    },
    {
     "symbol": "IFCI",
     "ticker": "IFCI.NS",
     "name": "IFCI Ltd.",
     "group": "Nifty Smallcap 100",
-    "rsi": 30.2,
-    "mcap_cr": 15910,
-    "close": 59.05,
-    "volume": 14241118,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "NTPC",
-    "ticker": "NTPC.NS",
-    "name": "NTPC Ltd.",
-    "group": "Nifty 50",
-    "rsi": 33.0,
-    "mcap_cr": 292645,
-    "close": 301.8,
-    "volume": 11861441,
-    "status": "slots_full"
-   },
-   {
-    "symbol": "JIOFIN",
-    "ticker": "JIOFIN.NS",
-    "name": "Jio Financial Services Ltd.",
-    "group": "Nifty 50",
-    "rsi": 33.4,
-    "mcap_cr": 136844,
-    "close": 207.24,
-    "volume": 14815938,
-    "status": "slots_full"
+    "rsi": 30.1,
+    "mcap_cr": 15886,
+    "close": 58.96,
+    "volume": 15511659,
+    "status": "pending"
    }
   ]
  },
@@ -2109,5 +2076,5 @@
   "total_tax_paid": 600.53,
   "total_charges_paid": 188.67
  },
- "updated_at": "2026-10-28T20:23:13+05:30"
+ "updated_at": "2026-10-28T20:30:26+05:30"
 }
