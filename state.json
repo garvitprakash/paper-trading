@@ -16,7 +16,8 @@
  "snapshots": [],
  "daily": {
   "scan_done": "2026-10-29",
-  "sel_counter": 0
+  "sel_counter": 0,
+  "buy_done": "2026-10-29"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -37,6 +38,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-10-29T09:26:50+05:30",
+ "updated_at": "2026-10-29T09:40:03+05:30",
  "tg_offset": 912526858
 }
