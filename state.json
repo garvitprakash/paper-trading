@@ -1,0 +1,41 @@
+{
+ "version": 1,
+ "start_capital": 500000,
+ "cash": 500000.0,
+ "next_amount": 10000.0,
+ "positions": [],
+ "trades": [],
+ "today_list": {
+  "date": "2026-10-29",
+  "created_at": "2026-10-29T07:40:33+05:30",
+  "scanned": 350,
+  "mcap_unknown": [],
+  "items": []
+ },
+ "list_history": [],
+ "snapshots": [],
+ "daily": {
+  "scan_done": "2026-10-29",
+  "sel_counter": 0
+ },
+ "summary": {
+  "total_actual_pl": 0,
+  "unrealized_pl_approx": 0,
+  "closed_trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate_pct": null,
+  "open_positions": 0,
+  "max_positions": 10,
+  "invested_open": 0,
+  "cash": 500000.0,
+  "portfolio_value": 500000.0,
+  "start_capital": 500000,
+  "next_amount": 10000.0,
+  "total_tax_paid": 0,
+  "total_charges_paid": 0,
+  "take_profit_pct": 10,
+  "stop_loss_pct": 15
+ },
+ "updated_at": "2026-10-29T07:41:02+05:30"
+}
