@@ -13,17 +13,17 @@
   "items": [],
   "funnel": {
    "universe": 2360,
-   "data": 2358,
-   "rsi": 570,
-   "volume": 12,
-   "circuit": 12,
+   "data": 2360,
+   "rsi": 574,
+   "volume": 16,
+   "circuit": 15,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-10-30T09:00:25+05:30"
+  "last_scan_at": "2026-10-30T09:43:55+05:30"
  },
  "list_history": [
   {
@@ -47,10 +47,10 @@
  "daily": {
   "scan_done": "2026-10-30",
   "sel_counter": 0,
-  "buy_done": "2026-10-29",
+  "buy_done": "2026-10-30",
   "eod_done": "2026-10-29",
   "rescan_needed": null,
-  "last_scan_at": "2026-10-30T09:00:25+05:30"
+  "last_scan_at": "2026-10-30T09:43:55+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -71,6 +71,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-10-30T09:00:25+05:30",
+ "updated_at": "2026-10-30T09:43:55+05:30",
  "tg_offset": 912526858
 }
