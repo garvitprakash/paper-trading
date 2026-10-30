@@ -509,7 +509,7 @@ def funnel_text(cfg, F):
 
 def format_list_messages(cfg, st, items, date_str, mcap_unknown=None, rescan=False, funnel=None):
     free = cfg["max_positions"] - len(st["positions"])
-    title = ("📋 NAYI LIST (stock bikne ke baad, abhi ke bhaav par) - %s" if rescan else "📋 AAJ KI LIST - %s") % date_str
+    title = ("📋 NAYI LIST (abhi ke bhaav par) - %s" if rescan else "📋 AAJ KI LIST - %s") % date_str
     lines = ["%s\n%d stock niyam par khare utre (sabse kam RSI sabse upar).\n"
              "Khaali jagah: %d | Ek stock par kam se kam: %s\n" %
              (title, len(items), free, inr(st["next_amount"], 0))]
@@ -541,7 +541,7 @@ def _trim_today(df, today, keep_today):
     return df
 
 
-def run_scan(cfg, st, now, rescan=False):
+def run_scan(cfg, st, now, rescan=False, periodic=False):
     today = now.date()
     d = st["daily"]
     mins = now.hour * 60 + now.minute
@@ -650,6 +650,16 @@ def run_scan(cfg, st, now, rescan=False):
     items = items[:cfg["list_max"]]
     F["final"] = len(items)
 
+    d["last_scan_at"] = now_ist().isoformat(timespec="seconds")
+    # beech ke (har 30 minute wale) scan me naya stock na mile to list aur message ko chhedo mat
+    if periodic and old and old.get("date") == str(today) and not old.get("skipped"):
+        old_syms = {it["symbol"] for it in old.get("items", [])}
+        if not [it for it in items if it["symbol"] not in old_syms]:
+            old["funnel"] = F
+            old["last_scan_at"] = d["last_scan_at"]
+            old["scanned"] = len(uni)
+            print("Beech ka scan: koi naya stock nahi mila.")
+            return
     # pehle se chune hue (jinka kharid abhi baaki hai) naye list me bhi rakho
     if old and old.get("date") == str(today):
         by_sym = {it["symbol"]: it for it in items}
@@ -666,7 +676,8 @@ def run_scan(cfg, st, now, rescan=False):
     scan_no = (old.get("scan_no", 1) + 1) if (rescan and old and old.get("date") == str(today)) else 1
     st["today_list"] = {"date": str(today), "created_at": now_ist().isoformat(timespec="seconds"),
                         "scanned": len(uni), "mcap_unknown": mcap_unknown, "items": items,
-                        "funnel": F, "scan_no": scan_no, "live_prices": bool(keep_today and not after_close)}
+                        "funnel": F, "scan_no": scan_no, "live_prices": bool(keep_today and not after_close),
+                        "last_scan_at": d["last_scan_at"]}
     d["scan_done"] = str(today)
     d["rescan_needed"] = None
     if not rescan:
@@ -1192,8 +1203,33 @@ def auto(cfg, st, now):
     hh, mm = [int(x) for x in cfg["last_buy_time"].split(":")]
     if d.get("rescan_needed") == today and mins < hh * 60 + mm and d.get("holiday") != today:
         run_scan(cfg, st, now, rescan=True)   # bikri ke baad: abhi ke bhaav par naya scan
+    else:
+        maybe_periodic_scan(cfg, st, now)
     if mins >= 15 * 60 + 45 and d.get("eod_done") != today:
         run_eod(cfg, st, now)
+
+
+def maybe_periodic_scan(cfg, st, now):
+    """10 se kam stock hon to har ~30 minute me poore market ka scan (naya stock mile tabhi message)."""
+    d = st["daily"]
+    today = str(now.date())
+    mins = now.hour * 60 + now.minute
+    uh, um = [int(x) for x in cfg["rescan_until"].split(":")]
+    if mins < 9 * 60 + 30 or mins >= uh * 60 + um or d.get("holiday") == today or d.get("scan_done") != today:
+        return
+    tl = st.get("today_list")
+    queued = selected_count(tl) if tl and tl.get("date") == today else 0
+    if cfg["max_positions"] - len(st["positions"]) - queued <= 0:
+        return
+    last = d.get("last_scan_at")
+    if last:
+        try:
+            gap = (now_ist() - datetime.fromisoformat(last)).total_seconds() / 60.0
+            if gap < cfg["rescan_every_min"] - 5:   # auto chakkar ~13 minute ke hote hain, isliye thodi chhoot
+                return
+        except Exception:  # noqa
+            pass
+    run_scan(cfg, st, now, rescan=True, periodic=True)
 
 
 def main():

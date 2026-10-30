@@ -33,5 +33,7 @@
     "cess_pct": 4
   },
   "min_return_1y_pct": 20,
-  "max_overshoot_pct": 50
+  "max_overshoot_pct": 50,
+  "rescan_every_min": 30,
+  "rescan_until": "15:00"
 }
