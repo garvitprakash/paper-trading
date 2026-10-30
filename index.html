@@ -142,9 +142,12 @@ function render(st){
   // ---- aaj ki list
   const tl = st.today_list;
   h += `<section><h2>📋 Aaj ki List (kharidne layak stock)</h2>`;
-  if(tl && tl.items){
-    h += `<div class="note">${fd(tl.date)} | ${tl.items.length} stock niyam par khare utre | sabse kam RSI sabse upar`
-      + (tl.scanned? ` | ${tl.scanned} stock scan hue`:'') + `</div>`;
+  if(tl && tl.skipped==='full'){
+    h += `<div class="empty">${fd(tl.date)}: Abhi 10/10 stock hamare paas hain, isliye naya scan nahi hua. Koi stock bikte hi poore market ka naya scan hoga aur nayi list yahan aur Telegram par aayegi.</div>`;
+  } else if(tl && tl.items){
+    h += `<div class="note">${fd(tl.date)} | ${ft(tl.created_at)} IST ka scan${tl.scan_no>1?` (aaj ka ${tl.scan_no}wa scan, abhi ke bhaav par)`:''} | ${tl.items.length} stock niyam par khare utre | sabse kam RSI sabse upar</div>`;
+    if(tl.funnel){ const F=tl.funnel;
+      h += `<div class="note">🔎 ${nf0.format(F.universe)} stock scan (data mila: ${nf0.format(F.data)}) → RSI niyam: ${nf0.format(F.rsi)} → volume: ${nf0.format(F.volume)} → circuit se bahar: ${nf0.format(F.circuit)} → 1 saal return: ${nf0.format(F['return'])} → market cap: ${nf0.format(F.mcap)}</div>`; }
     if(tl.items.length){
       h += `<div class="note"><b>Kaise chunein:</b> Telegram me list ke number bhejiye (jaise <b>1 4 7</b>, ya <b>sab</b>, ya <b>0</b> = kuch nahi). Wahi stock kharide jayenge.</div>`;
       h += `<div class="scroll"><table><thead><tr><th>#  Stock</th><th class="l">Index</th><th>RSI</th><th>1 saal return</th><th>Pichhla close</th><th>Market cap (cr)</th><th>Volume</th><th>Lagega (kam se kam)</th><th class="l">Haal</th></tr></thead><tbody>`;
@@ -158,7 +161,7 @@ function render(st){
       });
       h += `</tbody></table></div>`;
     } else h += `<div class="empty">Aaj koi stock niyam par khara nahi utra.</div>`;
-  } else h += `<div class="empty">Aaj ki list subah 8 baje banti hai.</div>`;
+  } else h += `<div class="empty">Aaj ki list subah 7:40 ke baad banti hai.</div>`;
   h += `</section>`;
 
   // ---- abhi ke stock

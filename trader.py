@@ -42,6 +42,9 @@ NSE_LISTS = {
     "Nifty Smallcap 100": "https://nsearchives.nseindia.com/content/indices/ind_niftysmallcap100list.csv",
 }
 
+NSE_ALL_URL = "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv"
+OTHER_GROUP = "Index ke bahar"
+
 OUTBOX = []  # Telegram messages; state save hone ke baad hi bheje jaate hain
 
 
@@ -245,6 +248,8 @@ def download(tickers, **kw):
     tickers = list(tickers)
     for i in range(0, len(tickers), 80):
         chunk = tickers[i:i + 80]
+        if i:
+            time.sleep(0.7)
         for attempt in range(3):
             try:
                 df = yf.download(chunk, group_by="ticker", progress=False, threads=True,
@@ -257,9 +262,9 @@ def download(tickers, **kw):
     return out
 
 
-def get_daily(tickers):
+def get_daily(tickers, period="8mo"):
     import pandas as pd
-    res = download(tickers, period="2y", interval="1d")
+    res = download(tickers, period=period, interval="1d")
     for t, df in res.items():
         idx = pd.DatetimeIndex(df.index)
         if idx.tz is not None:
@@ -338,7 +343,31 @@ def _download_group(group, url):
     return None
 
 
+def _download_all():
+    """NSE ke saare normal (EQ) stock ki list: [{symbol, name}]"""
+    hdr = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36",
+           "Accept": "text/csv,*/*"}
+    for attempt in range(3):
+        try:
+            r = requests.get(NSE_ALL_URL, headers=hdr, timeout=40)
+            if r.status_code == 200 and "SYMBOL" in r.text[:300].upper():
+                rows = []
+                for row in csv.DictReader(io.StringIO(r.text)):
+                    row = {(k or "").strip().upper(): (v or "").strip() for k, v in row.items()}
+                    sym = row.get("SYMBOL", "")
+                    if not sym or row.get("SERIES", "EQ") != "EQ":
+                        continue
+                    rows.append({"symbol": sym, "name": row.get("NAME OF COMPANY") or sym})
+                if len(rows) > 500:
+                    return rows
+        except Exception as e:  # noqa
+            print("NSE ki poori list me dikkat", e)
+        time.sleep(3)
+    return None
+
+
 def load_universe(cfg, now):
+    """NSE ke saare stock. Jo 4 index me hain unka index likha hota hai, baaki 'Index ke bahar'."""
     cache = {}
     if os.path.exists(UNIVERSE_PATH):
         try:
@@ -348,15 +377,18 @@ def load_universe(cfg, now):
             cache = {}
     groups = cache.get("groups", {})
     fetched = cache.get("fetched", {})
+    all_rows = cache.get("all", [])
+    all_fetched = cache.get("all_fetched")
     changed = False
+
+    def age(ts):
+        try:
+            return (now.date() - datetime.fromisoformat(ts).date()).days
+        except Exception:  # noqa
+            return 999
+
     for g, url in NSE_LISTS.items():
-        age_days = 999
-        if g in fetched:
-            try:
-                age_days = (now.date() - datetime.fromisoformat(fetched[g]).date()).days
-            except Exception:  # noqa
-                pass
-        if g not in groups or age_days >= 7:
+        if g not in groups or age(fetched.get(g)) >= 7:
             rows = _download_group(g, url)
             if rows:
                 groups[g] = rows
@@ -364,16 +396,35 @@ def load_universe(cfg, now):
                 changed = True
             else:
                 print("NSE se %s ki list nahi mili, purani saved list use hogi" % g)
+    if not all_rows or age(all_fetched) >= 7:
+        rows = _download_all()
+        if rows:
+            all_rows = rows
+            all_fetched = now.isoformat(timespec="seconds")
+            changed = True
+        else:
+            print("NSE ki poori stock list nahi mili" + (", purani saved list use hogi" if all_rows else ""))
     if changed:
         os.makedirs(DATA_DIR, exist_ok=True)
         with open(UNIVERSE_PATH, "w", encoding="utf-8") as f:
-            json.dump({"groups": groups, "fetched": fetched}, f, ensure_ascii=False)
-    seen, out = set(), []
+            json.dump({"groups": groups, "fetched": fetched, "all": all_rows, "all_fetched": all_fetched},
+                      f, ensure_ascii=False)
+    gmap, gname = {}, {}
     for g in cfg["universe_groups"]:
         for r in groups.get(g, []):
-            if r["ticker"] not in seen:
-                seen.add(r["ticker"])
-                out.append(r)
+            gmap.setdefault(r["symbol"], g)
+            gname.setdefault(r["symbol"], r["name"])
+    seen, out = set(), []
+    for r in all_rows:
+        sym = r["symbol"]
+        if sym in seen:
+            continue
+        seen.add(sym)
+        out.append({"symbol": sym, "name": r["name"], "group": gmap.get(sym, OTHER_GROUP), "ticker": sym + ".NS"})
+    for sym, g in gmap.items():  # index wale jo poori list me nahi mile
+        if sym not in seen:
+            seen.add(sym)
+            out.append({"symbol": sym, "name": gname[sym], "group": g, "ticker": sym + ".NS"})
     return out
 
 
@@ -428,24 +479,40 @@ def pm(hhmm):
     return "%d:%02d %s" % (h - 12 if h > 12 else h, m, "pm" if h >= 12 else "am")
 
 
-def how_to_reply_text(cfg):
+def how_to_reply_text(cfg, rescan=False):
     last = pm(cfg["last_buy_time"])
+    if rescan:
+        timing = ("⏰ Ab bhejenge to abhi ke bhaav par kharid hogi, kuch hi minute me. "
+                  "Aaj ke liye %s tak bhej sakte hain." % last)
+    else:
+        timing = ("⏰ 9:15 am se pehle bhejenge to khule bhaav par kharid hogi (message 9:30 ke baad aayega). "
+                  "Uske baad bhejenge to us samay ke bhaav par, kuch hi minute me. "
+                  "Aaj ke liye %s tak bhej sakte hain." % last)
     return ("👉 KAUN SA STOCK KHARIDNA HAI? Is chat me list ke NUMBER likh kar bhej dijiye:\n"
             "• Ek stock: 3\n"
             "• Kai stock: 1 4 7   (beech me space ya comma)\n"
             "• Upar ke utne stock jitni jagah khaali hai: sab\n"
             "• Aaj kuch nahi kharidna: 0\n"
-            "• List dobara dekhni hai: list\n\n"
-            "⏰ 9:15 am se pehle bhejenge to khule bhaav par kharid hogi (message 9:30 ke baad aayega). "
-            "Uske baad bhejenge to us samay ke bhaav par, kuch hi minute me. "
-            "Aaj ke liye %s tak bhej sakte hain." % last)
+            "• List dobara dekhni hai: list\n\n" + timing)
 
 
-def format_list_messages(cfg, st, items, date_str, mcap_unknown=None):
+def funnel_text(cfg, F):
+    if not F:
+        return ""
+    return ("🔎 Hisaab: %s stock scan (data mila: %s)\n"
+            "→ RSI %g ya kam: %s\n→ volume %s shares se zyada: %s\n→ circuit me nahi: %s\n"
+            "→ 1 saal return %g%% se zyada: %s\n→ market cap %s cr se zyada: %s" %
+            (num(F["universe"]), num(F["data"]), cfg["max_rsi"], num(F["rsi"]),
+             num(cfg["min_volume_shares"]), num(F["volume"]), num(F["circuit"]),
+             cfg["min_return_1y_pct"], num(F["return"]), num(cfg["min_market_cap_cr"]), num(F["mcap"])))
+
+
+def format_list_messages(cfg, st, items, date_str, mcap_unknown=None, rescan=False, funnel=None):
     free = cfg["max_positions"] - len(st["positions"])
-    lines = ["📋 AAJ KI LIST - %s\n%d stock niyam par khare utre (sabse kam RSI sabse upar).\n"
+    title = ("📋 NAYI LIST (stock bikne ke baad, abhi ke bhaav par) - %s" if rescan else "📋 AAJ KI LIST - %s") % date_str
+    lines = ["%s\n%d stock niyam par khare utre (sabse kam RSI sabse upar).\n"
              "Khaali jagah: %d | Ek stock par kam se kam: %s\n" %
-             (date_str, len(items), free, inr(st["next_amount"], 0))]
+             (title, len(items), free, inr(st["next_amount"], 0))]
     for i, it in enumerate(items, 1):
         r1 = it.get("ret_1y_pct")
         r1s = ("%+.1f%%" % r1) if r1 is not None else "-"
@@ -458,45 +525,81 @@ def format_list_messages(cfg, st, items, date_str, mcap_unknown=None):
                       num(it["mcap_cr"]), plan, STATUS_TAG.get(it["status"], "")))
     if mcap_unknown:
         lines.append("\nNote: in stock ka market cap nahi mil paaya, isliye list me nahi hain: " + ", ".join(mcap_unknown))
+    if funnel:
+        lines.append("\n" + funnel_text(cfg, funnel))
     return "\n".join(lines)
 
 
 # ----------------------------------------------------------------------------
-# 1) SCAN - subah stock chunna
+# 1) SCAN - NSE ke saare stock me se chunna
 # ----------------------------------------------------------------------------
-def run_scan(cfg, st, now):
+def _trim_today(df, today, keep_today):
+    """Aaj ki (adhoori ya poori) row rakhni hai ya hatani hai."""
+    df = df[df["Close"].notna()]
+    if len(df) and df.index[-1].date() == today and not keep_today:
+        df = df.iloc[:-1]
+    return df
+
+
+def run_scan(cfg, st, now, rescan=False):
     today = now.date()
+    d = st["daily"]
+    mins = now.hour * 60 + now.minute
+    free = cfg["max_positions"] - len(st["positions"])
+    old = st.get("today_list")
+
+    if free <= 0:
+        # 10/10 stock hain: market scan ki zaroorat nahi, sirf apne stock dekhne hain
+        if not rescan:
+            if old and old.get("date") != str(today):
+                st["list_history"].insert(0, old)
+                st["list_history"] = st["list_history"][:30]
+            st["today_list"] = {"date": str(today), "created_at": now_ist().isoformat(timespec="seconds"),
+                                "scanned": 0, "mcap_unknown": [], "items": [], "skipped": "full"}
+        d["scan_done"] = str(today)
+        d["rescan_needed"] = None
+        print("10/10 stock hain, market scan nahi kiya.")
+        return
+
     uni = load_universe(cfg, now)
     if not uni:
         warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: NSE se stock ki list nahi mil rahi. Program 15 minute baad phir koshish karega.")
         return
-    use_today = now.hour * 60 + now.minute >= 15 * 60 + 45
-    daily = get_daily([u["ticker"] for u in uni])
+    held = {p["symbol"] for p in st["positions"]}
+    keep_today = mins >= 9 * 60 + 30            # market khulne ke baad aaj ka (abhi ka) bhaav bhi gino
+    after_close = mins >= 15 * 60 + 45
+    print("Scan shuru: %d stock, live bhaav=%s" % (len(uni), keep_today and not after_close))
+    daily = get_daily([u["ticker"] for u in uni], "8mo")
     if len(daily) < 0.5 * len(uni):
         warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: Yahoo Finance se price data nahi mil raha (%d/%d stock). "
                            "Program 15 minute baad phir koshish karega." % (len(daily), len(uni)))
         return
-    survivors = []
+    F = {"universe": len(uni), "data": len(daily), "rsi": 0, "volume": 0, "circuit": 0, "return": 0, "mcap": 0}
+    stage1 = []
     for u in uni:
-        df = daily.get(u["ticker"])
-        if df is None:
+        if u["symbol"] in held:
             continue
-        df = df[df["Close"].notna()]
-        if not use_today:
-            df = df[[d < today for d in df.index.date]]
+        df0 = daily.get(u["ticker"])
+        if df0 is None:
+            continue
+        df = _trim_today(df0, today, keep_today)
         if len(df) < cfg["rsi_period"] + 5:
             continue
         r = rsi_series(df["Close"], cfg["rsi_period"]).iloc[-1]
         if r != r:  # NaN
             continue
+        if r > cfg["max_rsi"]:
+            continue
+        F["rsi"] += 1
         last = df.iloc[-1]
+        live_row = keep_today and not after_close and df.index[-1].date() == today
+        # volume: din adhoora ho to pichhle poore din ka volume dekho
+        vrow = df.iloc[-2] if (live_row and len(df) > 1) else last
+        vol = float(vrow["Volume"]) if vrow["Volume"] == vrow["Volume"] else 0.0
+        if vol < cfg["min_volume_shares"]:
+            continue
+        F["volume"] += 1
         prev_close = float(df["Close"].iloc[-2])
-        vol = float(last["Volume"]) if last["Volume"] == last["Volume"] else 0.0
-        if r > cfg["max_rsi"] or vol < cfg["min_volume_shares"]:
-            continue
-        ret1y = one_year_return(df)
-        if ret1y is None or ret1y <= cfg["min_return_1y_pct"]:
-            continue
         close, high, low = float(last["Close"]), float(last["High"]), float(last["Low"])
         chg = (close / prev_close - 1) * 100 if prev_close else 0
         locked = False
@@ -507,7 +610,27 @@ def run_scan(cfg, st, now):
                 locked = True  # lower circuit jaisa
         if locked:
             continue
-        survivors.append((u, round(float(r), 1), close, vol, round(ret1y, 1)))
+        F["circuit"] += 1
+        stage1.append((u, round(float(r), 1), close, vol))
+
+    # charan 2: sirf bache hue stock ka 2 saal ka data (1 saal ka return ke liye)
+    survivors = []
+    if stage1:
+        d2 = get_daily([x[0]["ticker"] for x in stage1], "2y")
+        if not d2:
+            warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: 1 saal ke return ka data nahi mil raha. "
+                               "Program 15 minute baad phir koshish karega.")
+            return
+        for u, r, close, vol in stage1:
+            df2 = d2.get(u["ticker"])
+            if df2 is None:
+                continue
+            df2 = _trim_today(df2, today, keep_today)
+            ret1y = one_year_return(df2)
+            if ret1y is None or ret1y <= cfg["min_return_1y_pct"]:
+                continue
+            F["return"] += 1
+            survivors.append((u, r, close, vol, round(ret1y, 1)))
     items = []
     mcap_unknown = []
     for u, r, close, vol, ret1y in survivors:
@@ -517,6 +640,7 @@ def run_scan(cfg, st, now):
             continue
         if mc < cfg["min_market_cap_cr"]:
             continue
+        F["mcap"] += 1
         q = plan_qty(cfg, st["next_amount"], close)
         items.append({"symbol": u["symbol"], "ticker": u["ticker"], "name": u["name"], "group": u["group"],
                       "rsi": r, "ret_1y_pct": ret1y, "mcap_cr": round(mc), "close": round(close, 2),
@@ -524,22 +648,38 @@ def run_scan(cfg, st, now):
                       "status": "pending" if q else "too_expensive"})
     items.sort(key=lambda x: x["rsi"])
     items = items[:cfg["list_max"]]
+    F["final"] = len(items)
 
-    old = st.get("today_list")
+    # pehle se chune hue (jinka kharid abhi baaki hai) naye list me bhi rakho
+    if old and old.get("date") == str(today):
+        by_sym = {it["symbol"]: it for it in items}
+        for oit in old.get("items", []):
+            if oit.get("status") == "selected":
+                if oit["symbol"] in by_sym:
+                    for k in ("status", "sel_order", "selected_at", "pre_open"):
+                        by_sym[oit["symbol"]][k] = oit.get(k)
+                else:
+                    items.append(oit)
     if old and old.get("date") != str(today):
         st["list_history"].insert(0, old)
         st["list_history"] = st["list_history"][:30]
-    st["today_list"] = {"date": str(today), "created_at": now.isoformat(timespec="seconds"),
-                        "scanned": len(uni), "mcap_unknown": mcap_unknown, "items": items}
-    st["daily"]["scan_done"] = str(today)
-    st["daily"]["sel_counter"] = 0
+    scan_no = (old.get("scan_no", 1) + 1) if (rescan and old and old.get("date") == str(today)) else 1
+    st["today_list"] = {"date": str(today), "created_at": now_ist().isoformat(timespec="seconds"),
+                        "scanned": len(uni), "mcap_unknown": mcap_unknown, "items": items,
+                        "funnel": F, "scan_no": scan_no, "live_prices": bool(keep_today and not after_close)}
+    d["scan_done"] = str(today)
+    d["rescan_needed"] = None
+    if not rescan:
+        d["sel_counter"] = 0
 
-    head = "📋 AAJ KI LIST - %s\n" % now.strftime("%d %b %Y")
     if not items:
-        notify(head + "Aaj koi stock niyam par khara nahi utra. Aaj kuch nahi kharidenge.")
+        notify(("📋 NAYI LIST - %s\nAbhi koi stock niyam par khara nahi utra." if rescan else
+                "📋 AAJ KI LIST - %s\nAaj koi stock niyam par khara nahi utra. Aaj kuch nahi kharidenge.") %
+               now.strftime("%d %b %Y") + "\n\n" + funnel_text(cfg, F))
         return
-    notify(format_list_messages(cfg, st, items, now.strftime("%d %b %Y"), mcap_unknown))
-    notify(how_to_reply_text(cfg))
+    notify(format_list_messages(cfg, st, items, now.strftime("%d %b %Y") + (" " + pm(now.strftime("%H:%M")) if rescan else ""),
+                                mcap_unknown, rescan=rescan, funnel=F))
+    notify(how_to_reply_text(cfg, rescan=rescan))
 
 
 # ----------------------------------------------------------------------------
@@ -582,6 +722,10 @@ def handle_reply(cfg, st, now, text):
     mins = now.hour * 60 + now.minute
     hh, mm = [int(x) for x in cfg["last_buy_time"].split(":")]
     kind, nums = parse_reply(text)
+    if not items and kind in ("nums", "all"):
+        notify("ℹ️ Abhi koi list nahi hai (ya to 10/10 stock hain, ya koi stock niyam par khara nahi utra). "
+               "Koi stock bikne par nayi list aa jayegi.")
+        return False
     if kind == "help":
         notify("Maaf kijiye, ye samajh nahi aaya. 😊\n\n" + how_to_reply_text(cfg))
         return False
@@ -1001,7 +1145,10 @@ def run_check(cfg, st, now):
             bought, skipped = fill_slots(cfg, st, now, intra, open_mode=False)
             notify_buys(cfg, st, bought, skipped)
     if sells and in_time:
-        slot_hint(cfg, st, now)
+        tl2 = st.get("today_list")
+        queued = selected_count(tl2) if tl2 and tl2.get("date") == str(today) else 0
+        if cfg["max_positions"] - len(st["positions"]) - queued > 0:
+            d["rescan_needed"] = str(today)   # jagah khaali hui: poore market ka naya scan
 
 
 # ----------------------------------------------------------------------------
@@ -1042,6 +1189,9 @@ def auto(cfg, st, now):
     if d.get("holiday") == today:
         return
     run_check(cfg, st, now)
+    hh, mm = [int(x) for x in cfg["last_buy_time"].split(":")]
+    if d.get("rescan_needed") == today and mins < hh * 60 + mm and d.get("holiday") != today:
+        run_scan(cfg, st, now, rescan=True)   # bikri ke baad: abhi ke bhaav par naya scan
     if mins >= 15 * 60 + 45 and d.get("eod_done") != today:
         run_eod(cfg, st, now)
 
