@@ -15,15 +15,15 @@
    "universe": 2360,
    "data": 2360,
    "rsi": 220,
-   "volume": 5,
-   "circuit": 5,
+   "volume": 7,
+   "circuit": 7,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-04T10:10:04+05:30"
+  "last_scan_at": "2026-11-04T10:37:40+05:30"
  },
  "list_history": [
   {
@@ -134,7 +134,7 @@
   "buy_done": "2026-11-04",
   "eod_done": "2026-11-03",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-04T10:10:04+05:30"
+  "last_scan_at": "2026-11-04T10:37:40+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -155,6 +155,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-04T10:23:16+05:30",
+ "updated_at": "2026-11-04T10:37:40+05:30",
  "tg_offset": 912526858
 }
