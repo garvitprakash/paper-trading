@@ -500,11 +500,13 @@ def funnel_text(cfg, F):
     if not F:
         return ""
     return ("🔎 Hisaab: %s stock scan (data mila: %s)\n"
-            "→ RSI %g ya kam: %s\n→ volume %s shares se zyada: %s\n→ circuit me nahi: %s\n"
-            "→ 1 saal return %g%% se zyada: %s\n→ market cap %s cr se zyada: %s" %
+            "→ RSI %g ya kam: %s\n→ volume %s shares se zyada: %s\n→ circuit me nahi: %s" %
             (num(F["universe"]), num(F["data"]), cfg["max_rsi"], num(F["rsi"]),
-             num(cfg["min_volume_shares"]), num(F["volume"]), num(F["circuit"]),
-             cfg["min_return_1y_pct"], num(F["return"]), num(cfg["min_market_cap_cr"]), num(F["mcap"])))
+             num(cfg["min_volume_shares"]), num(F["volume"]), num(F["circuit"])))
+
+
+def mcap_txt(x):
+    return num(x) if x else "-"
 
 
 def format_list_messages(cfg, st, items, date_str, mcap_unknown=None, rescan=False, funnel=None):
@@ -522,9 +524,9 @@ def format_list_messages(cfg, st, items, date_str, mcap_unknown=None, rescan=Fal
             plan = "⚠️ bahut mehnga"
         lines.append("%d. %s | RSI %.1f | %s | 1 saal %s\n    %s | MCap %s cr | %s%s" %
                      (i, it["symbol"], it["rsi"], inr(it["close"]), r1s, short_group(it["group"]),
-                      num(it["mcap_cr"]), plan, STATUS_TAG.get(it["status"], "")))
+                      mcap_txt(it.get("mcap_cr")), plan, STATUS_TAG.get(it["status"], "")))
     if mcap_unknown:
-        lines.append("\nNote: in stock ka market cap nahi mil paaya, isliye list me nahi hain: " + ", ".join(mcap_unknown))
+        lines.append("\nNote: in stock ka market cap nahi mil paaya (list me '-' likha hai): " + ", ".join(mcap_unknown))
     if funnel:
         lines.append("\n" + funnel_text(cfg, funnel))
     return "\n".join(lines)
@@ -574,7 +576,7 @@ def run_scan(cfg, st, now, rescan=False, periodic=False):
         warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: Yahoo Finance se price data nahi mil raha (%d/%d stock). "
                            "Program 15 minute baad phir koshish karega." % (len(daily), len(uni)))
         return
-    F = {"universe": len(uni), "data": len(daily), "rsi": 0, "volume": 0, "circuit": 0, "return": 0, "mcap": 0}
+    F = {"universe": len(uni), "data": len(daily), "rsi": 0, "volume": 0, "circuit": 0}
     stage1 = []
     for u in uni:
         if u["symbol"] in held:
@@ -615,35 +617,32 @@ def run_scan(cfg, st, now, rescan=False, periodic=False):
 
     # charan 2: sirf bache hue stock ka 2 saal ka data (1 saal ka return ke liye)
     survivors = []
+    # 1 saal ka return aur market cap ab sirf list me dikhane ke liye hain (niyam nahi), bache hue stock ke liye
+    stage1.sort(key=lambda x: x[1])
+    stage1 = stage1[:cfg["list_max"]]
+    d2 = {}
     if stage1:
-        d2 = get_daily([x[0]["ticker"] for x in stage1], "2y")
-        if not d2:
-            warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: 1 saal ke return ka data nahi mil raha. "
-                               "Program 15 minute baad phir koshish karega.")
-            return
-        for u, r, close, vol in stage1:
-            df2 = d2.get(u["ticker"])
-            if df2 is None:
-                continue
-            df2 = _trim_today(df2, today, keep_today)
-            ret1y = one_year_return(df2)
-            if ret1y is None or ret1y <= cfg["min_return_1y_pct"]:
-                continue
-            F["return"] += 1
-            survivors.append((u, r, close, vol, round(ret1y, 1)))
+        try:
+            d2 = get_daily([x[0]["ticker"] for x in stage1], "2y")
+        except Exception as e:  # noqa
+            print("1 saal ke return ka data nahi mila:", e)
     items = []
     mcap_unknown = []
-    for u, r, close, vol, ret1y in survivors:
-        mc = get_mcap_cr(u["ticker"])
+    for u, r, close, vol in stage1:
+        ret1y = None
+        df2 = d2.get(u["ticker"]) if d2 else None
+        if df2 is not None:
+            ret1y = one_year_return(_trim_today(df2, today, keep_today))
+        try:
+            mc = get_mcap_cr(u["ticker"])
+        except Exception:  # noqa
+            mc = None
         if mc is None:
             mcap_unknown.append(u["symbol"])
-            continue
-        if mc < cfg["min_market_cap_cr"]:
-            continue
-        F["mcap"] += 1
         q = plan_qty(cfg, st["next_amount"], close)
         items.append({"symbol": u["symbol"], "ticker": u["ticker"], "name": u["name"], "group": u["group"],
-                      "rsi": r, "ret_1y_pct": ret1y, "mcap_cr": round(mc), "close": round(close, 2),
+                      "rsi": r, "ret_1y_pct": round(ret1y, 1) if ret1y is not None else None,
+                      "mcap_cr": round(mc) if mc else None, "close": round(close, 2),
                       "volume": int(vol), "plan_qty": q, "plan_cost": round(q * close, 2) if q else None,
                       "status": "pending" if q else "too_expensive"})
     items.sort(key=lambda x: x["rsi"])
@@ -991,7 +990,7 @@ def notify_buys(cfg, st, bought, skipped=None):
         lines.append("🟢 KHARIDA (%d stock)\n" % len(bought))
         for p in bought:
             lines.append("• %s (%s | MCap %s cr)\n  %d share x %s = %s\n  Target %s | Stop-loss %s" %
-                         (p["symbol"], short_group(p["group"]), num(p.get("mcap_cr") or 0), p["qty"],
+                         (p["symbol"], short_group(p["group"]), mcap_txt(p.get("mcap_cr")), p["qty"],
                           inr(p["buy_price"]), inr(p["invested"]), inr(p["target"]), inr(p["stop"])))
         lines.append("\nAbhi portfolio: %d/%d stock | Cash %s" %
                      (len(st["positions"]), cfg["max_positions"], inr(st["cash"])))
@@ -1086,7 +1085,7 @@ def notify_sell(cfg, st, tr, old_amt):
            "Is trade ka Profit/Loss: %s (%.2f%%)\n"
            "Total actual Profit/Loss: %s\n"
            "Abhi portfolio: %d/%d stock | Cash %s") % (
-        icon, tr["symbol"], short_group(tr["group"]), num(tr.get("mcap_cr") or 0), why, inr(tr["buy_price"]), inr(tr["sell_price"]), tr["qty"],
+        icon, tr["symbol"], short_group(tr["group"]), mcap_txt(tr.get("mcap_cr")), why, inr(tr["buy_price"]), inr(tr["sell_price"]), tr["qty"],
         tr["days_held"], inr(tr["buy_charges"] + tr["sell_charges"]), inr(tr["tax"]), inr(tr["net_cash"]),
         inr(tr["profit_loss"]), tr["profit_pct"], inr(tot),
         len(st["positions"]), cfg["max_positions"], inr(st["cash"]))
