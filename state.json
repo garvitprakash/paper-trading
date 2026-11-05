@@ -7,23 +7,92 @@
  "trades": [],
  "today_list": {
   "date": "2026-11-05",
-  "created_at": "2026-11-05T07:42:31+05:30",
+  "created_at": "2026-11-05T08:23:31+05:30",
   "scanned": 2360,
   "mcap_unknown": [],
-  "items": [],
+  "items": [
+   {
+    "symbol": "SWIGGY",
+    "ticker": "SWIGGY.NS",
+    "name": "Swiggy Limited",
+    "group": "Nifty Midcap 150",
+    "rsi": 24.3,
+    "ret_1y_pct": -56.1,
+    "mcap_cr": 46920,
+    "close": 176.72,
+    "volume": 18431663,
+    "plan_qty": 57,
+    "plan_cost": 10073.04,
+    "status": "pending"
+   },
+   {
+    "symbol": "YESBANK",
+    "ticker": "YESBANK.NS",
+    "name": "Yes Bank Limited",
+    "group": "Nifty Midcap 150",
+    "rsi": 27.3,
+    "ret_1y_pct": -31.7,
+    "mcap_cr": 49377,
+    "close": 15.73,
+    "volume": 122345435,
+    "plan_qty": 636,
+    "plan_cost": 10004.28,
+    "status": "pending"
+   },
+   {
+    "symbol": "EQUITASBNK",
+    "ticker": "EQUITASBNK.NS",
+    "name": "Equitas Small Finance Bank Limited",
+    "group": "Index ke bahar",
+    "rsi": 30.2,
+    "ret_1y_pct": -8.3,
+    "mcap_cr": 6344,
+    "close": 55.45,
+    "volume": 55343061,
+    "plan_qty": 181,
+    "plan_cost": 10036.45,
+    "status": "pending"
+   },
+   {
+    "symbol": "MOTISONS",
+    "ticker": "MOTISONS.NS",
+    "name": "Motisons Jewellers Limited",
+    "group": "Index ke bahar",
+    "rsi": 34.0,
+    "ret_1y_pct": -12.8,
+    "mcap_cr": 1701,
+    "close": 14.48,
+    "volume": 25772633,
+    "plan_qty": 691,
+    "plan_cost": 10005.68,
+    "status": "pending"
+   },
+   {
+    "symbol": "UTKARSHBNK",
+    "ticker": "UTKARSHBNK.NS",
+    "name": "Utkarsh Small Finance Bank Limited",
+    "group": "Index ke bahar",
+    "rsi": 34.8,
+    "ret_1y_pct": -41.2,
+    "mcap_cr": 2086,
+    "close": 11.72,
+    "volume": 12051554,
+    "plan_qty": 854,
+    "plan_cost": 10008.88,
+    "status": "pending"
+   }
+  ],
   "funnel": {
    "universe": 2360,
-   "data": 2359,
-   "rsi": 315,
-   "volume": 7,
-   "circuit": 7,
-   "return": 0,
-   "mcap": 0,
-   "final": 0
+   "data": 2360,
+   "rsi": 265,
+   "volume": 5,
+   "circuit": 5,
+   "final": 5
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-05T07:42:31+05:30"
+  "last_scan_at": "2026-11-05T08:23:31+05:30"
  },
  "list_history": [
   {
@@ -162,7 +231,7 @@
   "buy_done": "2026-11-04",
   "eod_done": "2026-11-04",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-05T07:42:31+05:30"
+  "last_scan_at": "2026-11-05T08:23:31+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -183,6 +252,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-05T08:08:53+05:30",
+ "updated_at": "2026-11-05T08:23:31+05:30",
  "tg_offset": 912526858
 }
