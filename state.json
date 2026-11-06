@@ -6,9 +6,9 @@
  "positions": [],
  "trades": [],
  "today_list": {
-  "date": "2026-11-05",
-  "created_at": "2026-11-05T08:23:31+05:30",
-  "scanned": 2360,
+  "date": "2026-11-06",
+  "created_at": "2026-11-06T07:42:57+05:30",
+  "scanned": 2393,
   "mcap_unknown": [],
   "items": [
    {
@@ -16,13 +16,13 @@
     "ticker": "SWIGGY.NS",
     "name": "Swiggy Limited",
     "group": "Nifty Midcap 150",
-    "rsi": 24.3,
-    "ret_1y_pct": -56.1,
-    "mcap_cr": 46920,
-    "close": 176.72,
-    "volume": 18431663,
-    "plan_qty": 57,
-    "plan_cost": 10073.04,
+    "rsi": 26.4,
+    "ret_1y_pct": -56.7,
+    "mcap_cr": 49706,
+    "close": 178.89,
+    "volume": 15312024,
+    "plan_qty": 56,
+    "plan_cost": 10017.84,
     "status": "pending"
    },
    {
@@ -32,7 +32,7 @@
     "group": "Nifty Midcap 150",
     "rsi": 27.3,
     "ret_1y_pct": -31.7,
-    "mcap_cr": 49377,
+    "mcap_cr": 50978,
     "close": 15.73,
     "volume": 122345435,
     "plan_qty": 636,
@@ -46,25 +46,11 @@
     "group": "Index ke bahar",
     "rsi": 30.2,
     "ret_1y_pct": -8.3,
-    "mcap_cr": 6344,
+    "mcap_cr": 6269,
     "close": 55.45,
     "volume": 55343061,
     "plan_qty": 181,
     "plan_cost": 10036.45,
-    "status": "pending"
-   },
-   {
-    "symbol": "MOTISONS",
-    "ticker": "MOTISONS.NS",
-    "name": "Motisons Jewellers Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.0,
-    "ret_1y_pct": -12.8,
-    "mcap_cr": 1701,
-    "close": 14.48,
-    "volume": 25772633,
-    "plan_qty": 691,
-    "plan_cost": 10005.68,
     "status": "pending"
    },
    {
@@ -74,27 +60,130 @@
     "group": "Index ke bahar",
     "rsi": 34.8,
     "ret_1y_pct": -41.2,
-    "mcap_cr": 2086,
+    "mcap_cr": 2087,
     "close": 11.72,
     "volume": 12051554,
     "plan_qty": 854,
     "plan_cost": 10008.88,
     "status": "pending"
+   },
+   {
+    "symbol": "FILATFASH",
+    "ticker": "FILATFASH.NS",
+    "name": "Filatex Fashions Limited",
+    "group": "Index ke bahar",
+    "rsi": 34.9,
+    "ret_1y_pct": -64.6,
+    "mcap_cr": 142,
+    "close": 0.17,
+    "volume": 18697652,
+    "plan_qty": 58824,
+    "plan_cost": 10000.08,
+    "status": "pending"
    }
   ],
   "funnel": {
-   "universe": 2360,
-   "data": 2360,
-   "rsi": 110,
-   "volume": 2,
-   "circuit": 2,
-   "final": 2
+   "universe": 2393,
+   "data": 2391,
+   "rsi": 169,
+   "volume": 5,
+   "circuit": 5,
+   "final": 5
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-05T14:44:12+05:30"
+  "last_scan_at": "2026-11-06T07:42:57+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-05",
+   "created_at": "2026-11-05T08:23:31+05:30",
+   "scanned": 2360,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "SWIGGY",
+     "ticker": "SWIGGY.NS",
+     "name": "Swiggy Limited",
+     "group": "Nifty Midcap 150",
+     "rsi": 24.3,
+     "ret_1y_pct": -56.1,
+     "mcap_cr": 46920,
+     "close": 176.72,
+     "volume": 18431663,
+     "plan_qty": 57,
+     "plan_cost": 10073.04,
+     "status": "pending"
+    },
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Limited",
+     "group": "Nifty Midcap 150",
+     "rsi": 27.3,
+     "ret_1y_pct": -31.7,
+     "mcap_cr": 49377,
+     "close": 15.73,
+     "volume": 122345435,
+     "plan_qty": 636,
+     "plan_cost": 10004.28,
+     "status": "pending"
+    },
+    {
+     "symbol": "EQUITASBNK",
+     "ticker": "EQUITASBNK.NS",
+     "name": "Equitas Small Finance Bank Limited",
+     "group": "Index ke bahar",
+     "rsi": 30.2,
+     "ret_1y_pct": -8.3,
+     "mcap_cr": 6344,
+     "close": 55.45,
+     "volume": 55343061,
+     "plan_qty": 181,
+     "plan_cost": 10036.45,
+     "status": "pending"
+    },
+    {
+     "symbol": "MOTISONS",
+     "ticker": "MOTISONS.NS",
+     "name": "Motisons Jewellers Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.0,
+     "ret_1y_pct": -12.8,
+     "mcap_cr": 1701,
+     "close": 14.48,
+     "volume": 25772633,
+     "plan_qty": 691,
+     "plan_cost": 10005.68,
+     "status": "pending"
+    },
+    {
+     "symbol": "UTKARSHBNK",
+     "ticker": "UTKARSHBNK.NS",
+     "name": "Utkarsh Small Finance Bank Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.8,
+     "ret_1y_pct": -41.2,
+     "mcap_cr": 2086,
+     "close": 11.72,
+     "volume": 12051554,
+     "plan_qty": 854,
+     "plan_cost": 10008.88,
+     "status": "pending"
+    }
+   ],
+   "funnel": {
+    "universe": 2360,
+    "data": 2360,
+    "rsi": 110,
+    "volume": 2,
+    "circuit": 2,
+    "final": 2
+   },
+   "scan_no": 1,
+   "live_prices": false,
+   "last_scan_at": "2026-11-05T14:44:12+05:30"
+  },
   {
    "date": "2026-11-04",
    "created_at": "2026-11-04T07:42:24+05:30",
@@ -234,12 +323,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-05",
+  "scan_done": "2026-11-06",
   "sel_counter": 0,
   "buy_done": "2026-11-05",
   "eod_done": "2026-11-05",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-05T14:44:12+05:30"
+  "last_scan_at": "2026-11-06T07:42:57+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -260,6 +349,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-05T15:50:57+05:30",
+ "updated_at": "2026-11-06T07:42:57+05:30",
  "tg_offset": 912526860
 }
