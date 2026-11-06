@@ -99,14 +99,14 @@
   "funnel": {
    "universe": 2393,
    "data": 2393,
-   "rsi": 178,
-   "volume": 6,
-   "circuit": 5,
-   "final": 5
+   "rsi": 185,
+   "volume": 5,
+   "circuit": 4,
+   "final": 4
   },
   "scan_no": 3,
   "live_prices": true,
-  "last_scan_at": "2026-11-06T12:30:18+05:30"
+  "last_scan_at": "2026-11-06T12:58:07+05:30"
  },
  "list_history": [
   {
@@ -342,7 +342,7 @@
   "buy_done": "2026-11-06",
   "eod_done": "2026-11-05",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-06T12:30:18+05:30"
+  "last_scan_at": "2026-11-06T12:58:07+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -363,6 +363,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-06T12:43:29+05:30",
+ "updated_at": "2026-11-06T12:58:07+05:30",
  "tg_offset": 912526862
 }
