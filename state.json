@@ -7,21 +7,78 @@
  "trades": [],
  "today_list": {
   "date": "2026-11-09",
-  "created_at": "2026-11-09T07:43:20+05:30",
+  "created_at": "2026-11-09T09:43:42+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
-  "items": [],
+  "items": [
+   {
+    "symbol": "TDPOWERSYS",
+    "ticker": "TDPOWERSYS.NS",
+    "name": "TD Power Systems Limited",
+    "group": "Nifty Smallcap 100",
+    "rsi": 29.3,
+    "ret_1y_pct": 47.3,
+    "mcap_cr": 18483,
+    "close": 574.8,
+    "volume": 19405017,
+    "plan_qty": 18,
+    "plan_cost": 10346.4,
+    "status": "pending"
+   },
+   {
+    "symbol": "EQUITASBNK",
+    "ticker": "EQUITASBNK.NS",
+    "name": "Equitas Small Finance Bank Limited",
+    "group": "Index ke bahar",
+    "rsi": 31.3,
+    "ret_1y_pct": -8.8,
+    "mcap_cr": 6322,
+    "close": 55.29,
+    "volume": 14791710,
+    "plan_qty": 181,
+    "plan_cost": 10007.49,
+    "status": "pending"
+   },
+   {
+    "symbol": "APTUS",
+    "ticker": "APTUS.NS",
+    "name": "Aptus Value Housing Finance India Limited",
+    "group": "Index ke bahar",
+    "rsi": 33.0,
+    "ret_1y_pct": -38.0,
+    "mcap_cr": 9076,
+    "close": 181.39,
+    "volume": 24283856,
+    "plan_qty": 56,
+    "plan_cost": 10157.84,
+    "status": "pending"
+   },
+   {
+    "symbol": "ABFRL",
+    "ticker": "ABFRL.NS",
+    "name": "Aditya Birla Fashion and Retail Limited",
+    "group": "Index ke bahar",
+    "rsi": 34.2,
+    "ret_1y_pct": -51.1,
+    "mcap_cr": 4741,
+    "close": 38.93,
+    "volume": 11378979,
+    "plan_qty": 257,
+    "plan_cost": 10005.01,
+    "status": "pending"
+   }
+  ],
   "funnel": {
    "universe": 2393,
    "data": 2393,
-   "rsi": 90,
-   "volume": 0,
-   "circuit": 0,
-   "final": 0
+   "rsi": 118,
+   "volume": 4,
+   "circuit": 4,
+   "final": 4
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-09T07:43:20+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-09T09:43:42+05:30"
  },
  "list_history": [
   {
@@ -365,10 +422,10 @@
  "daily": {
   "scan_done": "2026-11-09",
   "sel_counter": 0,
-  "buy_done": "2026-11-06",
+  "buy_done": "2026-11-09",
   "eod_done": "2026-11-06",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-09T07:43:20+05:30"
+  "last_scan_at": "2026-11-09T09:43:42+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -389,6 +446,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-09T09:28:55+05:30",
+ "updated_at": "2026-11-09T09:43:42+05:30",
  "tg_offset": 912526863
 }
