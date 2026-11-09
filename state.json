@@ -6,109 +6,127 @@
  "positions": [],
  "trades": [],
  "today_list": {
-  "date": "2026-11-06",
-  "created_at": "2026-11-06T11:34:42+05:30",
+  "date": "2026-11-09",
+  "created_at": "2026-11-09T07:43:20+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
-  "items": [
-   {
-    "symbol": "PIIND",
-    "ticker": "PIIND.NS",
-    "name": "PI Industries Limited",
-    "group": "Nifty Midcap 150",
-    "rsi": 24.7,
-    "ret_1y_pct": -54.2,
-    "mcap_cr": 26071,
-    "close": 1722.4,
-    "volume": 10090435,
-    "plan_qty": 6,
-    "plan_cost": 10334.4,
-    "status": "pending"
-   },
-   {
-    "symbol": "APTUS",
-    "ticker": "APTUS.NS",
-    "name": "Aptus Value Housing Finance India Limited",
-    "group": "Index ke bahar",
-    "rsi": 26.8,
-    "ret_1y_pct": -41.1,
-    "mcap_cr": 8703,
-    "close": 173.91,
-    "volume": 20266769,
-    "plan_qty": 58,
-    "plan_cost": 10086.78,
-    "status": "pending"
-   },
-   {
-    "symbol": "EQUITASBNK",
-    "ticker": "EQUITASBNK.NS",
-    "name": "Equitas Small Finance Bank Limited",
-    "group": "Index ke bahar",
-    "rsi": 30.8,
-    "ret_1y_pct": -9.0,
-    "mcap_cr": 6316,
-    "close": 55.23,
-    "volume": 17075583,
-    "plan_qty": 182,
-    "plan_cost": 10051.86,
-    "status": "pending"
-   },
-   {
-    "symbol": "YESBANK",
-    "ticker": "YESBANK.NS",
-    "name": "Yes Bank Limited",
-    "group": "Nifty Midcap 150",
-    "rsi": 33.4,
-    "ret_1y_pct": -28.7,
-    "mcap_cr": 50633,
-    "close": 16.13,
-    "volume": 194627681,
-    "plan_qty": 620,
-    "plan_cost": 10000.6,
-    "status": "pending"
-   },
-   {
-    "symbol": "SWIGGY",
-    "ticker": "SWIGGY.NS",
-    "name": "Swiggy Limited",
-    "group": "Nifty Midcap 150",
-    "rsi": 33.8,
-    "ret_1y_pct": -54.2,
-    "mcap_cr": 48507,
-    "close": 185.08,
-    "volume": 31523575,
-    "plan_qty": 55,
-    "plan_cost": 10179.4,
-    "status": "pending"
-   },
-   {
-    "symbol": "FILATFASH",
-    "ticker": "FILATFASH.NS",
-    "name": "Filatex Fashions Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.9,
-    "ret_1y_pct": -60.9,
-    "mcap_cr": 150,
-    "close": 0.17,
-    "volume": 18697652,
-    "plan_qty": 58824,
-    "plan_cost": 10000.08,
-    "status": "pending"
-   }
-  ],
+  "items": [],
   "funnel": {
    "universe": 2393,
    "data": 2393,
-   "rsi": 161,
-   "volume": 4,
-   "circuit": 4,
-   "final": 4
+   "rsi": 90,
+   "volume": 0,
+   "circuit": 0,
+   "final": 0
   },
-  "scan_no": 3,
-  "live_prices": true,
-  "last_scan_at": "2026-11-06T14:50:10+05:30"
+  "scan_no": 1,
+  "live_prices": false,
+  "last_scan_at": "2026-11-09T07:43:20+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-06",
+   "created_at": "2026-11-06T11:34:42+05:30",
+   "scanned": 2393,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "PIIND",
+     "ticker": "PIIND.NS",
+     "name": "PI Industries Limited",
+     "group": "Nifty Midcap 150",
+     "rsi": 24.7,
+     "ret_1y_pct": -54.2,
+     "mcap_cr": 26071,
+     "close": 1722.4,
+     "volume": 10090435,
+     "plan_qty": 6,
+     "plan_cost": 10334.4,
+     "status": "pending"
+    },
+    {
+     "symbol": "APTUS",
+     "ticker": "APTUS.NS",
+     "name": "Aptus Value Housing Finance India Limited",
+     "group": "Index ke bahar",
+     "rsi": 26.8,
+     "ret_1y_pct": -41.1,
+     "mcap_cr": 8703,
+     "close": 173.91,
+     "volume": 20266769,
+     "plan_qty": 58,
+     "plan_cost": 10086.78,
+     "status": "pending"
+    },
+    {
+     "symbol": "EQUITASBNK",
+     "ticker": "EQUITASBNK.NS",
+     "name": "Equitas Small Finance Bank Limited",
+     "group": "Index ke bahar",
+     "rsi": 30.8,
+     "ret_1y_pct": -9.0,
+     "mcap_cr": 6316,
+     "close": 55.23,
+     "volume": 17075583,
+     "plan_qty": 182,
+     "plan_cost": 10051.86,
+     "status": "pending"
+    },
+    {
+     "symbol": "YESBANK",
+     "ticker": "YESBANK.NS",
+     "name": "Yes Bank Limited",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.4,
+     "ret_1y_pct": -28.7,
+     "mcap_cr": 50633,
+     "close": 16.13,
+     "volume": 194627681,
+     "plan_qty": 620,
+     "plan_cost": 10000.6,
+     "status": "pending"
+    },
+    {
+     "symbol": "SWIGGY",
+     "ticker": "SWIGGY.NS",
+     "name": "Swiggy Limited",
+     "group": "Nifty Midcap 150",
+     "rsi": 33.8,
+     "ret_1y_pct": -54.2,
+     "mcap_cr": 48507,
+     "close": 185.08,
+     "volume": 31523575,
+     "plan_qty": 55,
+     "plan_cost": 10179.4,
+     "status": "pending"
+    },
+    {
+     "symbol": "FILATFASH",
+     "ticker": "FILATFASH.NS",
+     "name": "Filatex Fashions Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.9,
+     "ret_1y_pct": -60.9,
+     "mcap_cr": 150,
+     "close": 0.17,
+     "volume": 18697652,
+     "plan_qty": 58824,
+     "plan_cost": 10000.08,
+     "status": "pending"
+    }
+   ],
+   "funnel": {
+    "universe": 2393,
+    "data": 2393,
+    "rsi": 161,
+    "volume": 4,
+    "circuit": 4,
+    "final": 4
+   },
+   "scan_no": 3,
+   "live_prices": true,
+   "last_scan_at": "2026-11-06T14:50:10+05:30"
+  },
   {
    "date": "2026-11-05",
    "created_at": "2026-11-05T08:23:31+05:30",
@@ -345,12 +363,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-06",
+  "scan_done": "2026-11-09",
   "sel_counter": 0,
   "buy_done": "2026-11-06",
   "eod_done": "2026-11-06",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-06T14:50:10+05:30"
+  "last_scan_at": "2026-11-09T07:43:20+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -371,6 +389,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-06T15:56:41+05:30",
+ "updated_at": "2026-11-09T07:43:20+05:30",
  "tg_offset": 912526863
 }
