@@ -1,9 +1,29 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 500000.0,
+ "cash": 489671.06,
  "next_amount": 10000.0,
- "positions": [],
+ "positions": [
+  {
+   "symbol": "TDPOWERSYS",
+   "ticker": "TDPOWERSYS.NS",
+   "name": "TD Power Systems Limited",
+   "group": "Nifty Smallcap 100",
+   "mcap_cr": 18483,
+   "rsi": 29.3,
+   "ret_1y_pct": 47.3,
+   "buy_date": "2026-11-09",
+   "buy_time": "2026-11-09T09:40:00+05:30",
+   "buy_price": 573.15,
+   "qty": 18,
+   "invested": 10316.7,
+   "buy_charges": 12.24,
+   "target": 630.47,
+   "stop": 487.18,
+   "last_price": 573.15,
+   "last_checked": "2026-11-09T09:40:00+05:30"
+  }
+ ],
  "trades": [],
  "today_list": {
   "date": "2026-11-09",
@@ -23,7 +43,10 @@
     "volume": 19405017,
     "plan_qty": 18,
     "plan_cost": 10346.4,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 1,
+    "selected_at": "2026-11-09T09:44:20+05:30",
+    "pre_open": false
    },
    {
     "symbol": "EQUITASBNK",
@@ -421,7 +444,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-09",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-09",
   "eod_done": "2026-11-06",
   "rescan_needed": null,
@@ -429,16 +452,16 @@
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": 0,
+  "unrealized_pl_approx": 0.0,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
   "win_rate_pct": null,
-  "open_positions": 0,
+  "open_positions": 1,
   "max_positions": 10,
-  "invested_open": 0,
-  "cash": 500000.0,
-  "portfolio_value": 500000.0,
+  "invested_open": 10316.7,
+  "cash": 489671.06,
+  "portfolio_value": 499987.76,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
@@ -446,6 +469,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-09T09:43:42+05:30",
- "tg_offset": 912526863
+ "updated_at": "2026-11-09T09:44:21+05:30",
+ "tg_offset": 912526864
 }
