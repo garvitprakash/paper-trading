@@ -43,7 +43,10 @@
     "volume": 12096741,
     "plan_qty": 62,
     "plan_cost": 10045.86,
-    "status": "pending"
+    "status": "selected",
+    "sel_order": 1,
+    "selected_at": "2026-11-10T08:18:39+05:30",
+    "pre_open": true
    },
    {
     "symbol": "EQUITASBNK",
@@ -496,7 +499,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-10",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-09",
   "eod_done": "2026-11-09",
   "rescan_needed": null,
@@ -521,6 +524,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-10T08:09:02+05:30",
- "tg_offset": 912526865
+ "updated_at": "2026-11-10T08:18:39+05:30",
+ "tg_offset": 912526866
 }
