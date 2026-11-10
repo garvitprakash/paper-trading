@@ -26,23 +26,23 @@
  ],
  "trades": [],
  "today_list": {
-  "date": "2026-11-09",
-  "created_at": "2026-11-09T12:58:57+05:30",
+  "date": "2026-11-10",
+  "created_at": "2026-11-10T07:42:30+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
   "items": [
    {
-    "symbol": "APTUS",
-    "ticker": "APTUS.NS",
-    "name": "Aptus Value Housing Finance India Limited",
+    "symbol": "RAIN",
+    "ticker": "RAIN.NS",
+    "name": "Rain Industries Limited",
     "group": "Index ke bahar",
-    "rsi": 29.8,
-    "ret_1y_pct": -39.2,
-    "mcap_cr": 8906,
-    "close": 177.74,
-    "volume": 24283856,
-    "plan_qty": 57,
-    "plan_cost": 10131.18,
+    "rsi": 29.3,
+    "ret_1y_pct": 22.8,
+    "mcap_cr": 5450,
+    "close": 162.03,
+    "volume": 12096741,
+    "plan_qty": 62,
+    "plan_cost": 10045.86,
     "status": "pending"
    },
    {
@@ -50,13 +50,13 @@
     "ticker": "EQUITASBNK.NS",
     "name": "Equitas Small Finance Bank Limited",
     "group": "Index ke bahar",
-    "rsi": 31.3,
-    "ret_1y_pct": -8.7,
-    "mcap_cr": 6327,
-    "close": 55.3,
-    "volume": 14791710,
-    "plan_qty": 181,
-    "plan_cost": 10009.3,
+    "rsi": 34.0,
+    "ret_1y_pct": -7.4,
+    "mcap_cr": 6419,
+    "close": 56.1,
+    "volume": 10122895,
+    "plan_qty": 179,
+    "plan_cost": 10041.9,
     "status": "pending"
    },
    {
@@ -65,10 +65,10 @@
     "name": "Filatex Fashions Limited",
     "group": "Index ke bahar",
     "rsi": 34.9,
-    "ret_1y_pct": -60.9,
-    "mcap_cr": 150,
+    "ret_1y_pct": -63.0,
+    "mcap_cr": 142,
     "close": 0.17,
-    "volume": 12006544,
+    "volume": 12333679,
     "plan_qty": 58824,
     "plan_cost": 10000.08,
     "status": "pending"
@@ -77,16 +77,77 @@
   "funnel": {
    "universe": 2393,
    "data": 2393,
-   "rsi": 119,
-   "volume": 3,
+   "rsi": 109,
+   "volume": 4,
    "circuit": 3,
    "final": 3
   },
-  "scan_no": 3,
-  "live_prices": true,
-  "last_scan_at": "2026-11-09T14:50:37+05:30"
+  "scan_no": 1,
+  "live_prices": false,
+  "last_scan_at": "2026-11-10T07:42:30+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-09",
+   "created_at": "2026-11-09T12:58:57+05:30",
+   "scanned": 2393,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "APTUS",
+     "ticker": "APTUS.NS",
+     "name": "Aptus Value Housing Finance India Limited",
+     "group": "Index ke bahar",
+     "rsi": 29.8,
+     "ret_1y_pct": -39.2,
+     "mcap_cr": 8906,
+     "close": 177.74,
+     "volume": 24283856,
+     "plan_qty": 57,
+     "plan_cost": 10131.18,
+     "status": "pending"
+    },
+    {
+     "symbol": "EQUITASBNK",
+     "ticker": "EQUITASBNK.NS",
+     "name": "Equitas Small Finance Bank Limited",
+     "group": "Index ke bahar",
+     "rsi": 31.3,
+     "ret_1y_pct": -8.7,
+     "mcap_cr": 6327,
+     "close": 55.3,
+     "volume": 14791710,
+     "plan_qty": 181,
+     "plan_cost": 10009.3,
+     "status": "pending"
+    },
+    {
+     "symbol": "FILATFASH",
+     "ticker": "FILATFASH.NS",
+     "name": "Filatex Fashions Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.9,
+     "ret_1y_pct": -60.9,
+     "mcap_cr": 150,
+     "close": 0.17,
+     "volume": 12006544,
+     "plan_qty": 58824,
+     "plan_cost": 10000.08,
+     "status": "pending"
+    }
+   ],
+   "funnel": {
+    "universe": 2393,
+    "data": 2393,
+    "rsi": 119,
+    "volume": 3,
+    "circuit": 3,
+    "final": 3
+   },
+   "scan_no": 3,
+   "live_prices": true,
+   "last_scan_at": "2026-11-09T14:50:37+05:30"
+  },
   {
    "date": "2026-11-06",
    "created_at": "2026-11-06T11:34:42+05:30",
@@ -434,12 +495,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-09",
-  "sel_counter": 1,
+  "scan_done": "2026-11-10",
+  "sel_counter": 0,
   "buy_done": "2026-11-09",
   "eod_done": "2026-11-09",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-09T14:50:37+05:30"
+  "last_scan_at": "2026-11-10T07:42:30+05:30"
  },
  "summary": {
   "total_actual_pl": 0,
@@ -460,6 +521,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-09T15:56:51+05:30",
+ "updated_at": "2026-11-10T07:42:30+05:30",
  "tg_offset": 912526865
 }
