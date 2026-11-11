@@ -26,8 +26,8 @@
  ],
  "trades": [],
  "today_list": {
-  "date": "2026-11-10",
-  "created_at": "2026-11-10T07:42:30+05:30",
+  "date": "2026-11-11",
+  "created_at": "2026-11-11T07:42:27+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
   "items": [
@@ -40,13 +40,10 @@
     "ret_1y_pct": 22.8,
     "mcap_cr": 5450,
     "close": 162.03,
-    "volume": 12096741,
+    "volume": 12099720,
     "plan_qty": 62,
     "plan_cost": 10045.86,
-    "status": "selected",
-    "sel_order": 1,
-    "selected_at": "2026-11-10T08:18:39+05:30",
-    "pre_open": true
+    "status": "pending"
    },
    {
     "symbol": "EQUITASBNK",
@@ -57,7 +54,7 @@
     "ret_1y_pct": -7.4,
     "mcap_cr": 6419,
     "close": 56.1,
-    "volume": 10122895,
+    "volume": 10131221,
     "plan_qty": 179,
     "plan_cost": 10041.9,
     "status": "pending"
@@ -71,7 +68,7 @@
     "ret_1y_pct": -63.0,
     "mcap_cr": 142,
     "close": 0.17,
-    "volume": 12333679,
+    "volume": 12334227,
     "plan_qty": 58824,
     "plan_cost": 10000.08,
     "status": "pending"
@@ -87,9 +84,73 @@
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-10T10:11:28+05:30"
+  "last_scan_at": "2026-11-11T07:42:27+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-10",
+   "created_at": "2026-11-10T07:42:30+05:30",
+   "scanned": 2393,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "RAIN",
+     "ticker": "RAIN.NS",
+     "name": "Rain Industries Limited",
+     "group": "Index ke bahar",
+     "rsi": 29.3,
+     "ret_1y_pct": 22.8,
+     "mcap_cr": 5450,
+     "close": 162.03,
+     "volume": 12096741,
+     "plan_qty": 62,
+     "plan_cost": 10045.86,
+     "status": "selected",
+     "sel_order": 1,
+     "selected_at": "2026-11-10T08:18:39+05:30",
+     "pre_open": true
+    },
+    {
+     "symbol": "EQUITASBNK",
+     "ticker": "EQUITASBNK.NS",
+     "name": "Equitas Small Finance Bank Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.0,
+     "ret_1y_pct": -7.4,
+     "mcap_cr": 6419,
+     "close": 56.1,
+     "volume": 10122895,
+     "plan_qty": 179,
+     "plan_cost": 10041.9,
+     "status": "pending"
+    },
+    {
+     "symbol": "FILATFASH",
+     "ticker": "FILATFASH.NS",
+     "name": "Filatex Fashions Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.9,
+     "ret_1y_pct": -63.0,
+     "mcap_cr": 142,
+     "close": 0.17,
+     "volume": 12333679,
+     "plan_qty": 58824,
+     "plan_cost": 10000.08,
+     "status": "pending"
+    }
+   ],
+   "funnel": {
+    "universe": 2393,
+    "data": 2393,
+    "rsi": 109,
+    "volume": 4,
+    "circuit": 3,
+    "final": 3
+   },
+   "scan_no": 1,
+   "live_prices": false,
+   "last_scan_at": "2026-11-10T10:11:28+05:30"
+  },
   {
    "date": "2026-11-09",
    "created_at": "2026-11-09T12:58:57+05:30",
@@ -506,12 +567,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-10",
-  "sel_counter": 1,
+  "scan_done": "2026-11-11",
+  "sel_counter": 0,
   "buy_done": "2026-11-10",
   "eod_done": "2026-11-10",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-10T10:11:28+05:30",
+  "last_scan_at": "2026-11-11T07:42:27+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
@@ -533,6 +594,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-10T15:56:19+05:30",
+ "updated_at": "2026-11-11T07:42:27+05:30",
  "tg_offset": 912526866
 }
