@@ -20,8 +20,8 @@
    "buy_charges": 12.24,
    "target": 630.47,
    "stop": 487.18,
-   "last_price": 597.8,
-   "last_checked": "2026-11-11T09:40:00+05:30"
+   "last_price": 593.8,
+   "last_checked": "2026-11-11T09:55:00+05:30"
   },
   {
    "symbol": "RAIN",
@@ -39,8 +39,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 167.5,
-   "last_checked": "2026-11-11T09:40:00+05:30"
+   "last_price": 167.25,
+   "last_checked": "2026-11-11T09:55:00+05:30"
   }
  ],
  "trades": [],
@@ -568,7 +568,7 @@
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": 600.47,
+  "unrealized_pl_approx": 513.22,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
@@ -577,7 +577,7 @@
   "max_positions": 10,
   "invested_open": 20377.43,
   "cash": 479598.4,
-  "portfolio_value": 500576.3,
+  "portfolio_value": 500489.05,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
@@ -585,6 +585,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-11T09:42:44+05:30",
+ "updated_at": "2026-11-11T09:56:02+05:30",
  "tg_offset": 912526867
 }
