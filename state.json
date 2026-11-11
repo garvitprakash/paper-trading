@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 489671.06,
+ "cash": 479598.4,
  "next_amount": 10000.0,
  "positions": [
   {
@@ -20,74 +20,62 @@
    "buy_charges": 12.24,
    "target": 630.47,
    "stop": 487.18,
-   "last_price": 570.5,
-   "last_checked": "2026-11-09T15:25:00+05:30"
+   "last_price": 597.8,
+   "last_checked": "2026-11-11T09:40:00+05:30"
+  },
+  {
+   "symbol": "RAIN",
+   "ticker": "RAIN.NS",
+   "name": "Rain Industries Limited",
+   "group": "Index ke bahar",
+   "mcap_cr": 5450,
+   "rsi": 29.3,
+   "ret_1y_pct": 22.8,
+   "buy_date": "2026-11-11",
+   "buy_time": "2026-11-11T09:15:00+05:30",
+   "buy_price": 164.93,
+   "qty": 61,
+   "invested": 10060.73,
+   "buy_charges": 11.93,
+   "target": 181.42,
+   "stop": 140.19,
+   "last_price": 167.5,
+   "last_checked": "2026-11-11T09:40:00+05:30"
   }
  ],
  "trades": [],
  "today_list": {
   "date": "2026-11-11",
-  "created_at": "2026-11-11T07:42:27+05:30",
+  "created_at": "2026-11-11T09:42:44+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
   "items": [
    {
-    "symbol": "RAIN",
-    "ticker": "RAIN.NS",
-    "name": "Rain Industries Limited",
+    "symbol": "EMPOWER",
+    "ticker": "EMPOWER.NS",
+    "name": "Empower India Limited",
     "group": "Index ke bahar",
-    "rsi": 29.3,
-    "ret_1y_pct": 22.8,
-    "mcap_cr": 5450,
-    "close": 162.03,
-    "volume": 12099720,
-    "plan_qty": 62,
-    "plan_cost": 10045.86,
-    "status": "selected",
-    "sel_order": 1,
-    "selected_at": "2026-11-11T08:03:09+05:30",
-    "pre_open": true
-   },
-   {
-    "symbol": "EQUITASBNK",
-    "ticker": "EQUITASBNK.NS",
-    "name": "Equitas Small Finance Bank Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.0,
-    "ret_1y_pct": -7.4,
-    "mcap_cr": 6419,
-    "close": 56.1,
-    "volume": 10131221,
-    "plan_qty": 179,
-    "plan_cost": 10041.9,
-    "status": "pending"
-   },
-   {
-    "symbol": "FILATFASH",
-    "ticker": "FILATFASH.NS",
-    "name": "Filatex Fashions Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.9,
-    "ret_1y_pct": -63.0,
-    "mcap_cr": 142,
-    "close": 0.17,
-    "volume": 12334227,
-    "plan_qty": 58824,
-    "plan_cost": 10000.08,
+    "rsi": 28.9,
+    "ret_1y_pct": null,
+    "mcap_cr": 128,
+    "close": 1.1,
+    "volume": 44178071,
+    "plan_qty": 9091,
+    "plan_cost": 10000.1,
     "status": "pending"
    }
   ],
   "funnel": {
    "universe": 2393,
    "data": 2393,
-   "rsi": 109,
-   "volume": 4,
-   "circuit": 3,
-   "final": 3
+   "rsi": 60,
+   "volume": 1,
+   "circuit": 1,
+   "final": 1
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-11T07:42:27+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-11T09:42:44+05:30"
  },
  "list_history": [
   {
@@ -572,24 +560,24 @@
  "daily": {
   "scan_done": "2026-11-11",
   "sel_counter": 1,
-  "buy_done": "2026-11-10",
+  "buy_done": "2026-11-11",
   "eod_done": "2026-11-10",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-11T07:42:27+05:30",
+  "last_scan_at": "2026-11-11T09:42:44+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": -47.7,
+  "unrealized_pl_approx": 600.47,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
   "win_rate_pct": null,
-  "open_positions": 1,
+  "open_positions": 2,
   "max_positions": 10,
-  "invested_open": 10316.7,
-  "cash": 489671.06,
-  "portfolio_value": 499940.06,
+  "invested_open": 20377.43,
+  "cash": 479598.4,
+  "portfolio_value": 500576.3,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
@@ -597,6 +585,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-11T09:28:13+05:30",
+ "updated_at": "2026-11-11T09:42:44+05:30",
  "tg_offset": 912526867
 }
