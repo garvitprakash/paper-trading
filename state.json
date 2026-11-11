@@ -20,8 +20,8 @@
    "buy_charges": 12.24,
    "target": 630.47,
    "stop": 487.18,
-   "last_price": 588.95,
-   "last_checked": "2026-11-11T10:20:00+05:30"
+   "last_price": 590.5,
+   "last_checked": "2026-11-11T10:35:00+05:30"
   },
   {
    "symbol": "RAIN",
@@ -39,8 +39,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 167.6,
-   "last_checked": "2026-11-11T10:20:00+05:30"
+   "last_price": 167.03,
+   "last_checked": "2026-11-11T10:35:00+05:30"
   }
  ],
  "trades": [],
@@ -67,7 +67,7 @@
   ],
   "funnel": {
    "universe": 2393,
-   "data": 2393,
+   "data": 2392,
    "rsi": 52,
    "volume": 1,
    "circuit": 1,
@@ -75,7 +75,7 @@
   },
   "scan_no": 2,
   "live_prices": true,
-  "last_scan_at": "2026-11-11T10:10:36+05:30"
+  "last_scan_at": "2026-11-11T10:38:21+05:30"
  },
  "list_history": [
   {
@@ -563,12 +563,12 @@
   "buy_done": "2026-11-11",
   "eod_done": "2026-11-10",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-11T10:10:36+05:30",
+  "last_scan_at": "2026-11-11T10:38:21+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 0,
-  "unrealized_pl_approx": 447.27,
+  "unrealized_pl_approx": 440.4,
   "closed_trades": 0,
   "wins": 0,
   "losses": 0,
@@ -577,7 +577,7 @@
   "max_positions": 10,
   "invested_open": 20377.43,
   "cash": 479598.4,
-  "portfolio_value": 500423.1,
+  "portfolio_value": 500416.23,
   "start_capital": 500000,
   "next_amount": 10000.0,
   "total_tax_paid": 0,
@@ -585,6 +585,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-11T10:23:50+05:30",
+ "updated_at": "2026-11-11T10:38:21+05:30",
  "tg_offset": 912526867
 }
