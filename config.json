@@ -33,5 +33,7 @@
   },
   "max_overshoot_pct": 50,
   "rescan_every_min": 30,
-  "rescan_until": "15:00"
+  "rescan_until": "15:00",
+  "min_return_1y_pct": 0,
+  "min_market_cap_cr": 5000
 }

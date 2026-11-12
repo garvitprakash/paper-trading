@@ -500,9 +500,11 @@ def funnel_text(cfg, F):
     if not F:
         return ""
     return ("🔎 Hisaab: %s stock scan (data mila: %s)\n"
-            "→ RSI %g ya kam: %s\n→ volume %s shares se zyada: %s\n→ circuit me nahi: %s" %
+            "→ RSI %g ya kam: %s\n→ volume %s shares se zyada: %s\n→ circuit me nahi: %s\n"
+            "→ 1 saal return %g%% se zyada: %s\n→ market cap %s cr ya zyada: %s" %
             (num(F["universe"]), num(F["data"]), cfg["max_rsi"], num(F["rsi"]),
-             num(cfg["min_volume_shares"]), num(F["volume"]), num(F["circuit"])))
+             num(cfg["min_volume_shares"]), num(F["volume"]), num(F["circuit"]),
+             cfg["min_return_1y_pct"], num(F.get("return", 0)), num(cfg["min_market_cap_cr"]), num(F.get("mcap", 0))))
 
 
 def mcap_txt(x):
@@ -526,7 +528,7 @@ def format_list_messages(cfg, st, items, date_str, mcap_unknown=None, rescan=Fal
                      (i, it["symbol"], it["rsi"], inr(it["close"]), r1s, short_group(it["group"]),
                       mcap_txt(it.get("mcap_cr")), plan, STATUS_TAG.get(it["status"], "")))
     if mcap_unknown:
-        lines.append("\nNote: in stock ka market cap nahi mil paaya (list me '-' likha hai): " + ", ".join(mcap_unknown))
+        lines.append("\nNote: in stock ka market cap nahi mil paaya (isliye list me nahi hain): " + ", ".join(mcap_unknown))
     if funnel:
         lines.append("\n" + funnel_text(cfg, funnel))
     return "\n".join(lines)
@@ -576,7 +578,7 @@ def run_scan(cfg, st, now, rescan=False, periodic=False):
         warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: Yahoo Finance se price data nahi mil raha (%d/%d stock). "
                            "Program 15 minute baad phir koshish karega." % (len(daily), len(uni)))
         return
-    F = {"universe": len(uni), "data": len(daily), "rsi": 0, "volume": 0, "circuit": 0}
+    F = {"universe": len(uni), "data": len(daily), "rsi": 0, "volume": 0, "circuit": 0, "return": 0, "mcap": 0}
     stage1 = []
     for u in uni:
         if u["symbol"] in held:
@@ -617,32 +619,42 @@ def run_scan(cfg, st, now, rescan=False, periodic=False):
 
     # charan 2: sirf bache hue stock ka 2 saal ka data (1 saal ka return ke liye)
     survivors = []
-    # 1 saal ka return aur market cap ab sirf list me dikhane ke liye hain (niyam nahi), bache hue stock ke liye
+    # charan 2: bache hue stock ka 1 saal ka return (niyam: return > min_return_1y_pct)
     stage1.sort(key=lambda x: x[1])
-    stage1 = stage1[:cfg["list_max"]]
     d2 = {}
     if stage1:
         try:
             d2 = get_daily([x[0]["ticker"] for x in stage1], "2y")
         except Exception as e:  # noqa
             print("1 saal ke return ka data nahi mila:", e)
+        if not d2:
+            warn_once(st, now, "⚠️ Aaj ki list nahi ban saki: 1 saal ke return ka data nahi mil raha. "
+                               "Program 15 minute baad phir koshish karega.")
+            return
+    survivors = []
+    for u, r, close, vol in stage1:
+        df2 = d2.get(u["ticker"])
+        if df2 is None:
+            continue
+        ret1y = one_year_return(_trim_today(df2, today, keep_today))
+        if ret1y is None or ret1y <= cfg["min_return_1y_pct"]:
+            continue
+        F["return"] += 1
+        survivors.append((u, r, close, vol, round(ret1y, 1)))
+    # charan 3: market cap (niyam: market cap >= min_market_cap_cr)
     items = []
     mcap_unknown = []
-    for u, r, close, vol in stage1:
-        ret1y = None
-        df2 = d2.get(u["ticker"]) if d2 else None
-        if df2 is not None:
-            ret1y = one_year_return(_trim_today(df2, today, keep_today))
-        try:
-            mc = get_mcap_cr(u["ticker"])
-        except Exception:  # noqa
-            mc = None
+    for u, r, close, vol, ret1y in survivors:
+        mc = get_mcap_cr(u["ticker"])
         if mc is None:
             mcap_unknown.append(u["symbol"])
+            continue
+        if mc < cfg["min_market_cap_cr"]:
+            continue
+        F["mcap"] += 1
         q = plan_qty(cfg, st["next_amount"], close)
         items.append({"symbol": u["symbol"], "ticker": u["ticker"], "name": u["name"], "group": u["group"],
-                      "rsi": r, "ret_1y_pct": round(ret1y, 1) if ret1y is not None else None,
-                      "mcap_cr": round(mc) if mc else None, "close": round(close, 2),
+                      "rsi": r, "ret_1y_pct": ret1y, "mcap_cr": round(mc), "close": round(close, 2),
                       "volume": int(vol), "plan_qty": q, "plan_cost": round(q * close, 2) if q else None,
                       "status": "pending" if q else "too_expensive"})
     items.sort(key=lambda x: x["rsi"])
