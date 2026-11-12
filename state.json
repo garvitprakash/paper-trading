@@ -51,64 +51,23 @@
  ],
  "today_list": {
   "date": "2026-11-12",
-  "created_at": "2026-11-12T11:05:55+05:30",
+  "created_at": "2026-11-12T13:45:54+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
-  "items": [
-   {
-    "symbol": "EMPOWER",
-    "ticker": "EMPOWER.NS",
-    "name": "Empower India Limited",
-    "group": "Index ke bahar",
-    "rsi": 29.8,
-    "ret_1y_pct": null,
-    "mcap_cr": 132,
-    "close": 1.13,
-    "volume": 44178071,
-    "plan_qty": 9293,
-    "plan_cost": 10501.09,
-    "status": "pending"
-   },
-   {
-    "symbol": "MOTISONS",
-    "ticker": "MOTISONS.NS",
-    "name": "Motisons Jewellers Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.4,
-    "ret_1y_pct": -14.4,
-    "mcap_cr": 1602,
-    "close": 14.1,
-    "volume": 45785525,
-    "plan_qty": 745,
-    "plan_cost": 10504.5,
-    "status": "pending"
-   },
-   {
-    "symbol": "FILATFASH",
-    "ticker": "FILATFASH.NS",
-    "name": "Filatex Fashions Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.9,
-    "ret_1y_pct": -60.0,
-    "mcap_cr": 150,
-    "close": 0.17,
-    "volume": 12334227,
-    "plan_qty": 61765,
-    "plan_cost": 10500.05,
-    "status": "pending"
-   }
-  ],
+  "items": [],
   "funnel": {
    "universe": 2393,
    "data": 2393,
-   "rsi": 67,
-   "volume": 2,
-   "circuit": 2,
-   "final": 2
+   "rsi": 65,
+   "volume": 3,
+   "circuit": 3,
+   "return": 0,
+   "mcap": 0,
+   "final": 0
   },
-  "scan_no": 3,
+  "scan_no": 1,
   "live_prices": true,
-  "last_scan_at": "2026-11-12T13:23:45+05:30"
+  "last_scan_at": "2026-11-12T13:45:54+05:30"
  },
  "list_history": [
   {
@@ -679,7 +638,7 @@
   "buy_done": "2026-11-12",
   "eod_done": "2026-11-11",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-12T13:23:45+05:30",
+  "last_scan_at": "2026-11-12T13:45:54+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
@@ -701,6 +660,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-12T13:37:19+05:30",
+ "updated_at": "2026-11-12T13:45:54+05:30",
  "tg_offset": 912526872
 }
