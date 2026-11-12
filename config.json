@@ -7,7 +7,7 @@
   "stop_loss_pct": 15,
   "max_rsi": 35,
   "rsi_period": 14,
-  "min_volume_shares": 10000000,
+  "min_volume_shares": 5000000,
   "circuit_move_pct": 4.9,
   "list_max": 40,
   "universe_groups": [
