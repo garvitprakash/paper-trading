@@ -51,23 +51,23 @@
  ],
  "today_list": {
   "date": "2026-11-12",
-  "created_at": "2026-11-12T13:45:54+05:30",
+  "created_at": "2026-11-12T14:37:51+05:30",
   "scanned": 2393,
   "mcap_unknown": [],
   "items": [],
   "funnel": {
    "universe": 2393,
-   "data": 2393,
-   "rsi": 65,
-   "volume": 3,
-   "circuit": 3,
+   "data": 2392,
+   "rsi": 62,
+   "volume": 4,
+   "circuit": 4,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
   "scan_no": 1,
   "live_prices": true,
-  "last_scan_at": "2026-11-12T13:45:54+05:30"
+  "last_scan_at": "2026-11-12T14:37:51+05:30"
  },
  "list_history": [
   {
@@ -638,7 +638,7 @@
   "buy_done": "2026-11-12",
   "eod_done": "2026-11-11",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-12T13:45:54+05:30",
+  "last_scan_at": "2026-11-12T14:37:51+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
@@ -660,6 +660,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-12T13:45:54+05:30",
+ "updated_at": "2026-11-12T14:37:51+05:30",
  "tg_offset": 912526872
 }
