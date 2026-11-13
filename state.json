@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 166.64,
-   "last_checked": "2026-11-13T09:55:00+05:30"
+   "last_price": 166.76,
+   "last_checked": "2026-11-13T10:10:00+05:30"
   }
  ],
  "trades": [
@@ -58,16 +58,16 @@
   "funnel": {
    "universe": 2394,
    "data": 2394,
-   "rsi": 63,
-   "volume": 3,
-   "circuit": 3,
+   "rsi": 61,
+   "volume": 4,
+   "circuit": 4,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-13T09:43:41+05:30"
+  "last_scan_at": "2026-11-13T10:11:43+05:30"
  },
  "list_history": [
   {
@@ -666,12 +666,12 @@
   "buy_done": "2026-11-13",
   "eod_done": "2026-11-12",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-13T09:43:41+05:30",
+  "last_scan_at": "2026-11-13T10:11:43+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": 104.31,
+  "unrealized_pl_approx": 111.63,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -680,7 +680,7 @@
   "max_positions": 10,
   "invested_open": 10060.73,
   "cash": 490712.87,
-  "portfolio_value": 500877.91,
+  "portfolio_value": 500885.23,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -688,6 +688,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-13T09:56:55+05:30",
+ "updated_at": "2026-11-13T10:11:44+05:30",
  "tg_offset": 912526872
 }
