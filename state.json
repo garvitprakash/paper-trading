@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 490712.87,
+ "cash": 480163.97,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -22,6 +22,25 @@
    "stop": 140.19,
    "last_price": 160.8,
    "last_checked": "2026-11-16T10:05:00+05:30"
+  },
+  {
+   "symbol": "HFCL",
+   "ticker": "HFCL.NS",
+   "name": "HFCL Ltd.",
+   "group": "Nifty Smallcap 100",
+   "mcap_cr": 30374,
+   "rsi": 34.3,
+   "ret_1y_pct": 161.7,
+   "buy_date": "2026-11-16",
+   "buy_time": "2026-11-16T10:10:00+05:30",
+   "buy_price": 198.8,
+   "qty": 53,
+   "invested": 10536.4,
+   "buy_charges": 12.5,
+   "target": 218.68,
+   "stop": 168.98,
+   "last_price": 198.8,
+   "last_checked": "2026-11-16T10:10:00+05:30"
   }
  ],
  "trades": [
@@ -67,7 +86,10 @@
     "volume": 7560120,
     "plan_qty": 53,
     "plan_cost": 10507.25,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 1,
+    "selected_at": "2026-11-16T10:11:43+05:30",
+    "pre_open": false
    }
   ],
   "funnel": {
@@ -705,7 +727,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-16",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-16",
   "eod_done": "2026-11-13",
   "rescan_needed": null,
@@ -719,11 +741,11 @@
   "wins": 1,
   "losses": 0,
   "win_rate_pct": 100.0,
-  "open_positions": 1,
+  "open_positions": 2,
   "max_positions": 10,
-  "invested_open": 10060.73,
-  "cash": 490712.87,
-  "portfolio_value": 500521.67,
+  "invested_open": 20597.13,
+  "cash": 480163.97,
+  "portfolio_value": 500509.17,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -731,6 +753,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-16T10:10:08+05:30",
- "tg_offset": 912526872
+ "updated_at": "2026-11-16T10:11:43+05:30",
+ "tg_offset": 912526873
 }
