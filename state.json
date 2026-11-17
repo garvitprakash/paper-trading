@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 167.13,
-   "last_checked": "2026-11-17T12:55:00+05:30"
+   "last_price": 166.55,
+   "last_checked": "2026-11-17T13:10:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -40,7 +40,7 @@
    "target": 218.68,
    "stop": 168.98,
    "last_price": 185.44,
-   "last_checked": "2026-11-17T12:55:00+05:30"
+   "last_checked": "2026-11-17T13:10:00+05:30"
   }
  ],
  "trades": [
@@ -764,7 +764,7 @@
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -573.88,
+  "unrealized_pl_approx": -609.26,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -773,7 +773,7 @@
   "max_positions": 10,
   "invested_open": 20597.13,
   "cash": 480163.97,
-  "portfolio_value": 500187.22,
+  "portfolio_value": 500151.84,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -781,6 +781,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-17T12:58:49+05:30",
+ "updated_at": "2026-11-17T13:12:02+05:30",
  "tg_offset": 912526873
 }
