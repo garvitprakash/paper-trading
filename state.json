@@ -751,13 +751,21 @@
    "cash": 480163.97,
    "portfolio_value": 500391.57,
    "open_positions": 2
+  },
+  {
+   "date": "2026-11-17",
+   "total_actual_pl": 785.53,
+   "unrealized_pl_approx": -588.03,
+   "cash": 480163.97,
+   "portfolio_value": 500173.07,
+   "open_positions": 2
   }
  ],
  "daily": {
   "scan_done": "2026-11-17",
   "sel_counter": 0,
   "buy_done": "2026-11-17",
-  "eod_done": "2026-11-16",
+  "eod_done": "2026-11-17",
   "rescan_needed": null,
   "last_scan_at": "2026-11-17T14:50:12+05:30",
   "holiday": "2026-11-10"
@@ -781,6 +789,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-17T15:42:59+05:30",
+ "updated_at": "2026-11-17T15:56:04+05:30",
  "tg_offset": 912526873
 }
