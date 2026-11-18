@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 480163.97,
+ "cash": 469619.2,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -41,6 +41,25 @@
    "stop": 168.98,
    "last_price": 194.1,
    "last_checked": "2026-11-18T11:55:00+05:30"
+  },
+  {
+   "symbol": "FCL",
+   "ticker": "FCL.NS",
+   "name": "Fineotex Chemical Limited",
+   "group": "Index ke bahar",
+   "mcap_cr": 5188,
+   "rsi": 35.0,
+   "ret_1y_pct": 80.1,
+   "buy_date": "2026-11-18",
+   "buy_time": "2026-11-18T12:05:00+05:30",
+   "buy_price": 44.44,
+   "qty": 237,
+   "invested": 10532.28,
+   "buy_charges": 12.49,
+   "target": 48.88,
+   "stop": 37.77,
+   "last_price": 44.44,
+   "last_checked": "2026-11-18T12:05:00+05:30"
   }
  ],
  "trades": [
@@ -86,7 +105,10 @@
     "volume": 16034653,
     "plan_qty": 236,
     "plan_cost": 10513.8,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 1,
+    "selected_at": "2026-11-18T12:05:49+05:30",
+    "pre_open": false
    }
   ],
   "funnel": {
@@ -798,7 +820,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-18",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-18",
   "eod_done": "2026-11-17",
   "rescan_needed": null,
@@ -812,11 +834,11 @@
   "wins": 1,
   "losses": 0,
   "win_rate_pct": 100.0,
-  "open_positions": 2,
+  "open_positions": 3,
   "max_positions": 10,
-  "invested_open": 20597.13,
-  "cash": 480163.97,
-  "portfolio_value": 500372.92,
+  "invested_open": 31129.41,
+  "cash": 469619.2,
+  "portfolio_value": 500360.43,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -824,6 +846,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-18T12:00:01+05:30",
- "tg_offset": 912526873
+ "updated_at": "2026-11-18T12:05:50+05:30",
+ "tg_offset": 912526874
 }
