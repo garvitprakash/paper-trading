@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 162.66,
-   "last_checked": "2026-11-18T11:40:00+05:30"
+   "last_price": 162.65,
+   "last_checked": "2026-11-18T11:55:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -40,7 +40,7 @@
    "target": 218.68,
    "stop": 168.98,
    "last_price": 194.1,
-   "last_checked": "2026-11-18T11:45:00+05:30"
+   "last_checked": "2026-11-18T11:55:00+05:30"
   }
  ],
  "trades": [
@@ -70,23 +70,38 @@
  ],
  "today_list": {
   "date": "2026-11-18",
-  "created_at": "2026-11-18T07:42:24+05:30",
+  "created_at": "2026-11-18T12:00:01+05:30",
   "scanned": 2394,
   "mcap_unknown": [],
-  "items": [],
+  "items": [
+   {
+    "symbol": "FCL",
+    "ticker": "FCL.NS",
+    "name": "Fineotex Chemical Limited",
+    "group": "Index ke bahar",
+    "rsi": 35.0,
+    "ret_1y_pct": 80.1,
+    "mcap_cr": 5188,
+    "close": 44.55,
+    "volume": 16034653,
+    "plan_qty": 236,
+    "plan_cost": 10513.8,
+    "status": "pending"
+   }
+  ],
   "funnel": {
    "universe": 2394,
    "data": 2394,
-   "rsi": 159,
-   "volume": 6,
-   "circuit": 6,
-   "return": 0,
-   "mcap": 0,
-   "final": 0
+   "rsi": 168,
+   "volume": 8,
+   "circuit": 8,
+   "return": 1,
+   "mcap": 1,
+   "final": 1
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-18T11:32:29+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-18T12:00:01+05:30"
  },
  "list_history": [
   {
@@ -787,12 +802,12 @@
   "buy_done": "2026-11-18",
   "eod_done": "2026-11-17",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-18T11:32:29+05:30",
+  "last_scan_at": "2026-11-18T12:00:01+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -387.57,
+  "unrealized_pl_approx": -388.18,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -801,7 +816,7 @@
   "max_positions": 10,
   "invested_open": 20597.13,
   "cash": 480163.97,
-  "portfolio_value": 500373.53,
+  "portfolio_value": 500372.92,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -809,6 +824,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-18T11:45:41+05:30",
+ "updated_at": "2026-11-18T12:00:01+05:30",
  "tg_offset": 912526873
 }
