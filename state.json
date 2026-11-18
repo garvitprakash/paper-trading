@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 162.68,
-   "last_checked": "2026-11-18T12:40:00+05:30"
+   "last_price": 162.24,
+   "last_checked": "2026-11-18T12:50:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.5,
    "target": 218.68,
    "stop": 168.98,
-   "last_price": 194.2,
-   "last_checked": "2026-11-18T12:40:00+05:30"
+   "last_price": 192.56,
+   "last_checked": "2026-11-18T12:50:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +58,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 44.49,
-   "last_checked": "2026-11-18T12:40:00+05:30"
+   "last_price": 44.5,
+   "last_checked": "2026-11-18T12:50:00+05:30"
   }
  ],
  "trades": [
@@ -123,7 +123,7 @@
   },
   "scan_no": 2,
   "live_prices": true,
-  "last_scan_at": "2026-11-18T12:27:52+05:30"
+  "last_scan_at": "2026-11-18T12:55:24+05:30"
  },
  "list_history": [
   {
@@ -824,12 +824,12 @@
   "buy_done": "2026-11-18",
   "eod_done": "2026-11-17",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-18T12:27:52+05:30",
+  "last_scan_at": "2026-11-18T12:55:24+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -369.2,
+  "unrealized_pl_approx": -480.59,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -838,7 +838,7 @@
   "max_positions": 10,
   "invested_open": 31129.41,
   "cash": 469619.2,
-  "portfolio_value": 500379.41,
+  "portfolio_value": 500268.02,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -846,6 +846,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-18T12:41:04+05:30",
+ "updated_at": "2026-11-18T12:55:24+05:30",
  "tg_offset": 912526874
 }
