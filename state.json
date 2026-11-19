@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 162.67,
-   "last_checked": "2026-11-19T10:20:00+05:30"
+   "last_price": 162.44,
+   "last_checked": "2026-11-19T10:35:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.5,
    "target": 218.68,
    "stop": 168.98,
-   "last_price": 191.1,
-   "last_checked": "2026-11-19T10:20:00+05:30"
+   "last_price": 190.64,
+   "last_checked": "2026-11-19T10:35:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +58,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 45.2,
-   "last_checked": "2026-11-19T10:20:00+05:30"
+   "last_price": 45.13,
+   "last_checked": "2026-11-19T10:35:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -77,8 +77,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 281.95,
-   "last_checked": "2026-11-19T10:20:00+05:30"
+   "last_price": 280.9,
+   "last_checked": "2026-11-19T10:35:00+05:30"
   }
  ],
  "trades": [
@@ -133,7 +133,7 @@
   "funnel": {
    "universe": 2394,
    "data": 2394,
-   "rsi": 148,
+   "rsi": 165,
    "volume": 8,
    "circuit": 8,
    "return": 0,
@@ -142,7 +142,7 @@
   },
   "scan_no": 2,
   "live_prices": true,
-  "last_scan_at": "2026-11-19T10:10:33+05:30"
+  "last_scan_at": "2026-11-19T10:38:31+05:30"
  },
  "list_history": [
   {
@@ -889,12 +889,12 @@
   "buy_done": "2026-11-19",
   "eod_done": "2026-11-18",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-19T10:10:33+05:30",
+  "last_scan_at": "2026-11-19T10:38:31+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -348.74,
+  "unrealized_pl_approx": -443.64,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -903,7 +903,7 @@
   "max_positions": 10,
   "invested_open": 41826.41,
   "cash": 458909.51,
-  "portfolio_value": 500387.18,
+  "portfolio_value": 500292.28,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -911,6 +911,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-19T10:23:45+05:30",
+ "updated_at": "2026-11-19T10:38:31+05:30",
  "tg_offset": 912526875
 }
