@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 469619.2,
+ "cash": 458909.51,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -60,6 +60,25 @@
    "stop": 37.77,
    "last_price": 44.59,
    "last_checked": "2026-11-19T09:55:00+05:30"
+  },
+  {
+   "symbol": "MANAPPURAM",
+   "ticker": "MANAPPURAM.NS",
+   "name": "Manappuram Finance Limited",
+   "group": "Nifty Smallcap 100",
+   "mcap_cr": 26419,
+   "rsi": 34.2,
+   "ret_1y_pct": 0.3,
+   "buy_date": "2026-11-19",
+   "buy_time": "2026-11-19T10:00:00+05:30",
+   "buy_price": 281.5,
+   "qty": 38,
+   "invested": 10697.0,
+   "buy_charges": 12.69,
+   "target": 309.65,
+   "stop": 239.28,
+   "last_price": 281.5,
+   "last_checked": "2026-11-19T10:00:00+05:30"
   }
  ],
  "trades": [
@@ -105,7 +124,10 @@
     "volume": 15888401,
     "plan_qty": 38,
     "plan_cost": 10700.8,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 1,
+    "selected_at": "2026-11-19T10:00:11+05:30",
+    "pre_open": false
    }
   ],
   "funnel": {
@@ -863,7 +885,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-19",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-19",
   "eod_done": "2026-11-18",
   "rescan_needed": null,
@@ -877,11 +899,11 @@
   "wins": 1,
   "losses": 0,
   "win_rate_pct": 100.0,
-  "open_positions": 3,
+  "open_positions": 4,
   "max_positions": 10,
-  "invested_open": 31129.41,
-  "cash": 469619.2,
-  "portfolio_value": 500395.98,
+  "invested_open": 41826.41,
+  "cash": 458909.51,
+  "portfolio_value": 500383.29,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -889,6 +911,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-19T09:56:10+05:30",
- "tg_offset": 912526874
+ "updated_at": "2026-11-19T10:00:12+05:30",
+ "tg_offset": 912526875
 }
