@@ -88,44 +88,64 @@
   }
  ],
  "today_list": {
-  "date": "2026-11-18",
-  "created_at": "2026-11-18T12:00:01+05:30",
+  "date": "2026-11-19",
+  "created_at": "2026-11-19T07:42:53+05:30",
   "scanned": 2394,
   "mcap_unknown": [],
-  "items": [
-   {
-    "symbol": "FCL",
-    "ticker": "FCL.NS",
-    "name": "Fineotex Chemical Limited",
-    "group": "Index ke bahar",
-    "rsi": 35.0,
-    "ret_1y_pct": 80.1,
-    "mcap_cr": 5188,
-    "close": 44.55,
-    "volume": 16034653,
-    "plan_qty": 236,
-    "plan_cost": 10513.8,
-    "status": "bought",
-    "sel_order": 1,
-    "selected_at": "2026-11-18T12:05:49+05:30",
-    "pre_open": false
-   }
-  ],
+  "items": [],
   "funnel": {
    "universe": 2394,
    "data": 2394,
-   "rsi": 165,
-   "volume": 7,
-   "circuit": 7,
+   "rsi": 121,
+   "volume": 4,
+   "circuit": 4,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
-  "scan_no": 2,
-  "live_prices": true,
-  "last_scan_at": "2026-11-18T14:46:39+05:30"
+  "scan_no": 1,
+  "live_prices": false,
+  "last_scan_at": "2026-11-19T07:42:53+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-18",
+   "created_at": "2026-11-18T12:00:01+05:30",
+   "scanned": 2394,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "FCL",
+     "ticker": "FCL.NS",
+     "name": "Fineotex Chemical Limited",
+     "group": "Index ke bahar",
+     "rsi": 35.0,
+     "ret_1y_pct": 80.1,
+     "mcap_cr": 5188,
+     "close": 44.55,
+     "volume": 16034653,
+     "plan_qty": 236,
+     "plan_cost": 10513.8,
+     "status": "bought",
+     "sel_order": 1,
+     "selected_at": "2026-11-18T12:05:49+05:30",
+     "pre_open": false
+    }
+   ],
+   "funnel": {
+    "universe": 2394,
+    "data": 2394,
+    "rsi": 165,
+    "volume": 7,
+    "circuit": 7,
+    "return": 0,
+    "mcap": 0,
+    "final": 0
+   },
+   "scan_no": 2,
+   "live_prices": true,
+   "last_scan_at": "2026-11-18T14:46:39+05:30"
+  },
   {
    "date": "2026-11-17",
    "created_at": "2026-11-17T07:43:00+05:30",
@@ -827,12 +847,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-18",
-  "sel_counter": 1,
+  "scan_done": "2026-11-19",
+  "sel_counter": 0,
   "buy_done": "2026-11-18",
   "eod_done": "2026-11-18",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-18T14:46:39+05:30",
+  "last_scan_at": "2026-11-19T07:42:53+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
@@ -854,6 +874,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-18T15:52:54+05:30",
+ "updated_at": "2026-11-19T07:42:53+05:30",
  "tg_offset": 912526874
 }
