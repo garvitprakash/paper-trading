@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 161.98,
-   "last_checked": "2026-11-18T15:25:00+05:30"
+   "last_price": 163.19,
+   "last_checked": "2026-11-19T09:40:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.5,
    "target": 218.68,
    "stop": 168.98,
-   "last_price": 197.59,
-   "last_checked": "2026-11-18T15:25:00+05:30"
+   "last_price": 191.85,
+   "last_checked": "2026-11-19T09:40:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +58,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 44.62,
-   "last_checked": "2026-11-18T15:25:00+05:30"
+   "last_price": 44.41,
+   "last_checked": "2026-11-19T09:40:00+05:30"
   }
  ],
  "trades": [
@@ -89,23 +89,38 @@
  ],
  "today_list": {
   "date": "2026-11-19",
-  "created_at": "2026-11-19T07:42:53+05:30",
+  "created_at": "2026-11-19T09:42:55+05:30",
   "scanned": 2394,
   "mcap_unknown": [],
-  "items": [],
+  "items": [
+   {
+    "symbol": "MANAPPURAM",
+    "ticker": "MANAPPURAM.NS",
+    "name": "Manappuram Finance Limited",
+    "group": "Nifty Smallcap 100",
+    "rsi": 34.2,
+    "ret_1y_pct": 0.3,
+    "mcap_cr": 26419,
+    "close": 281.6,
+    "volume": 15888401,
+    "plan_qty": 38,
+    "plan_cost": 10700.8,
+    "status": "pending"
+   }
+  ],
   "funnel": {
    "universe": 2394,
    "data": 2394,
-   "rsi": 121,
-   "volume": 4,
-   "circuit": 4,
-   "return": 0,
-   "mcap": 0,
-   "final": 0
+   "rsi": 148,
+   "volume": 9,
+   "circuit": 9,
+   "return": 1,
+   "mcap": 1,
+   "final": 1
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-19T07:42:53+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-19T09:42:55+05:30"
  },
  "list_history": [
   {
@@ -849,15 +864,15 @@
  "daily": {
   "scan_done": "2026-11-19",
   "sel_counter": 0,
-  "buy_done": "2026-11-18",
+  "buy_done": "2026-11-19",
   "eod_done": "2026-11-18",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-19T07:42:53+05:30",
+  "last_scan_at": "2026-11-19T09:42:55+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -201.42,
+  "unrealized_pl_approx": -481.6,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -866,7 +881,7 @@
   "max_positions": 10,
   "invested_open": 31129.41,
   "cash": 469619.2,
-  "portfolio_value": 500547.19,
+  "portfolio_value": 500267.01,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -874,6 +889,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-19T09:28:21+05:30",
+ "updated_at": "2026-11-19T09:42:55+05:30",
  "tg_offset": 912526874
 }
