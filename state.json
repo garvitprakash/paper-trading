@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 162.2,
-   "last_checked": "2026-11-19T13:50:00+05:30"
+   "last_price": 162.23,
+   "last_checked": "2026-11-19T14:05:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.5,
    "target": 218.68,
    "stop": 168.98,
-   "last_price": 190.91,
-   "last_checked": "2026-11-19T13:50:00+05:30"
+   "last_price": 190.9,
+   "last_checked": "2026-11-19T14:05:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +58,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 45.03,
-   "last_checked": "2026-11-19T13:50:00+05:30"
+   "last_price": 45.08,
+   "last_checked": "2026-11-19T14:05:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -77,8 +77,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 283.5,
-   "last_checked": "2026-11-19T13:50:00+05:30"
+   "last_price": 283.25,
+   "last_checked": "2026-11-19T14:05:00+05:30"
   }
  ],
  "trades": [
@@ -894,7 +894,7 @@
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -368.87,
+  "unrealized_pl_approx": -365.22,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -903,7 +903,7 @@
   "max_positions": 10,
   "invested_open": 41826.41,
   "cash": 458909.51,
-  "portfolio_value": 500367.05,
+  "portfolio_value": 500370.7,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -911,6 +911,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-19T13:53:49+05:30",
+ "updated_at": "2026-11-19T14:07:01+05:30",
  "tg_offset": 912526875
 }
