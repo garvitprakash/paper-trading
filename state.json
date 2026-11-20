@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 161.73,
-   "last_checked": "2026-11-20T09:55:00+05:30"
+   "last_price": 161.5,
+   "last_checked": "2026-11-20T10:05:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.5,
    "target": 218.68,
    "stop": 168.98,
-   "last_price": 188.4,
-   "last_checked": "2026-11-20T09:55:00+05:30"
+   "last_price": 187.0,
+   "last_checked": "2026-11-20T10:05:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -59,7 +59,7 @@
    "target": 48.88,
    "stop": 37.77,
    "last_price": 44.81,
-   "last_checked": "2026-11-20T09:55:00+05:30"
+   "last_checked": "2026-11-20T10:05:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -77,8 +77,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 278.7,
-   "last_checked": "2026-11-20T09:55:00+05:30"
+   "last_price": 278.2,
+   "last_checked": "2026-11-20T10:05:00+05:30"
   }
  ],
  "trades": [
@@ -108,38 +108,38 @@
  ],
  "today_list": {
   "date": "2026-11-20",
-  "created_at": "2026-11-20T07:42:36+05:30",
+  "created_at": "2026-11-20T10:09:54+05:30",
   "scanned": 2410,
   "mcap_unknown": [],
   "items": [
    {
-    "symbol": "AZAD",
-    "ticker": "AZAD.NS",
-    "name": "Azad Engineering Limited",
+    "symbol": "PAISALO",
+    "ticker": "PAISALO.NS",
+    "name": "Paisalo Digital Limited",
     "group": "Index ke bahar",
-    "rsi": 32.3,
-    "ret_1y_pct": 41.3,
-    "mcap_cr": 15565,
-    "close": 2318.9,
-    "volume": 5984722,
-    "plan_qty": 5,
-    "plan_cost": 11594.5,
+    "rsi": 34.3,
+    "ret_1y_pct": 109.0,
+    "mcap_cr": 6822,
+    "close": 72.67,
+    "volume": 7043663,
+    "plan_qty": 145,
+    "plan_cost": 10537.15,
     "status": "pending"
    }
   ],
   "funnel": {
    "universe": 2410,
-   "data": 2410,
-   "rsi": 183,
-   "volume": 10,
-   "circuit": 9,
-   "return": 0,
-   "mcap": 0,
-   "final": 0
+   "data": 2409,
+   "rsi": 174,
+   "volume": 9,
+   "circuit": 8,
+   "return": 1,
+   "mcap": 1,
+   "final": 1
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-20T09:42:20+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-20T10:09:54+05:30"
  },
  "list_history": [
   {
@@ -932,12 +932,12 @@
   "buy_done": "2026-11-20",
   "eod_done": "2026-11-19",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-20T09:42:20+05:30",
+  "last_scan_at": "2026-11-20T10:09:54+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -765.11,
+  "unrealized_pl_approx": -872.34,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -946,7 +946,7 @@
   "max_positions": 10,
   "invested_open": 41826.41,
   "cash": 458909.51,
-  "portfolio_value": 499970.81,
+  "portfolio_value": 499863.58,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -954,6 +954,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-20T09:55:31+05:30",
+ "updated_at": "2026-11-20T10:09:54+05:30",
  "tg_offset": 912526875
 }
