@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 162.01,
-   "last_checked": "2026-11-20T14:45:00+05:30"
+   "last_price": 162.15,
+   "last_checked": "2026-11-20T15:00:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -40,7 +40,7 @@
    "target": 218.68,
    "stop": 168.98,
    "last_price": 184.72,
-   "last_checked": "2026-11-20T14:45:00+05:30"
+   "last_checked": "2026-11-20T15:00:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +58,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 44.92,
-   "last_checked": "2026-11-20T14:45:00+05:30"
+   "last_price": 44.87,
+   "last_checked": "2026-11-20T15:00:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -77,8 +77,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 279.1,
-   "last_checked": "2026-11-20T14:45:00+05:30"
+   "last_price": 279.4,
+   "last_checked": "2026-11-20T15:00:00+05:30"
   },
   {
    "symbol": "PAISALO",
@@ -96,8 +96,8 @@
    "buy_charges": 12.47,
    "target": 80.32,
    "stop": 62.07,
-   "last_price": 73.42,
-   "last_checked": "2026-11-20T14:45:00+05:30"
+   "last_price": 73.93,
+   "last_checked": "2026-11-20T15:00:00+05:30"
   }
  ],
  "trades": [
@@ -959,7 +959,7 @@
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -844.2,
+  "unrealized_pl_approx": -762.67,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -968,7 +968,7 @@
   "max_positions": 10,
   "invested_open": 52341.29,
   "cash": 448382.16,
-  "portfolio_value": 499879.25,
+  "portfolio_value": 499960.78,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -976,6 +976,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-20T14:47:52+05:30",
+ "updated_at": "2026-11-20T15:01:07+05:30",
  "tg_offset": 912526876
 }
