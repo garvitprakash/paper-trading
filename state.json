@@ -126,44 +126,64 @@
   }
  ],
  "today_list": {
-  "date": "2026-11-20",
-  "created_at": "2026-11-20T10:09:54+05:30",
+  "date": "2026-11-23",
+  "created_at": "2026-11-23T07:42:11+05:30",
   "scanned": 2410,
   "mcap_unknown": [],
-  "items": [
-   {
-    "symbol": "PAISALO",
-    "ticker": "PAISALO.NS",
-    "name": "Paisalo Digital Limited",
-    "group": "Index ke bahar",
-    "rsi": 34.3,
-    "ret_1y_pct": 109.0,
-    "mcap_cr": 6822,
-    "close": 72.67,
-    "volume": 7043663,
-    "plan_qty": 145,
-    "plan_cost": 10537.15,
-    "status": "bought",
-    "sel_order": 1,
-    "selected_at": "2026-11-20T10:56:28+05:30",
-    "pre_open": false
-   }
-  ],
+  "items": [],
   "funnel": {
    "universe": 2410,
-   "data": 2409,
-   "rsi": 182,
-   "volume": 10,
+   "data": 2410,
+   "rsi": 178,
+   "volume": 12,
    "circuit": 9,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
-  "scan_no": 2,
-  "live_prices": true,
-  "last_scan_at": "2026-11-20T14:47:52+05:30"
+  "scan_no": 1,
+  "live_prices": false,
+  "last_scan_at": "2026-11-23T07:42:11+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-20",
+   "created_at": "2026-11-20T10:09:54+05:30",
+   "scanned": 2410,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "PAISALO",
+     "ticker": "PAISALO.NS",
+     "name": "Paisalo Digital Limited",
+     "group": "Index ke bahar",
+     "rsi": 34.3,
+     "ret_1y_pct": 109.0,
+     "mcap_cr": 6822,
+     "close": 72.67,
+     "volume": 7043663,
+     "plan_qty": 145,
+     "plan_cost": 10537.15,
+     "status": "bought",
+     "sel_order": 1,
+     "selected_at": "2026-11-20T10:56:28+05:30",
+     "pre_open": false
+    }
+   ],
+   "funnel": {
+    "universe": 2410,
+    "data": 2409,
+    "rsi": 182,
+    "volume": 10,
+    "circuit": 9,
+    "return": 0,
+    "mcap": 0,
+    "final": 0
+   },
+   "scan_no": 2,
+   "live_prices": true,
+   "last_scan_at": "2026-11-20T14:47:52+05:30"
+  },
   {
    "date": "2026-11-19",
    "created_at": "2026-11-19T09:42:55+05:30",
@@ -957,12 +977,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-20",
-  "sel_counter": 1,
+  "scan_done": "2026-11-23",
+  "sel_counter": 0,
   "buy_done": "2026-11-20",
   "eod_done": "2026-11-20",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-20T14:47:52+05:30",
+  "last_scan_at": "2026-11-23T07:42:11+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
@@ -984,6 +1004,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-20T15:54:22+05:30",
+ "updated_at": "2026-11-23T07:42:11+05:30",
  "tg_offset": 912526876
 }
