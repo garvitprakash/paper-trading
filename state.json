@@ -77,8 +77,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 270.2,
-   "last_checked": "2026-11-23T15:15:00+05:30"
+   "last_price": 271.0,
+   "last_checked": "2026-11-23T15:25:00+05:30"
   },
   {
    "symbol": "PAISALO",
@@ -974,20 +974,28 @@
    "cash": 448382.16,
    "portfolio_value": 500294.76,
    "open_positions": 5
+  },
+  {
+   "date": "2026-11-23",
+   "total_actual_pl": 785.53,
+   "unrealized_pl_approx": -2126.47,
+   "cash": 448382.16,
+   "portfolio_value": 498596.98,
+   "open_positions": 5
   }
  ],
  "daily": {
   "scan_done": "2026-11-23",
   "sel_counter": 0,
   "buy_done": "2026-11-23",
-  "eod_done": "2026-11-20",
+  "eod_done": "2026-11-23",
   "rescan_needed": null,
   "last_scan_at": "2026-11-23T14:45:59+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -2156.87,
+  "unrealized_pl_approx": -2126.47,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -996,7 +1004,7 @@
   "max_positions": 10,
   "invested_open": 52341.29,
   "cash": 448382.16,
-  "portfolio_value": 498566.58,
+  "portfolio_value": 498596.98,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1004,6 +1012,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-23T15:38:45+05:30",
+ "updated_at": "2026-11-23T15:51:53+05:30",
  "tg_offset": 912526876
 }
