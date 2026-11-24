@@ -1007,11 +1007,11 @@
  "daily": {
   "scan_done": "2026-11-24",
   "sel_counter": 0,
-  "buy_done": "2026-11-23",
+  "buy_done": "2026-11-24",
   "eod_done": "2026-11-23",
   "rescan_needed": null,
   "last_scan_at": "2026-11-24T10:10:45+05:30",
-  "holiday": "2026-11-10"
+  "holiday": "2026-11-24"
  },
  "summary": {
   "total_actual_pl": 785.53,
@@ -1032,6 +1032,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-24T10:10:45+05:30",
+ "updated_at": "2026-11-24T10:23:57+05:30",
  "tg_offset": 912526876
 }
