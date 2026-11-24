@@ -143,7 +143,7 @@
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-24T09:43:08+05:30"
+  "last_scan_at": "2026-11-24T10:10:45+05:30"
  },
  "list_history": [
   {
@@ -1010,7 +1010,7 @@
   "buy_done": "2026-11-23",
   "eod_done": "2026-11-23",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-24T09:43:08+05:30",
+  "last_scan_at": "2026-11-24T10:10:45+05:30",
   "holiday": "2026-11-10"
  },
  "summary": {
@@ -1032,6 +1032,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-24T09:56:19+05:30",
+ "updated_at": "2026-11-24T10:10:45+05:30",
  "tg_offset": 912526876
 }
