@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 448382.16,
+ "cash": 437702.41,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -98,6 +98,25 @@
    "stop": 62.07,
    "last_price": 73.57,
    "last_checked": "2026-11-25T09:40:00+05:30"
+  },
+  {
+   "symbol": "NATIONALUM",
+   "ticker": "NATIONALUM.NS",
+   "name": "National Aluminium Company Limited",
+   "group": "Nifty Midcap 150",
+   "mcap_cr": 52886,
+   "rsi": 31.7,
+   "ret_1y_pct": 13.4,
+   "buy_date": "2026-11-25",
+   "buy_time": "2026-11-25T09:40:00+05:30",
+   "buy_price": 288.3,
+   "qty": 37,
+   "invested": 10667.1,
+   "buy_charges": 12.65,
+   "target": 317.13,
+   "stop": 245.05,
+   "last_price": 288.3,
+   "last_checked": "2026-11-25T09:40:00+05:30"
   }
  ],
  "trades": [
@@ -143,7 +162,10 @@
     "volume": 11463632,
     "plan_qty": 37,
     "plan_cost": 10665.25,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 1,
+    "selected_at": "2026-11-25T09:44:44+05:30",
+    "pre_open": false
    }
   ],
   "funnel": {
@@ -1049,7 +1071,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-25",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-25",
   "eod_done": "2026-11-24",
   "rescan_needed": null,
@@ -1063,11 +1085,11 @@
   "wins": 1,
   "losses": 0,
   "win_rate_pct": 100.0,
-  "open_positions": 5,
+  "open_positions": 6,
   "max_positions": 10,
-  "invested_open": 52341.29,
-  "cash": 448382.16,
-  "portfolio_value": 498251.09,
+  "invested_open": 63008.39,
+  "cash": 437702.41,
+  "portfolio_value": 498238.44,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1075,6 +1097,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-25T09:43:15+05:30",
- "tg_offset": 912526876
+ "updated_at": "2026-11-25T09:44:44+05:30",
+ "tg_offset": 912526877
 }
