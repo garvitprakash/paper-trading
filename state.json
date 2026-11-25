@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 160.2,
-   "last_checked": "2026-11-23T15:25:00+05:30"
+   "last_price": 160.37,
+   "last_checked": "2026-11-25T09:40:00+05:30"
   },
   {
    "symbol": "HFCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.5,
    "target": 218.68,
    "stop": 168.98,
-   "last_price": 178.6,
-   "last_checked": "2026-11-23T15:25:00+05:30"
+   "last_price": 173.89,
+   "last_checked": "2026-11-25T09:40:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +58,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 42.74,
-   "last_checked": "2026-11-23T15:25:00+05:30"
+   "last_price": 42.23,
+   "last_checked": "2026-11-25T09:40:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -77,8 +77,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 271.0,
-   "last_checked": "2026-11-23T15:25:00+05:30"
+   "last_price": 270.2,
+   "last_checked": "2026-11-25T09:40:00+05:30"
   },
   {
    "symbol": "PAISALO",
@@ -96,8 +96,8 @@
    "buy_charges": 12.47,
    "target": 80.32,
    "stop": 62.07,
-   "last_price": 73.26,
-   "last_checked": "2026-11-23T15:25:00+05:30"
+   "last_price": 73.57,
+   "last_checked": "2026-11-25T09:40:00+05:30"
   }
  ],
  "trades": [
@@ -127,23 +127,38 @@
  ],
  "today_list": {
   "date": "2026-11-25",
-  "created_at": "2026-11-25T07:43:16+05:30",
+  "created_at": "2026-11-25T09:43:15+05:30",
   "scanned": 2410,
   "mcap_unknown": [],
-  "items": [],
+  "items": [
+   {
+    "symbol": "NATIONALUM",
+    "ticker": "NATIONALUM.NS",
+    "name": "National Aluminium Company Limited",
+    "group": "Nifty Midcap 150",
+    "rsi": 31.7,
+    "ret_1y_pct": 13.4,
+    "mcap_cr": 52886,
+    "close": 288.25,
+    "volume": 11463632,
+    "plan_qty": 37,
+    "plan_cost": 10665.25,
+    "status": "pending"
+   }
+  ],
   "funnel": {
    "universe": 2410,
    "data": 2410,
-   "rsi": 248,
-   "volume": 13,
-   "circuit": 13,
-   "return": 0,
-   "mcap": 0,
-   "final": 0
+   "rsi": 220,
+   "volume": 10,
+   "circuit": 9,
+   "return": 1,
+   "mcap": 1,
+   "final": 1
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-25T07:43:16+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-25T09:43:15+05:30"
  },
  "list_history": [
   {
@@ -1035,15 +1050,15 @@
  "daily": {
   "scan_done": "2026-11-25",
   "sel_counter": 0,
-  "buy_done": "2026-11-24",
+  "buy_done": "2026-11-25",
   "eod_done": "2026-11-24",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-25T07:43:16+05:30",
+  "last_scan_at": "2026-11-25T09:43:15+05:30",
   "holiday": "2026-11-24"
  },
  "summary": {
   "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -2126.47,
+  "unrealized_pl_approx": -2472.36,
   "closed_trades": 1,
   "wins": 1,
   "losses": 0,
@@ -1052,7 +1067,7 @@
   "max_positions": 10,
   "invested_open": 52341.29,
   "cash": 448382.16,
-  "portfolio_value": 498596.98,
+  "portfolio_value": 498251.09,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1060,6 +1075,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-25T09:28:46+05:30",
+ "updated_at": "2026-11-25T09:43:15+05:30",
  "tg_offset": 912526876
 }
