@@ -126,26 +126,46 @@
   }
  ],
  "today_list": {
-  "date": "2026-11-24",
-  "created_at": "2026-11-24T07:03:03+05:30",
+  "date": "2026-11-25",
+  "created_at": "2026-11-25T07:43:16+05:30",
   "scanned": 2410,
   "mcap_unknown": [],
   "items": [],
   "funnel": {
    "universe": 2410,
    "data": 2410,
-   "rsi": 208,
+   "rsi": 248,
    "volume": 13,
-   "circuit": 10,
+   "circuit": 13,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
   "scan_no": 1,
   "live_prices": false,
-  "last_scan_at": "2026-11-24T10:10:45+05:30"
+  "last_scan_at": "2026-11-25T07:43:16+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-24",
+   "created_at": "2026-11-24T07:03:03+05:30",
+   "scanned": 2410,
+   "mcap_unknown": [],
+   "items": [],
+   "funnel": {
+    "universe": 2410,
+    "data": 2410,
+    "rsi": 208,
+    "volume": 13,
+    "circuit": 10,
+    "return": 0,
+    "mcap": 0,
+    "final": 0
+   },
+   "scan_no": 1,
+   "live_prices": false,
+   "last_scan_at": "2026-11-24T10:10:45+05:30"
+  },
   {
    "date": "2026-11-23",
    "created_at": "2026-11-23T07:42:11+05:30",
@@ -1013,12 +1033,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-24",
+  "scan_done": "2026-11-25",
   "sel_counter": 0,
   "buy_done": "2026-11-24",
   "eod_done": "2026-11-24",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-24T10:10:45+05:30",
+  "last_scan_at": "2026-11-25T07:43:16+05:30",
   "holiday": "2026-11-24"
  },
  "summary": {
@@ -1040,6 +1060,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-24T15:54:29+05:30",
+ "updated_at": "2026-11-25T07:43:16+05:30",
  "tg_offset": 912526876
 }
