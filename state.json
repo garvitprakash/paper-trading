@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 437702.41,
+ "cash": 427186.89,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -117,6 +117,25 @@
    "stop": 245.06,
    "last_price": 286.75,
    "last_checked": "2026-11-25T13:50:00+05:30"
+  },
+  {
+   "symbol": "IDEA",
+   "ticker": "IDEA.NS",
+   "name": "Vodafone Idea Limited",
+   "group": "Nifty Next 50",
+   "mcap_cr": 125353,
+   "rsi": 35.0,
+   "ret_1y_pct": 15.1,
+   "buy_date": "2026-11-25",
+   "buy_time": "2026-11-25T13:55:00+05:30",
+   "buy_price": 11.58,
+   "qty": 907,
+   "invested": 10503.06,
+   "buy_charges": 12.46,
+   "target": 12.74,
+   "stop": 9.84,
+   "last_price": 11.58,
+   "last_checked": "2026-11-25T13:55:00+05:30"
   }
  ],
  "trades": [
@@ -162,7 +181,10 @@
     "volume": 314136024,
     "plan_qty": 907,
     "plan_cost": 10503.06,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 2,
+    "selected_at": "2026-11-25T13:55:02+05:30",
+    "pre_open": false
    }
   ],
   "funnel": {
@@ -1068,7 +1090,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-25",
-  "sel_counter": 1,
+  "sel_counter": 2,
   "buy_done": "2026-11-25",
   "eod_done": "2026-11-24",
   "rescan_needed": null,
@@ -1082,11 +1104,11 @@
   "wins": 1,
   "losses": 0,
   "win_rate_pct": 100.0,
-  "open_positions": 6,
+  "open_positions": 7,
   "max_positions": 10,
-  "invested_open": 63008.39,
-  "cash": 437702.41,
-  "portfolio_value": 497822.37,
+  "invested_open": 73511.45,
+  "cash": 427186.89,
+  "portfolio_value": 497809.91,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1094,6 +1116,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-25T13:54:33+05:30",
- "tg_offset": 912526877
+ "updated_at": "2026-11-25T13:55:03+05:30",
+ "tg_offset": 912526878
 }
