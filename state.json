@@ -58,8 +58,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 269.7,
-   "last_checked": "2026-11-26T15:15:00+05:30"
+   "last_price": 270.0,
+   "last_checked": "2026-11-26T15:25:00+05:30"
   },
   {
    "symbol": "PAISALO",
@@ -97,7 +97,7 @@
    "target": 317.13,
    "stop": 245.06,
    "last_price": 294.95,
-   "last_checked": "2026-11-26T15:15:00+05:30"
+   "last_checked": "2026-11-26T15:25:00+05:30"
   },
   {
    "symbol": "IDEA",
@@ -1190,7 +1190,7 @@
  },
  "summary": {
   "total_actual_pl": -832.64,
-  "unrealized_pl_approx": -285.89,
+  "unrealized_pl_approx": -274.49,
   "closed_trades": 2,
   "wins": 1,
   "losses": 1,
@@ -1199,7 +1199,7 @@
   "max_positions": 10,
   "invested_open": 73994.1,
   "cash": 425085.5,
-  "portfolio_value": 498793.71,
+  "portfolio_value": 498805.11,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1207,6 +1207,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-26T15:54:00+05:30",
+ "updated_at": "2026-11-26T16:15:28+05:30",
  "tg_offset": 912526879
 }
