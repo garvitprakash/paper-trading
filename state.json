@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 436117.62,
+ "cash": 425085.5,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -117,6 +117,25 @@
    "stop": 9.84,
    "last_price": 11.74,
    "last_checked": "2026-11-26T09:40:00+05:30"
+  },
+  {
+   "symbol": "STLTECH",
+   "ticker": "STLTECH.NS",
+   "name": "Sterlite Technologies Ltd.",
+   "group": "Nifty Smallcap 100",
+   "mcap_cr": 29770,
+   "rsi": 28.7,
+   "ret_1y_pct": 433.2,
+   "buy_date": "2026-11-26",
+   "buy_time": "2026-11-26T09:40:00+05:30",
+   "buy_price": 579.95,
+   "qty": 19,
+   "invested": 11019.05,
+   "buy_charges": 13.07,
+   "target": 637.95,
+   "stop": 492.96,
+   "last_price": 579.95,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   }
  ],
  "trades": [
@@ -199,7 +218,10 @@
     "volume": 6253997,
     "plan_qty": 19,
     "plan_cost": 10940.2,
-    "status": "pending"
+    "status": "bought",
+    "sel_order": 1,
+    "selected_at": "2026-11-26T09:43:01+05:30",
+    "pre_open": false
    }
   ],
   "funnel": {
@@ -1151,7 +1173,7 @@
  ],
  "daily": {
   "scan_done": "2026-11-26",
-  "sel_counter": 0,
+  "sel_counter": 1,
   "buy_done": "2026-11-26",
   "eod_done": "2026-11-25",
   "rescan_needed": null,
@@ -1165,11 +1187,11 @@
   "wins": 1,
   "losses": 1,
   "win_rate_pct": 50.0,
-  "open_positions": 6,
+  "open_positions": 7,
   "max_positions": 10,
-  "invested_open": 62975.05,
-  "cash": 436117.62,
-  "portfolio_value": 499285.2,
+  "invested_open": 73994.1,
+  "cash": 425085.5,
+  "portfolio_value": 499272.13,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1177,6 +1199,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-26T09:42:32+05:30",
- "tg_offset": 912526878
+ "updated_at": "2026-11-26T09:43:02+05:30",
+ "tg_offset": 912526879
 }
