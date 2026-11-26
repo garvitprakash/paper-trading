@@ -20,8 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 165.84,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_price": 165.79,
+   "last_checked": "2026-11-26T11:30:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -39,8 +39,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 43.19,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_price": 43.17,
+   "last_checked": "2026-11-26T11:30:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -58,8 +58,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 273.2,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_price": 272.9,
+   "last_checked": "2026-11-26T11:30:00+05:30"
   },
   {
    "symbol": "PAISALO",
@@ -77,8 +77,8 @@
    "buy_charges": 12.47,
    "target": 80.32,
    "stop": 62.07,
-   "last_price": 74.2,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_price": 74.04,
+   "last_checked": "2026-11-26T11:30:00+05:30"
   },
   {
    "symbol": "NATIONALUM",
@@ -96,8 +96,8 @@
    "buy_charges": 12.65,
    "target": 317.13,
    "stop": 245.06,
-   "last_price": 296.4,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_price": 298.85,
+   "last_checked": "2026-11-26T11:30:00+05:30"
   },
   {
    "symbol": "IDEA",
@@ -115,8 +115,8 @@
    "buy_charges": 12.46,
    "target": 12.74,
    "stop": 9.84,
-   "last_price": 11.75,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_price": 11.78,
+   "last_checked": "2026-11-26T11:30:00+05:30"
   },
   {
    "symbol": "STLTECH",
@@ -135,7 +135,7 @@
    "target": 637.95,
    "stop": 492.96,
    "last_price": 607.85,
-   "last_checked": "2026-11-26T11:15:00+05:30"
+   "last_checked": "2026-11-26T11:30:00+05:30"
   }
  ],
  "trades": [
@@ -227,16 +227,16 @@
   "funnel": {
    "universe": 2410,
    "data": 2410,
-   "rsi": 216,
-   "volume": 12,
-   "circuit": 12,
+   "rsi": 233,
+   "volume": 13,
+   "circuit": 13,
    "return": 1,
    "mcap": 1,
    "final": 1
   },
   "scan_no": 2,
   "live_prices": true,
-  "last_scan_at": "2026-11-26T11:05:53+05:30"
+  "last_scan_at": "2026-11-26T11:33:29+05:30"
  },
  "list_history": [
   {
@@ -1177,12 +1177,12 @@
   "buy_done": "2026-11-26",
   "eod_done": "2026-11-25",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-26T11:05:53+05:30",
+  "last_scan_at": "2026-11-26T11:33:29+05:30",
   "holiday": "2026-11-24"
  },
  "summary": {
   "total_actual_pl": -832.64,
-  "unrealized_pl_approx": 597.77,
+  "unrealized_pl_approx": 673.4,
   "closed_trades": 2,
   "wins": 1,
   "losses": 1,
@@ -1191,7 +1191,7 @@
   "max_positions": 10,
   "invested_open": 73994.1,
   "cash": 425085.5,
-  "portfolio_value": 499677.37,
+  "portfolio_value": 499753.0,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
@@ -1199,6 +1199,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-26T11:19:04+05:30",
+ "updated_at": "2026-11-26T11:33:29+05:30",
  "tg_offset": 912526879
 }
