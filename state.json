@@ -1,7 +1,7 @@
 {
  "version": 1,
  "start_capital": 500000,
- "cash": 427186.89,
+ "cash": 436117.62,
  "next_amount": 10500.0,
  "positions": [
   {
@@ -20,27 +20,8 @@
    "buy_charges": 11.93,
    "target": 181.42,
    "stop": 140.19,
-   "last_price": 159.47,
-   "last_checked": "2026-11-25T15:25:00+05:30"
-  },
-  {
-   "symbol": "HFCL",
-   "ticker": "HFCL.NS",
-   "name": "HFCL Ltd.",
-   "group": "Nifty Smallcap 100",
-   "mcap_cr": 30374,
-   "rsi": 34.3,
-   "ret_1y_pct": 161.7,
-   "buy_date": "2026-11-16",
-   "buy_time": "2026-11-16T10:10:00+05:30",
-   "buy_price": 198.8,
-   "qty": 53,
-   "invested": 10536.4,
-   "buy_charges": 12.5,
-   "target": 218.68,
-   "stop": 168.98,
-   "last_price": 169.67,
-   "last_checked": "2026-11-25T15:25:00+05:30"
+   "last_price": 165.1,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   },
   {
    "symbol": "FCL",
@@ -58,8 +39,8 @@
    "buy_charges": 12.49,
    "target": 48.88,
    "stop": 37.77,
-   "last_price": 42.01,
-   "last_checked": "2026-11-25T15:25:00+05:30"
+   "last_price": 43.62,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   },
   {
    "symbol": "MANAPPURAM",
@@ -77,8 +58,8 @@
    "buy_charges": 12.69,
    "target": 309.65,
    "stop": 239.28,
-   "last_price": 267.5,
-   "last_checked": "2026-11-25T15:25:00+05:30"
+   "last_price": 273.35,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   },
   {
    "symbol": "PAISALO",
@@ -96,8 +77,8 @@
    "buy_charges": 12.47,
    "target": 80.32,
    "stop": 62.07,
-   "last_price": 74.77,
-   "last_checked": "2026-11-25T15:25:00+05:30"
+   "last_price": 75.39,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   },
   {
    "symbol": "NATIONALUM",
@@ -115,8 +96,8 @@
    "buy_charges": 12.65,
    "target": 317.13,
    "stop": 245.06,
-   "last_price": 287.8,
-   "last_checked": "2026-11-25T15:25:00+05:30"
+   "last_price": 293.7,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   },
   {
    "symbol": "IDEA",
@@ -134,8 +115,8 @@
    "buy_charges": 12.46,
    "target": 12.74,
    "stop": 9.84,
-   "last_price": 11.69,
-   "last_checked": "2026-11-25T15:25:00+05:30"
+   "last_price": 11.74,
+   "last_checked": "2026-11-26T09:40:00+05:30"
   }
  ],
  "trades": [
@@ -161,27 +142,79 @@
    "profit_loss": 785.53,
    "profit_pct": 7.61,
    "reason": "target"
+  },
+  {
+   "symbol": "HFCL",
+   "name": "HFCL Ltd.",
+   "group": "Nifty Smallcap 100",
+   "mcap_cr": 30374,
+   "buy_date": "2026-11-16",
+   "qty": 53,
+   "buy_price": 198.8,
+   "buy_amount": 10536.4,
+   "buy_charges": 12.5,
+   "total_cost": 10548.9,
+   "sell_date": "2026-11-26",
+   "sell_time": "2026-11-26T09:15:00+05:30",
+   "sell_price": 168.98,
+   "sell_amount": 8955.94,
+   "sell_charges": 25.21,
+   "days_held": 10,
+   "tax": 0.0,
+   "net_cash": 8930.73,
+   "profit_loss": -1618.17,
+   "profit_pct": -15.34,
+   "reason": "stoploss"
   }
  ],
  "today_list": {
   "date": "2026-11-26",
-  "created_at": "2026-11-26T07:42:36+05:30",
+  "created_at": "2026-11-26T09:42:32+05:30",
   "scanned": 2410,
   "mcap_unknown": [],
-  "items": [],
+  "items": [
+   {
+    "symbol": "HFCL",
+    "ticker": "HFCL.NS",
+    "name": "HFCL Ltd.",
+    "group": "Nifty Smallcap 100",
+    "rsi": 27.1,
+    "ret_1y_pct": 132.8,
+    "mcap_cr": 25552,
+    "close": 166.98,
+    "volume": 14364434,
+    "plan_qty": 63,
+    "plan_cost": 10519.74,
+    "status": "pending"
+   },
+   {
+    "symbol": "STLTECH",
+    "ticker": "STLTECH.NS",
+    "name": "Sterlite Technologies Ltd.",
+    "group": "Nifty Smallcap 100",
+    "rsi": 28.7,
+    "ret_1y_pct": 433.2,
+    "mcap_cr": 29770,
+    "close": 575.8,
+    "volume": 6253997,
+    "plan_qty": 19,
+    "plan_cost": 10940.2,
+    "status": "pending"
+   }
+  ],
   "funnel": {
    "universe": 2410,
    "data": 2410,
-   "rsi": 248,
+   "rsi": 221,
    "volume": 13,
    "circuit": 13,
-   "return": 0,
-   "mcap": 0,
-   "final": 0
+   "return": 2,
+   "mcap": 2,
+   "final": 2
   },
-  "scan_no": 1,
-  "live_prices": false,
-  "last_scan_at": "2026-11-26T07:42:36+05:30"
+  "scan_no": 2,
+  "live_prices": true,
+  "last_scan_at": "2026-11-26T09:42:32+05:30"
  },
  "list_history": [
   {
@@ -1119,31 +1152,31 @@
  "daily": {
   "scan_done": "2026-11-26",
   "sel_counter": 0,
-  "buy_done": "2026-11-25",
+  "buy_done": "2026-11-26",
   "eod_done": "2026-11-25",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-26T07:42:36+05:30",
+  "last_scan_at": "2026-11-26T09:42:32+05:30",
   "holiday": "2026-11-24"
  },
  "summary": {
-  "total_actual_pl": 785.53,
-  "unrealized_pl_approx": -2651.59,
-  "closed_trades": 1,
+  "total_actual_pl": -832.64,
+  "unrealized_pl_approx": 192.53,
+  "closed_trades": 2,
   "wins": 1,
-  "losses": 0,
-  "win_rate_pct": 100.0,
-  "open_positions": 7,
+  "losses": 1,
+  "win_rate_pct": 50.0,
+  "open_positions": 6,
   "max_positions": 10,
-  "invested_open": 73511.45,
-  "cash": 427186.89,
-  "portfolio_value": 498046.75,
+  "invested_open": 62975.05,
+  "cash": 436117.62,
+  "portfolio_value": 499285.2,
   "start_capital": 500000,
   "next_amount": 10500.0,
   "total_tax_paid": 206.3,
-  "total_charges_paid": 39.93,
+  "total_charges_paid": 77.64,
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-26T09:28:02+05:30",
+ "updated_at": "2026-11-26T09:42:32+05:30",
  "tg_offset": 912526878
 }
