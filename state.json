@@ -116,7 +116,7 @@
    "target": 12.74,
    "stop": 9.84,
    "last_price": 11.6,
-   "last_checked": "2026-11-26T15:15:00+05:30"
+   "last_checked": "2026-11-26T15:25:00+05:30"
   },
   {
    "symbol": "STLTECH",
@@ -1169,13 +1169,21 @@
    "cash": 427186.89,
    "portfolio_value": 498046.75,
    "open_positions": 7
+  },
+  {
+   "date": "2026-11-26",
+   "total_actual_pl": -832.64,
+   "unrealized_pl_approx": -285.89,
+   "cash": 425085.5,
+   "portfolio_value": 498793.71,
+   "open_positions": 7
   }
  ],
  "daily": {
   "scan_done": "2026-11-26",
   "sel_counter": 1,
   "buy_done": "2026-11-26",
-  "eod_done": "2026-11-25",
+  "eod_done": "2026-11-26",
   "rescan_needed": null,
   "last_scan_at": "2026-11-26T14:48:02+05:30",
   "holiday": "2026-11-24"
@@ -1199,6 +1207,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-26T15:40:53+05:30",
+ "updated_at": "2026-11-26T15:54:00+05:30",
  "tg_offset": 912526879
 }
