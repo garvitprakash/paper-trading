@@ -164,44 +164,64 @@
   }
  ],
  "today_list": {
-  "date": "2026-11-25",
-  "created_at": "2026-11-25T13:54:33+05:30",
+  "date": "2026-11-26",
+  "created_at": "2026-11-26T07:42:36+05:30",
   "scanned": 2410,
   "mcap_unknown": [],
-  "items": [
-   {
-    "symbol": "IDEA",
-    "ticker": "IDEA.NS",
-    "name": "Vodafone Idea Limited",
-    "group": "Nifty Next 50",
-    "rsi": 35.0,
-    "ret_1y_pct": 15.1,
-    "mcap_cr": 125353,
-    "close": 11.58,
-    "volume": 314136024,
-    "plan_qty": 907,
-    "plan_cost": 10503.06,
-    "status": "bought",
-    "sel_order": 2,
-    "selected_at": "2026-11-25T13:55:02+05:30",
-    "pre_open": false
-   }
-  ],
+  "items": [],
   "funnel": {
    "universe": 2410,
    "data": 2410,
-   "rsi": 271,
-   "volume": 12,
-   "circuit": 12,
+   "rsi": 248,
+   "volume": 13,
+   "circuit": 13,
    "return": 0,
    "mcap": 0,
    "final": 0
   },
-  "scan_no": 3,
-  "live_prices": true,
-  "last_scan_at": "2026-11-25T14:49:54+05:30"
+  "scan_no": 1,
+  "live_prices": false,
+  "last_scan_at": "2026-11-26T07:42:36+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-25",
+   "created_at": "2026-11-25T13:54:33+05:30",
+   "scanned": 2410,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "IDEA",
+     "ticker": "IDEA.NS",
+     "name": "Vodafone Idea Limited",
+     "group": "Nifty Next 50",
+     "rsi": 35.0,
+     "ret_1y_pct": 15.1,
+     "mcap_cr": 125353,
+     "close": 11.58,
+     "volume": 314136024,
+     "plan_qty": 907,
+     "plan_cost": 10503.06,
+     "status": "bought",
+     "sel_order": 2,
+     "selected_at": "2026-11-25T13:55:02+05:30",
+     "pre_open": false
+    }
+   ],
+   "funnel": {
+    "universe": 2410,
+    "data": 2410,
+    "rsi": 271,
+    "volume": 12,
+    "circuit": 12,
+    "return": 0,
+    "mcap": 0,
+    "final": 0
+   },
+   "scan_no": 3,
+   "live_prices": true,
+   "last_scan_at": "2026-11-25T14:49:54+05:30"
+  },
   {
    "date": "2026-11-24",
    "created_at": "2026-11-24T07:03:03+05:30",
@@ -1097,12 +1117,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-25",
-  "sel_counter": 2,
+  "scan_done": "2026-11-26",
+  "sel_counter": 0,
   "buy_done": "2026-11-25",
   "eod_done": "2026-11-25",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-25T14:49:54+05:30",
+  "last_scan_at": "2026-11-26T07:42:36+05:30",
   "holiday": "2026-11-24"
  },
  "summary": {
@@ -1124,6 +1144,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-25T15:56:05+05:30",
+ "updated_at": "2026-11-26T07:42:36+05:30",
  "tg_offset": 912526878
 }
