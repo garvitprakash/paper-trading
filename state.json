@@ -187,9 +187,9 @@
   }
  ],
  "today_list": {
-  "date": "2026-11-26",
-  "created_at": "2026-11-26T09:42:32+05:30",
-  "scanned": 2410,
+  "date": "2026-11-27",
+  "created_at": "2026-11-27T07:42:25+05:30",
+  "scanned": 2423,
   "mcap_unknown": [],
   "items": [
    {
@@ -197,48 +197,83 @@
     "ticker": "HFCL.NS",
     "name": "HFCL Ltd.",
     "group": "Nifty Smallcap 100",
-    "rsi": 27.1,
-    "ret_1y_pct": 132.8,
-    "mcap_cr": 25552,
-    "close": 166.98,
+    "rsi": 28.0,
+    "ret_1y_pct": 140.3,
+    "mcap_cr": 25138,
+    "close": 169.95,
     "volume": 14364434,
-    "plan_qty": 63,
-    "plan_cost": 10519.74,
+    "plan_qty": 62,
+    "plan_cost": 10536.9,
     "status": "pending"
-   },
-   {
-    "symbol": "STLTECH",
-    "ticker": "STLTECH.NS",
-    "name": "Sterlite Technologies Ltd.",
-    "group": "Nifty Smallcap 100",
-    "rsi": 28.7,
-    "ret_1y_pct": 433.2,
-    "mcap_cr": 29770,
-    "close": 575.8,
-    "volume": 6253997,
-    "plan_qty": 19,
-    "plan_cost": 10940.2,
-    "status": "bought",
-    "sel_order": 1,
-    "selected_at": "2026-11-26T09:43:01+05:30",
-    "pre_open": false
    }
   ],
   "funnel": {
-   "universe": 2410,
-   "data": 2410,
-   "rsi": 249,
-   "volume": 10,
-   "circuit": 9,
+   "universe": 2423,
+   "data": 2422,
+   "rsi": 286,
+   "volume": 16,
+   "circuit": 15,
    "return": 1,
    "mcap": 1,
    "final": 1
   },
-  "scan_no": 2,
-  "live_prices": true,
-  "last_scan_at": "2026-11-26T14:48:02+05:30"
+  "scan_no": 1,
+  "live_prices": false,
+  "last_scan_at": "2026-11-27T07:42:25+05:30"
  },
  "list_history": [
+  {
+   "date": "2026-11-26",
+   "created_at": "2026-11-26T09:42:32+05:30",
+   "scanned": 2410,
+   "mcap_unknown": [],
+   "items": [
+    {
+     "symbol": "HFCL",
+     "ticker": "HFCL.NS",
+     "name": "HFCL Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 27.1,
+     "ret_1y_pct": 132.8,
+     "mcap_cr": 25552,
+     "close": 166.98,
+     "volume": 14364434,
+     "plan_qty": 63,
+     "plan_cost": 10519.74,
+     "status": "pending"
+    },
+    {
+     "symbol": "STLTECH",
+     "ticker": "STLTECH.NS",
+     "name": "Sterlite Technologies Ltd.",
+     "group": "Nifty Smallcap 100",
+     "rsi": 28.7,
+     "ret_1y_pct": 433.2,
+     "mcap_cr": 29770,
+     "close": 575.8,
+     "volume": 6253997,
+     "plan_qty": 19,
+     "plan_cost": 10940.2,
+     "status": "bought",
+     "sel_order": 1,
+     "selected_at": "2026-11-26T09:43:01+05:30",
+     "pre_open": false
+    }
+   ],
+   "funnel": {
+    "universe": 2410,
+    "data": 2410,
+    "rsi": 249,
+    "volume": 10,
+    "circuit": 9,
+    "return": 1,
+    "mcap": 1,
+    "final": 1
+   },
+   "scan_no": 2,
+   "live_prices": true,
+   "last_scan_at": "2026-11-26T14:48:02+05:30"
+  },
   {
    "date": "2026-11-25",
    "created_at": "2026-11-25T13:54:33+05:30",
@@ -1180,12 +1215,12 @@
   }
  ],
  "daily": {
-  "scan_done": "2026-11-26",
-  "sel_counter": 1,
+  "scan_done": "2026-11-27",
+  "sel_counter": 0,
   "buy_done": "2026-11-26",
   "eod_done": "2026-11-26",
   "rescan_needed": null,
-  "last_scan_at": "2026-11-26T14:48:02+05:30",
+  "last_scan_at": "2026-11-27T07:42:25+05:30",
   "holiday": "2026-11-24"
  },
  "summary": {
@@ -1207,6 +1242,6 @@
   "take_profit_pct": 10,
   "stop_loss_pct": 15
  },
- "updated_at": "2026-11-26T16:15:28+05:30",
+ "updated_at": "2026-11-27T07:42:25+05:30",
  "tg_offset": 912526879
 }
